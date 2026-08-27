@@ -9,6 +9,16 @@ Jejich rodiče založili spolek [SPATA5 CZ](https://www.zazracnedeti.cz/) a
 zaplatili start výzkumu v Českém centru pro fenogenomiku. Tento repozitář
 sbírá vše, co o nemoci a výzkumu víme, a prezentuje to jako přehledný web.
 
+## Jak si web otevřít
+
+Aktuální verze webu je součástí repozitáře. Stačí otevřít soubor
+[web/index.html](web/index.html) v prohlížeči. Nic se neinstaluje a žádný
+server není potřeba. Všechny odkazy jsou relativní, web funguje i přímo
+ze souboru.
+
+Sekce o generování níže je jen pro úpravy obsahu. Po změně ve `data/` se
+web přegeneruje a nová verze se commitne.
+
 ## Co v repozitáři je
 
 - `data/`: znalostní vault (Obsidian). Jediný zdroj pravdy pro veškerý
