@@ -10,10 +10,10 @@ datum-reserse: 2026-08-26
 
 ## Jak se nemoc pozná
 
-Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexomové sekvenování (WES), tedy přečtení všech kódujících částí DNA, případně cílený genetický panel. Ve všech publikovaných kohortách byla diagnóza stanovena právě exomem.
+Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexomové sekvenování (WES), tedy přečtení všech kódujících částí DNA, případně cílený genetický panel. V publikovaných případech stanovil diagnózu exom. U jednoho pacienta ji uzavřela až souběžně provedená čipová analýza, která odhalila deleci exonů 12 a 13 o velikosti 51 kb na druhé alele (PMID 30552426).
 
 > ℹ **Exom** je souhrn všech úseků DNA, podle kterých buňka vyrábí bílkoviny. Tvoří malou část celé DNA.
-> ℹ **Sekvenování** je přečtení pořadí písmen v DNA.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 dává definitivní diagnózu jen genetické vyšetření, obvykle sekvenování exomu nebo cílený genetický panel. Vzácně je potřeba i čipová analýza, která najde velké delece. V literatuře je takový pacient popsán jeden (PMID 30552426).
 > ℹ **Cílený genetický panel** vyšetřuje jen předem vybranou sadu genů.
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
 
@@ -53,7 +53,7 @@ Databáze ClinVar k 26. 8. 2026 evidovala pro AFG2A celkem 971 variant. Z toho 1
 
 ## Zdroje
 
-- Poddiagnostikování: https://pubmed.ncbi.nlm.nih.gov/30552426/ (Papuc 2019)
+- Poddiagnostikování a kombinace exomu s čipovou analýzou: https://pubmed.ncbi.nlm.nih.gov/30552426/ (Papuc 2019)
 - Nálezy MRI a EEG: https://pubmed.ncbi.nlm.nih.gov/41933351/ a https://pubmed.ncbi.nlm.nih.gov/27246907/
 - Mitochondriální test z krve: https://pubmed.ncbi.nlm.nih.gov/36849973/
 - ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/?term=AFG2A%5Bgene%5D
