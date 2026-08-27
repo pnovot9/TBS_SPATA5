@@ -42,8 +42,10 @@ row on the overview page. The page describes this workflow itself.
 ## Term explanations (info popovers)
 
 Paragraphs, lists, and tables that use specialist terminology carry a small
-orange circled "i" button. For a paragraph it sits inline at the end of the
-text; for a list or table it sits on its own line right below. The button is
+orange circled "i" button. For a paragraph, list, or blockquote it sits
+inline at the end of the last line of text, bound to the final word with a
+no-wrap span (`.term-anchor`) so it can never wrap onto a line of its own.
+Only after a table does it sit on its own line right below. The button is
 slightly dimmed and brightens on hover to signal it is interactive. A click
 opens a modal window titled "Vysvětlení pojmů" with short plain-Czech
 explanations of the terms used in that block. The window stays open until

@@ -283,6 +283,7 @@ body {
 }
 .term-info:hover { opacity: 1; background: var(--accent-soft); }
 .term-attach { margin: -6px 0 14px; }
+.term-anchor { white-space: nowrap; }
 .term-dialog {
   width: min(560px, calc(100vw - 48px));
   max-height: min(70vh, 640px);
