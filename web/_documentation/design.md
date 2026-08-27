@@ -18,7 +18,7 @@ association:
 ## Tokens
 
 Every color, font, and shadow is a CSS custom property on `:root` in
-`web/styles.css`. Dark mode redefines the same tokens under
+`web/assets/styles.css`. Dark mode redefines the same tokens under
 `[data-theme="dark"]`. Rules reference `var(--token)` only. Adding a raw
 hex value mid-stylesheet is a bug.
 

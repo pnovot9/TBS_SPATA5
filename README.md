@@ -40,7 +40,7 @@ Skript vypíše, kolik článků vytvořil. Spustit jde z libovolné složky.
 Spusťte lokální server:
 
 ```bash
-python3 -m http.server 8741 -d web
+python3 -m http.server 8741 -d web/dist
 ```
 
 Pak otevřete http://localhost:8741.
@@ -48,17 +48,18 @@ Pak otevřete http://localhost:8741.
 ## K čemu je build.py
 
 `web/build.py` je celý generátor webu. Přečte všechny soubory `data/**/*.md`,
-z každého článku udělá jednu stránku `web/<slug>.html` a k tomu složí
-`web/index.html` s menu a seznamem posledních změn. Odkazy `[[wikilink]]`
+z každého článku udělá jednu stránku `web/dist/<slug>.html` a k tomu složí
+`web/dist/index.html` s menu a seznamem posledních změn. Do `web/dist/` také
+zkopíruje soubory z `web/assets/`. Odkazy `[[wikilink]]`
 převede na odkazy mezi stránkami. Datum poslední změny bere z historie gitu.
 
 Skript hlídá dvě věci a při chybě skončí: `[[wikilink]]` musí mířit na
 existující dokument a každý článek musí patřit do některé skupiny v menu.
 
-Spouštějte ho po každé změně v `data/`. Vygenerované HTML pak patří do
-stejného commitu jako změna vaultu. Ručně se HTML soubory neupravují,
-příští build je přepíše. Když měníte jen `web/styles.css` nebo
-`web/app.js`, build potřeba není.
+Spouštějte ho po každé změně v `data/` i po změně souborů ve
+`web/assets/`. Vygenerovaný obsah `web/dist/` pak patří do stejného
+commitu. Soubory ve `web/dist/` se ručně neupravují, příští build je
+přepíše.
 
 ## Obsah vaultu
 
