@@ -135,7 +135,7 @@ def md_to_html(body, slugs):
 
 
 def sidebar(nav, active_slug):
-    parts = [f'<a href="index.html"{" class=\"active\"" if active_slug == "index" else ""}>Domů</a>']
+    parts = [f'<a href="index.html"{" class=\"active\"" if active_slug == "index" else ""}>Overview</a>']
     for group, docs in nav:
         is_open = any(slug == active_slug for slug, _ in docs)
         links = "".join(
