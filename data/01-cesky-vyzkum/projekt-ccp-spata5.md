@@ -12,7 +12,7 @@ Výzkum terapie SPATA5 onemocnění běží v Českém centru pro fenogenomiku (
 
 ## Co přesně vědci dělají
 
-Podle stránky projektu, inzerátu na post-doktorandskou pozici a vyjádření v médiích:
+Podle stránky projektu, inzerátu na postdoktorandskou pozici a vyjádření v médiích:
 
 - **Myší modely s pacientskými mutacemi.** K srpnu 2026 jsou "ve vývoji". Zaměření: energetický metabolismus mozku, funkce mitochondrií a klinicky relevantní neurologické, sluchové a záchvatové projevy.
 - **Testování na lidských buňkách** vedle myších modelů, pro detailní charakterizaci nemoci (Procházka v [[hn-clanek-2026]]).
@@ -29,7 +29,7 @@ Cíl formuloval Sedláček pro Roklen24: vyvinout a pilotně otestovat genovou t
 | 4. 12. 2024 | zápis spolku SPATA 5 CZ z.s. |
 | 22. až 23. 12. 2024 | smlouva s ÚMG AV ČR, start sbírky na Donio, tisková zpráva |
 | přelom 2025/2026 | start pilotní studie (dle HN 11. 5. 2026) |
-| srpen 2026 | myší model ve vývoji, CCP nabírá post-doktoranda na SPATA5 |
+| srpen 2026 | myší model ve vývoji, CCP nabírá postdoktoranda na SPATA5 |
 | 9. až 11. 9. 2026 | 8. CCP Phenogenomics Conference v Praze s blokem věnovaným SPATA5/SPATA5L1 |
 
 Klinické testování na lidech je otázkou několika let. Plán fází a rozpočet: [[faze-a-financovani]].
