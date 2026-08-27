@@ -18,7 +18,7 @@ Národní výzkumná infrastruktura pro tvorbu a studium zvířecích modelů li
 - Preklinické testování léčiv na zavedených modelech nemocí.
 - Člen mezinárodních konsorcií IMPC (International Mouse Phenotyping Consortium) a Infrafrontier/EMMA.
 
-Myší geny se s lidskými shodují zhruba z 98 %. Proto lze na myších modelech studovat lidské nemoci a testovat terapie. Sedláček práci centra přirovnává k tvorbě "encyklopedie lidských genů".
+Myší geny se s lidskými shodují zhruba z 98 %. ⚠ OVĚŘIT: číslo pochází z mediálních textů o CCP. Odborné zdroje uvádějí spíše podíl myších genů s lidským protějškem (kolem 99 %), sekvenční shoda je nižší. Dohledat přesnou formulaci a primární zdroj. Na myších modelech lze díky této podobnosti studovat lidské nemoci a testovat terapie. Sedláček práci centra přirovnává k tvorbě "encyklopedie lidských genů".
 
 ## Role v příběhu SPATA5
 

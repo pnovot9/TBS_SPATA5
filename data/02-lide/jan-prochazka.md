@@ -13,7 +13,7 @@ Vedoucí fenotypizačního modulu Českého centra pro fenogenomiku ([[ccp-centr
 ## Role a výroky
 
 - Fenotypizace znamená podrobné měření projevů nemoci na modelu: chování, metabolismus, sluch, záchvaty a další.
-- V [[hn-clanek-2026]] popisuje, proč výzkum kombinuje myší modely a lidské buňky: "Na myších se snažíme simulovat komplexní fyziologickou situaci, zatímco lidské buňky umožňují detailní pohled na to, co se děje na buňové úrovni u člověka." (⚠ OVĚŘIT přesné znění slova "buňové", článek je za paywallem a přepis může být zkomolený.)
+- V [[hn-clanek-2026]] popisuje, proč výzkum kombinuje myší modely a lidské buňky: "Na myších se snažíme simulovat komplexní fyziologickou situaci, zatímco lidské buňky umožňují detailní pohled na to, co se děje na buňové úrovni u člověka." (⚠ OVĚŘIT přesné znění slova "buňové", správně česky je "buněčné". Část citací se při strojovém čtení článku zkomolila, viz poznámka ke spolehlivosti v [[hn-clanek-2026]].)
 - ⚠ OVĚŘIT: dřívější verze textu uváděla, že terapii by podle Procházky šlo vyvinout "v horizontu let". V dostupném textu HN taková věta není, je tam jen konstatování, že genová terapie se dnes jeví jako řešení pro vzácné choroby. Dohledat v tištěném nebo plném znění článku, jinak tvrzení smazat.
 - Na biocev.eu (článek 8. 3. 2023 k akci z 27. 2. 2023) mluvil o důležitosti myších modelů pro ověření cílů a vývoj experimentální terapie.
 

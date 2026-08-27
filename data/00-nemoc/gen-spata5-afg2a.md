@@ -11,7 +11,7 @@ datum-reserse: 2026-08-26
 ## Základní údaje
 
 - Oficiální symbol dnes: **AFG2A**. Starší a stále běžně užívaný název: SPATA5. Další aliasy: SPAF, AFG2, EHLMRS, NEDHSB.
-- Umístění: chromozom 4, oblast 4q28.1. Gen má 24 exonů a kóduje protein o 892 aminokyselinách.
+- Umístění: chromozom 4, oblast 4q28.1. Gen má 24 exonů a kóduje protein o 893 aminokyselinách (UniProt Q8NB90, Ensembl ENST00000274008).
 - Protein patří do rodiny AAA+ ATPáz. To jsou molekulární "motory", které v buňce přestavují jiné bílkoviny za spotřeby energie ATP.
 - Původní jméno SPermATogenesis Associated 5 vzniklo, protože byl protein poprvé popsán při vývoji spermií. Přejmenování na AFG2A odráží příbuznost s kvasinkovým genem Afg2/Drg1.
 
@@ -41,6 +41,7 @@ Napříč studiemi se opakuje varianta c.989_991del (p.Thr330del). U příbuzné
 ## Zdroje
 
 - NCBI Gene 166378: https://www.ncbi.nlm.nih.gov/gene/166378
+- Délka proteinu: https://www.uniprot.org/uniprotkb/Q8NB90/entry a https://www.ensembl.org/Homo_sapiens/Transcript/Summary?t=ENST00000274008
 - První popis nemoci: https://pubmed.ncbi.nlm.nih.gov/26299366/ (Tanaka 2015)
 - Ribozomová role: https://pubmed.ncbi.nlm.nih.gov/35354024/ (Ni 2022)
 - Struktura komplexu: https://www.nature.com/articles/s41467-025-58894-0 (Dai 2025)

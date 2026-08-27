@@ -13,14 +13,14 @@ datum-reserse: 2026-08-26
 ## Časová osa
 
 - 1. 10. 2024: otevřená výzva k nominacím
-- 1. kolo: 44 nominací, vybráno 12 nemocí (avcr.cz uvádí seznam 11 nemocí). U poloviny vznikl myší model do 6 měsíců.
+- 1. kolo: 44 nominací, vybráno 12 nemocí. ⚠ OVĚŘIT: avcr.cz uvádí seznam jen 11 nemocí, rozpor 12 vs. 11 zatím nevysvětlen. U poloviny vznikl myší model do 6 měsíců.
 - 2. kolo: 45 nominací, uzávěrka červen 2025
 - Nyní kontinuální příjem nominací. Interim výsledky 3. výzvy zveřejněny v lednu 2026.
 - Připojily se 2 francouzské instituce, jednání s USA.
 
 ## Vztah k SPATA5
 
-Seznam Zprávy (27. 12. 2024) a BIOTRIN (20. 1. 2025) jmenují SPATA5 mezi prvními cílenými nemocemi programu, spolu s Nethertonovým, Angelmanovým a Prader-Williho syndromem, Blackfan-Diamondovou anémií a ARCI ichtyózou. ⚠ OVĚŘIT: oficiální seznam prvního kola na avcr.cz SPATA5 neuvádí. Projekt [[projekt-ccp-spata5]] běží především jako samostatná, rodiči financovaná spolupráce s ÚMG.
+Seznam Zprávy (27. 12. 2024) a BIOTRIN (20. 1. 2025) jmenují SPATA5 mezi prvními cílenými nemocemi programu, spolu s Nethertonovým, Angelmanovým a Prader-Williho syndromem, Diamondovou-Blackfanovou anémií a ARCI ichtyózou. ⚠ OVĚŘIT: oficiální seznam prvního kola na avcr.cz SPATA5 neuvádí. Projekt [[projekt-ccp-spata5]] běží především jako samostatná, rodiči financovaná spolupráce s ÚMG.
 
 ## Vazby
 
