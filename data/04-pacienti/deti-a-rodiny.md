@@ -12,7 +12,7 @@ V Česku jsou známy jednotky případů. Veřejně popsáno je pět dětí ze �
 
 ## Julinka (Julie Zajícová)
 
-- Dcera [[jan-zajic]] a [[lucie-zajicova]]. V době článku HN (květen 2026) jí bylo 12 let.
+- Dcera [[jan-zajic]] a [[lucie-zajicova]]. V době článku HN (květen 2026) jí bylo 12 let. ⚠ OVĚŘIT: Roklen24 ji už v prosinci 2024 popsal jako dvanáctiletou. Obě čísla nemohou platit zároveň, jeden ze zdrojů věk uvádí nepřesně. Dohledat datum narození nebo věk potvrdit u rodiny.
 - Vývoj se zastavil kolem 8. měsíce života. Ve dvou letech těžká epilepsie s téměř nepřetržitými záchvaty.
 - Diagnózu SPATA5 dostala až v devíti letech. Mentálně je na úrovni zhruba desetiměsíčního dítěte.
 

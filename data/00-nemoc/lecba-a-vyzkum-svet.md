@@ -19,7 +19,7 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 
 ## Nadějné dílčí výsledky
 
-**Ketogenní dieta.** Série 5 pacientů s farmakorezistentní epilepsií (Nou-Fontanet a kol., 2025, PMID 40712368): u čtyř dětí na dietě klesl počet záchvatů o 0 %, 30 %, 70 % a 100 %. Lepší výsledky mělo časné nasazení. V laboratoři navíc médium napodobující ketogenní dietu upravilo tvar, dynamiku a výrobu ATP mitochondrií v buňkách pacientů. To je zatím nejsilnější publikovaný terapeutický signál.
+**Ketogenní dieta.** Série 5 pacientů s farmakorezistentní epilepsií (Nou-Fontanet a kol., 2025, PMID 40712368): počet záchvatů u čtyř dětí na dietě klesl o 30 %, 70 % a 100 %, u čtvrtého dítěte se nezměnil (0 %). Lepší výsledky mělo časné nasazení. V laboratoři navíc médium napodobující ketogenní dietu upravilo tvar, dynamiku a výrobu ATP mitochondrií v buňkách pacientů. To je zatím nejsilnější publikovaný terapeutický signál.
 
 **Rufinamid.** V jedné retrospektivní studii dětské epilepsie dosáhl pacient se SPATA5 mutací výrazného snížení záchvatů (DOI 10.1016/j.eplepsyres.2019.106211). Jde o jednotlivý případ.
 

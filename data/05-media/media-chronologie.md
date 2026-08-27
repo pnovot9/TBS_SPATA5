@@ -52,4 +52,4 @@ Cílené hledání k 26. 8. 2026 nenašlo žádné pokrytí SPATA5 na idnes.cz, 
 
 - [[hn-clanek-2026]] (nejdůležitější článek)
 - [[projekt-ccp-spata5]] (pokrývaný projekt)
-- [[rd-factory]] (souvislý program)
+- [[rd-factory]] (související program)
