@@ -15,13 +15,29 @@ datum-reserse: 2026-08-26
 - Protein patří do rodiny AAA+ ATPáz. To jsou molekulární "motory", které v buňce přestavují jiné bílkoviny za spotřeby energie ATP.
 - Původní jméno SPermATogenesis Associated 5 vzniklo, protože byl protein poprvé popsán při vývoji spermií. Přejmenování na AFG2A odráží příbuznost s kvasinkovým genem Afg2/Drg1.
 
+> ℹ **Chromozom** je balíček DNA v jádře buňky. Člověk jich má 23 párů.
+> ℹ **Exon** je úsek genu, který nese návod na stavbu bílkoviny.
+> ℹ **Aminokyseliny** jsou stavební jednotky bílkovin.
+> ℹ **ATP** je molekula, ve které buňka ukládá a přenáší energii.
+> ℹ **UniProt a Ensembl** jsou veřejné databáze bílkovin a genů.
+
 ## Co protein v buňce dělá
 
 Věda dnes zná dvě propojené role. Obě dávají smysl u nemoci, která ničí hlavně mozek.
 
 **1. Výroba ribozomů.** Ribozomy jsou továrny na bílkoviny. Protein AFG2A tvoří komplex s proteiny AFG2B (SPATA5L1), AIRIM (C1orf109) a CINP. Tento komplex dokončuje zrání velké podjednotky ribozomu (pre-60S) v cytoplazmě a recykluje faktor RSL24D1. Bez funkčního AFG2A klesá celková výroba bílkovin v buňce. Struktura komplexu byla vyřešena kryoelektronovou mikroskopií v roce 2025 (Dai a kol., Nat Commun, PMID 40268917). Autoři píší, že struktura obsahuje lidsky specifické rysy, které by šly využít terapeuticky. Nemoc lze proto řadit mezi tzv. ribozomopatie.
 
+> ℹ **Proteinový komplex** je skupina bílkovin, které se spojí a pracují jako jeden celek.
+> ℹ **Pre-60S** je nedozrálá velká podjednotka ribozomu. Před dokončením ještě prochází úpravami.
+> ℹ **Cytoplazma** je vnitřní prostor buňky mimo jádro.
+> ℹ **Kryoelektronová mikroskopie** zobrazuje rychle zmrazené molekuly elektronovým mikroskopem. Ukáže jejich tvar do velkého detailu.
+> ℹ **Ribozomopatie** jsou nemoci způsobené poruchou výroby nebo funkce ribozomů.
+
 **2. Mitochondrie.** Nervové buňky s nefunkčním SPATA5 mají porušenou rovnováhu spojování a dělení mitochondrií, nižší výrobu ATP a kratší axony (Puusepp a kol., 2018, PMID 29343804). Snížená mitochondriální funkce byla změřena i přímo v krevních buňkách jednoho pacienta (kazuistika, Raggio a kol., 2023, PMID 36849973).
+
+> ℹ **Mitochondrie** jsou drobné útvary uvnitř buněk. Pracují jako buněčné elektrárny.
+> ℹ **ATP** je molekula, ve které buňka ukládá a přenáší energii.
+> ℹ **Axon** je dlouhé vlákno nervové buňky. Vede signály k dalším buňkám.
 
 Pracovní hypotéza nemoci: porucha zrání ribozomů snižuje výrobu bílkovin v kritických oknech vývoje mozku. K tomu se přidává porucha energetiky mitochondrií.
 
@@ -30,6 +46,9 @@ Pracovní hypotéza nemoci: porucha zrání ribozomů snižuje výrobu bílkovin
 Nemoc je autozomálně recesivní. Každý člověk má dvě kopie genu. Nemoc propukne, jen když jsou poškozené obě. Rodiče s jednou poškozenou kopií jsou zdraví přenašeči. Dva přenašeči mají u každého dítěte 25% riziko nemoci. Přesně tak to popisuje Ján Zajíc v článku [[hn-clanek-2026]].
 
 Napříč studiemi se opakuje varianta c.989_991del (p.Thr330del). U příbuzného genu AFG2B (SPATA5L1, záznam genu OMIM *619578) existuje podobná nemoc NEDHLS (OMIM #619616).
+
+> ℹ **Varianta** je konkrétní změna v DNA. Zápis c.989_991del popisuje ztrátu v DNA genu, zápis p.Thr330del odpovídající změnu v bílkovině.
+> ℹ **OMIM** je katalog dědičných nemocí a genů.
 
 ## Vazby
 

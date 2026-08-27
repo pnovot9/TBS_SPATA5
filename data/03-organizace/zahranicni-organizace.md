@@ -20,6 +20,11 @@ Mezinárodní pacientská organizace rodin s poruchami SPATA5 a SPATA5L1. Spolup
 - Kohorta obsahuje kolem 30 dosud nepublikovaných pacientů.
 - Význam: data o přirozeném průběhu jsou nutným základem pro budoucí klinické studie terapie. Bez nich nejde měřit, zda lék funguje.
 
+> ℹ **Hluboké fenotypování** je podrobný popis všech projevů nemoci u každého pacienta.
+> ℹ **Studie přirozeného průběhu** sleduje, jak se nemoc vyvíjí bez léčby.
+> ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
+> ℹ **Klinická studie** ověřuje léčbu na lidech.
+
 ## ERN ITHACA
 
 Evropská referenční síť pro vzácné vrozené vady a vzácná mentální postižení. Publikovala výzvu ke spolupráci na výše uvedené studii.

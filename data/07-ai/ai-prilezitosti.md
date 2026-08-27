@@ -18,6 +18,11 @@ Tato poznámka mapuje výchozí situaci pro plánované nasazení AI ve výzkumu
 - **Literatura roste rychle.** Jen v letech 2025 a 2026 vyšlo několik zásadních prací. Automatický monitoring PubMed, bioRxiv a ClinVar pro SPATA5/AFG2A je levná a okamžitě užitečná věc.
 - **Mediální stopa je malá.** Pro fundraising spolku může AI pomoci s obsahem a osvětou. Viz [[media-chronologie]].
 
+> ℹ **Kryo-EM** zobrazuje rychle zmrazené molekuly elektronovým mikroskopem. **Predikce dopadu variant** odhaduje, jak konkrétní změna DNA poškodí bílkovinu.
+> ℹ **In silico screening** je počítačové prosévání velkého množství látek bez laboratorní práce.
+> ℹ **HPO termíny** jsou položky standardizovaného slovníku příznaků. Slouží k jednotnému popisu pacientů.
+> ℹ **Fenotypizace** je systematické měření projevů nemoci. **Metabolomika** měří malé molekuly látkové výměny. **EEG** měří elektrickou aktivitu mozku.
+
 ## AlphaFold a navazující nástroje
 
 AlphaFold od Google DeepMind predikuje 3D strukturu proteinů z jejich sekvence. Pro práci na SPATA5/AFG2A jsou relevantní tři produkty (přehled: https://deepmind.google/science/alphafold/):
@@ -26,12 +31,20 @@ AlphaFold od Google DeepMind predikuje 3D strukturu proteinů z jejich sekvence.
 - **AlphaFold Server** (https://alphafoldserver.com). Webové rozhraní nad modelem AlphaFold 3. Predikuje strukturu komplexů proteinu s dalšími molekulami: jinými proteiny, DNA, RNA, ionty a vybranými ligandy. Pro nekomerční výzkum je zdarma. Hodí se pro modelování interakcí komplexu AFG2A bez vlastní výpočetní infrastruktury.
 - **AlphaFold 3.** Model publikovaný v Nature v květnu 2024. Oproti AlphaFold 2 predikuje nejen samotné proteiny, ale i jejich interakce s malými molekulami a nukleovými kyselinami. Kód a váhy modelu jsou dostupné na GitHubu pro akademické použití.
 
+> ℹ **Sekvence** je pořadí stavebních jednotek v DNA nebo v bílkovině.
+> ℹ **Ligand** je malá molekula, která se váže na bílkovinu.
+> ℹ **Nukleové kyseliny** jsou DNA a RNA, nosiče genetické informace.
+> ℹ **Váhy modelu** jsou naučené parametry AI modelu. Jejich zveřejnění umožňuje model provozovat vlastními silami.
+
 ### Vazba na Recursion
 
 Recursion (viz [[inspirace]]) má na AlphaFold dvě vazby:
 
 - **Infrastruktura od Googlu.** Recursion přes šest let běží na Google Cloud a v říjnu 2024 partnerství rozšířila o zkoumání generativních modelů Gemini pro svou platformu RecursionOS. Nejde tedy o přímou spolupráci s DeepMind, ale o infrastrukturní partnerství v rámci Googlu.
 - **Boltz-2, otevřená alternativa k AlphaFold 3.** Recursion vyvinula spolu s MIT model Boltz-2 (červen 2025). Navazuje na Boltz-1, nejrozšířenější open-source alternativu k AlphaFold 3. Boltz-2 navíc predikuje vazebnou afinitu, tedy jak silně se molekula váže na cíl. To je přímý krok k in silico screeningu léčiv. Model je pod licencí MIT, takže jej lze volně použít i pro projekt SPATA5. Trénován byl na superpočítači Recursion BioHive-2. ⚠ OVĚŘIT: detaily převzaty z tiskové zprávy Recursion a materiálů MIT Jameel Clinic, před citováním v žádosti o grant zkontrolovat primární zdroje.
+
+> ℹ **Generativní modely** jsou AI modely, které vytvářejí nový obsah. **Vazebná afinita** udává, jak silně se molekula váže na svůj cíl.
+> ℹ **Open source** znamená veřejně dostupný kód, který smí kdokoli používat a upravovat. **Licence MIT** je jedna z nejvolnějších open source licencí.
 
 ## Otevřené otázky k dořešení
 

@@ -19,6 +19,9 @@ datum-reserse: 2026-08-26
 | Orphanet testy | diagnostický test 499349 | https://www.orpha.net/en/diagnostic-tests/diagnostic/499349 |
 | ERN ITHACA | výzva ke spolupráci (natural history) | https://ern-ithaca.eu/for-clinicians/calls-for-collaboration/deep-phenotyping-and-natural-history-of-afg2a-spata5-and-afg2b-spata5l1-disorders/ |
 
+> ℹ **Patogenní varianta** je změna genu, která nemoc prokazatelně způsobuje. U **pravděpodobně patogenní** varianty jsou důkazy silné, ale ne úplné.
+> ℹ **Natural history** (přirozený průběh) označuje vývoj nemoci bez léčby.
+
 Poznámky:
 
 - GeneReviews kapitola pro SPATA5/AFG2A nebyla nalezena.

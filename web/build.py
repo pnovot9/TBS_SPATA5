@@ -78,11 +78,39 @@ def inline(text, slugs):
     return text
 
 
+def term_block(defs, n, slugs):
+    """Info button + dialog with plain-language explanations of terms."""
+    btn = (f'<button class="term-info" type="button" aria-haspopup="dialog" '
+           f'aria-controls="pojmy-{n}" aria-label="Vysvětlení odborných pojmů">i</button>')
+    body = "".join(f'<p class="term-def">{inline(d, slugs)}</p>' for d in defs)
+    dialog = (f'<dialog class="term-dialog" id="pojmy-{n}" aria-label="Vysvětlení pojmů">'
+              f'<button class="term-close" type="button" aria-label="Zavřít">&#215;</button>'
+              f'<h4 class="term-title">Vysvětlení pojmů</h4>{body}</dialog>')
+    return btn, dialog
+
+
 def md_to_html(body, slugs):
     lines = body.splitlines()
-    out, i = [], 0
+    out, i, terms = [], 0, 0
     while i < len(lines):
         line = lines[i]
+        if line.startswith("> ℹ"):
+            defs = []
+            while i < len(lines) and lines[i].startswith("> ℹ"):
+                defs.append(lines[i][len("> ℹ"):].strip())
+                i += 1
+            if not out:
+                raise SystemExit("CHYBA: řádek '> ℹ' nemá před sebou žádný blok")
+            terms += 1
+            btn, dialog = term_block(defs, terms, slugs)
+            prev = out.pop()
+            if prev.endswith("</p>"):
+                out.append(prev[:-len("</p>")] + " " + btn + "</p>")
+            else:
+                out.append(prev)
+                out.append(f'<p class="term-attach">{btn}</p>')
+            out.append(dialog)
+            continue
         if line.startswith("```"):
             lang = line[3:].strip()
             block = []
