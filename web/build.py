@@ -214,7 +214,7 @@ PAGE = """<!doctype html>
     <div class="content">
       <div class="eyebrow">{eyebrow}</div>
 {article}
-      <footer class="site-footer">Znalostní báze spolku SPATA5 CZ. {footer_meta}</footer>
+      <footer class="site-footer">{footer_meta}</footer>
     </div>
   </main>
 </div>
