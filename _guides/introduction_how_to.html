@@ -65,7 +65,10 @@ h1, h2, h3 {
   line-height: 1.25;
 }
 h1 { font-size: 2.2rem; margin: 0 0 1rem; }
-h2 { font-size: 1.5rem; margin: 2.5rem 0 .75rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 .75rem; scroll-margin-top: 1.5rem; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 h3 { font-size: 1.15rem; margin: 1.75rem 0 .5rem; }
 p, li { color: var(--ink-soft); }
 strong { color: var(--ink); }
@@ -135,6 +138,36 @@ th { color: var(--ink); }
   margin: 1rem 0;
 }
 .step h3 { margin-top: 0; }
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.toc-label {
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: .5rem;
+}
+.toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.toc li { padding: .15rem 0; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.back-to-top {
+  display: inline-block;
+  font-size: .85rem;
+  margin-top: .75rem;
+  text-decoration: none;
+}
+.back-to-top:hover { text-decoration: underline; }
 .footer {
   margin-top: 3.5rem;
   padding-top: 1rem;
@@ -152,7 +185,20 @@ th { color: var(--ink); }
   do ní přidat nebo upravit obsah. Není potřeba nic programovat. Stačí umět
   upravit textový soubor a spustit jeden příkaz.</p>
 
-  <h2>Jak to celé funguje</h2>
+  <nav class="toc" id="obsah" aria-label="Obsah příručky">
+    <div class="toc-label">Obsah</div>
+    <ol>
+      <li><a href="#prehled">Jak to celé funguje</a></li>
+      <li><a href="#otevrit">Jak si web otevřít</a></li>
+      <li><a href="#upravit">Jak upravit existující článek</a></li>
+      <li><a href="#pridat">Jak přidat nový článek</a></li>
+      <li><a href="#overit">Značka pro neověřené údaje</a></li>
+      <li><a href="#kontroly">Co skript hlídá</a></li>
+      <li><a href="#instalace">Co potřebujete mít nainstalované</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="prehled">Jak to celé funguje</h2>
   <p>Repozitář má dvě hlavní složky.</p>
   <div class="table-wrap">
   <table>
@@ -169,7 +215,7 @@ th { color: var(--ink); }
   vznikne jedna stránka. Menu, odkazy mezi stránkami a seznam posledních
   změn skript složí sám.</p>
 
-  <h2>Jak si web otevřít</h2>
+  <h2 id="otevrit">Jak si web otevřít</h2>
   <p>Aktuální verze webu je vždy uložená v repozitáři. Otevřete soubor
   <code>web/index.html</code> v prohlížeči, například poklepáním. Nic se
   neinstaluje a žádný server není potřeba.</p>
@@ -179,7 +225,7 @@ th { color: var(--ink); }
     <code>data/</code>, obsah stránky pochází z <code>data/INDEX.md</code>.</figcaption>
   </figure>
 
-  <h2>Jak upravit existující článek</h2>
+  <h2 id="upravit">Jak upravit existující článek</h2>
   <div class="step">
     <h3>1. Najděte soubor článku</h3>
     <p>Články leží ve složkách <code>data/00-nemoc/</code> až
@@ -217,7 +263,7 @@ Podrobnosti shrnuje [[spata5-nemoc]].</code></pre>
     doplní skript sám z historie gitu.</figcaption>
   </figure>
 
-  <h2>Jak přidat nový článek</h2>
+  <h2 id="pridat">Jak přidat nový článek</h2>
   <div class="step">
     <h3>1. Založte soubor ve správné složce</h3>
     <p>Složka určuje, ve které skupině menu se článek objeví.</p>
@@ -268,7 +314,7 @@ Text článku.
     i vygenerované HTML.</p>
   </div>
 
-  <h2>Značka pro neověřené údaje</h2>
+  <h2 id="overit">Značka pro neověřené údaje</h2>
   <p>Když si údajem nejste jistí, napište před něj
   <span class="verify-example">⚠ OVĚŘIT</span> s poznámkou, odkud údaj
   pochází a co je potřeba dohledat. Web značku zvýrazní, takže čtenář vždy
@@ -278,7 +324,7 @@ Text článku.
     <figcaption>Zvýrazněná značka v článku o výskytu nemoci.</figcaption>
   </figure>
 
-  <h2>Co skript hlídá</h2>
+  <h2 id="kontroly">Co skript hlídá</h2>
   <p>Skript při chybě skončí a napíše, co je špatně. Hlídá dvě věci.</p>
   <ul>
     <li>Každý odkaz <code>[[...]]</code> musí vést na existující soubor.
@@ -294,9 +340,11 @@ Text článku.
     automaticky.</figcaption>
   </figure>
 
-  <h2>Co potřebujete mít nainstalované</h2>
+  <h2 id="instalace">Co potřebujete mít nainstalované</h2>
   <p>Jen pro generování webu: Python 3.7 nebo novější a git. Nic dalšího.
   Pro čtení webu a úpravy textů nepotřebujete nic.</p>
+
+  <a class="back-to-top" href="#obsah">↑ Zpět na obsah</a>
 
   <div class="footer">Příručka ke znalostní bázi SPATA5. Podrobná
   technická dokumentace je ve složce <code>web/_documentation/</code>.</div>
