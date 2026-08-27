@@ -5,8 +5,10 @@ Usage: python3 build.py   (from the web/ directory, or anywhere)
 Reads data/**/*.md, writes one HTML page per article plus index.html.
 Fails if any [[wikilink]] points to a document that does not exist.
 """
+import datetime
 import html
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -23,6 +25,19 @@ GROUPS = [
 ]
 
 WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
+
+
+def last_changed(path):
+    """Date of the file's last git commit, or its mtime for uncommitted files."""
+    out = subprocess.run(
+        ["git", "log", "-1", "--format=%cs", "--", str(path)],
+        capture_output=True, text=True, cwd=DATA.parent).stdout.strip()
+    dirty = subprocess.run(
+        ["git", "status", "--porcelain", "--", str(path)],
+        capture_output=True, text=True, cwd=DATA.parent).stdout.strip()
+    if dirty or not out:
+        return datetime.date.fromtimestamp(path.stat().st_mtime).isoformat()
+    return out
 
 
 def parse_doc(path):
@@ -175,7 +190,7 @@ def main():
         meta, body, title = parse_doc(path)
         slug = meta.get("id", path.stem)
         docs[slug] = {"meta": meta, "body": body, "title": title,
-                      "folder": path.parent.name}
+                      "folder": path.parent.name, "changed": last_changed(path)}
 
     index_meta, index_body, index_title = parse_doc(DATA / "INDEX.md")
     index_body = index_body.split("## Vizuální mapa")[0].strip()
@@ -192,26 +207,37 @@ def main():
     slugs = {s: d["title"] for s, d in docs.items()}
     group_of = {s: g for g, members in nav for s, _ in members}
 
+    built = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    footer = f"Web vygenerován {built}."
+
     for slug, doc in docs.items():
         body = re.sub(r"^# .+$", "", doc["body"], count=1, flags=re.M)
         datum = doc["meta"].get("datum-reserse", "")
         article = (f"<h1>{html.escape(doc['title'])}</h1>\n"
-                   f'<p class="article-meta">Datum rešerše: {datum}</p>\n'
+                   f'<p class="article-meta">Rešerše: {datum}. '
+                   f'Poslední změna: {doc["changed"]}.</p>\n'
                    + md_to_html(body, slugs))
         page = PAGE.format(title=f"{doc['title']} | SPATA5",
                            nav=sidebar(nav, slug),
                            eyebrow=html.escape(group_of.get(slug, "")),
                            article=article,
-                           footer_meta=f"Datum rešerše: {datum}.")
+                           footer_meta=footer)
         (WEB / f"{slug}.html").write_text(page, encoding="utf-8")
 
     body = re.sub(r"^# .+$", "", index_body, count=1, flags=re.M)
-    article = f"<h1>{html.escape(index_title)}</h1>\n" + md_to_html(body, slugs)
+    newest = sorted(docs.items(), key=lambda sd: sd[1]["changed"], reverse=True)[:10]
+    recent = "".join(
+        f'<li><a href="{s}.html">{html.escape(d["title"])}</a>'
+        f'<span class="recent-date">{d["changed"]}</span></li>'
+        for s, d in newest)
+    article = (f"<h1>{html.escape(index_title)}</h1>\n"
+               + md_to_html(body, slugs)
+               + f'\n<h2>Poslední změny</h2>\n<ul class="recent">{recent}</ul>')
     page = PAGE.format(title="SPATA5 Znalostní centrum",
                        nav=sidebar(nav, "index"),
                        eyebrow="Znalostní centrum",
                        article=article,
-                       footer_meta=f"Datum rešerše: {index_meta.get('datum-reserse', '')}.")
+                       footer_meta=footer)
     (WEB / "index.html").write_text(page, encoding="utf-8")
 
     in_nav = {s for _, members in nav for s, _ in members}

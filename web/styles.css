@@ -250,6 +250,23 @@ body {
 }
 .verify-flag { background: var(--warn-bg); border-radius: 4px; padding: 1px 5px; }
 
+.content .recent { list-style: none; margin-left: 0; }
+.recent li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0;
+}
+.recent-date {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   margin-top: 56px;
