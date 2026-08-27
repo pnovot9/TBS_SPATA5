@@ -38,3 +38,66 @@
     }
   });
 })();
+(function () {
+  var dataEl = document.getElementById('glossData');
+  if (!dataEl) return;
+  var terms = JSON.parse(dataEl.textContent);
+  var listEl = document.getElementById('glossTerms');
+  var detailEl = document.getElementById('glossDetail');
+  var q = document.getElementById('glossQ');
+  var current = terms[0].t;
+  function norm(s) {
+    return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+  function esc(s) {
+    return s.replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+  function renderList() {
+    var needle = norm(q.value.trim());
+    var hits = terms.filter(function (x) {
+      return !needle || norm(x.t).indexOf(needle) >= 0 || norm(x.plain).indexOf(needle) >= 0;
+    });
+    if (!hits.length) {
+      listEl.innerHTML = '<div class="dict-empty">Žádný pojem neodpovídá hledání.</div>';
+      return;
+    }
+    var html = '', lastLetter = '';
+    hits.forEach(function (x) {
+      var L = norm(x.t)[0].toUpperCase();
+      if (L !== lastLetter) {
+        html += '<div class="dict-letter">' + L + '</div>';
+        lastLetter = L;
+      }
+      html += '<button type="button" data-t="' + esc(x.t) + '" aria-current="' +
+        (x.t === current) + '">' + esc(x.t) + '</button>';
+    });
+    listEl.innerHTML = html;
+  }
+  function renderDetail() {
+    var x = terms.filter(function (y) { return y.t === current; })[0];
+    detailEl.innerHTML = '<div class="dict-group">' + esc(x.group) + '</div>' +
+      '<h2>' + esc(x.t) + '</h2>' +
+      '<p class="dict-def">' + x.def + '</p>' +
+      '<h3>Kde na webu se pojem používá</h3>' +
+      '<ul class="dict-uses">' + x.uses.map(function (u) {
+        return '<li><a href="' + esc(u[1]) + '">' + esc(u[0]) + '</a></li>';
+      }).join('') +
+      '</ul>' +
+      (x.rel.length ? '<h3>Související pojmy</h3><div class="dict-rel">' +
+        x.rel.map(function (r) {
+          return '<button type="button" data-t="' + esc(r) + '">' + esc(r) + '</button>';
+        }).join('') + '</div>' : '');
+  }
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.dict button[data-t]');
+    if (!btn) return;
+    current = btn.dataset.t;
+    renderList();
+    renderDetail();
+  });
+  q.addEventListener('input', renderList);
+  renderList();
+  renderDetail();
+})();
