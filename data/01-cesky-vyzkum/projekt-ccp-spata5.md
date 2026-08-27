@@ -8,7 +8,7 @@ datum-reserse: 2026-08-26
 
 # Český výzkum SPATA5
 
-Výzkum terapie SPATA5 onemocnění běží v Českém centru pro fenogenomiku ([[ccp-centrum]]) pod vedením [[radislav-sedlacek]] a [[jan-prochazka]]. Iniciovali a z velké části zatím zaplatili ho rodiče nemocných dětí přes spolek [[spolek-spata5-cz]]. Média ho označují za celosvětově unikátní: pro tuto nemoc nikde jinde vývoj terapie neběží a publikovaný myší model dosud neexistuje.
+Výzkum terapie SPATA5 onemocnění běží v Českém centru pro fenogenomiku ([[ccp-centrum]]) pod vedením Radislava Sedláčka a Jana Procházky. Iniciovali a z velké části zatím zaplatili ho rodiče nemocných dětí přes spolek [[spolek-spata5-cz]]. Média ho označují za celosvětově unikátní: pro tuto nemoc nikde jinde vývoj terapie neběží a publikovaný myší model dosud neexistuje.
 
 ## Co přesně vědci dělají
 
@@ -48,8 +48,8 @@ Projekt běží dvoukolejně. Rodiči financovaný pilot je samostatná smlouva 
 ## Vazby
 
 - [[ccp-centrum]] (kde výzkum běží)
-- [[radislav-sedlacek]] (vede výzkum)
-- [[jan-prochazka]] (vede fenotypizaci)
+- Radislav Sedláček (vede výzkum)
+- Jan Procházka (vede fenotypizaci)
 - [[spolek-spata5-cz]] (iniciátor a plátce)
 - [[faze-a-financovani]] (plán a rozpočet)
 - [[rd-factory]] (širší program CCP)

@@ -27,7 +27,7 @@ Pracovní hypotéza nemoci: porucha zrání ribozomů snižuje výrobu bílkovin
 
 ## Dědičnost jednoduše
 
-Nemoc je autozomálně recesivní. Každý člověk má dvě kopie genu. Nemoc propukne, jen když jsou poškozené obě. Rodiče s jednou poškozenou kopií jsou zdraví přenašeči. Dva přenašeči mají u každého dítěte 25% riziko nemoci. Přesně tak to popisuje [[jan-zajic]] v článku [[hn-clanek-2026]].
+Nemoc je autozomálně recesivní. Každý člověk má dvě kopie genu. Nemoc propukne, jen když jsou poškozené obě. Rodiče s jednou poškozenou kopií jsou zdraví přenašeči. Dva přenašeči mají u každého dítěte 25% riziko nemoci. Přesně tak to popisuje Ján Zajíc v článku [[hn-clanek-2026]].
 
 Napříč studiemi se opakuje varianta c.989_991del (p.Thr330del). U příbuzného genu AFG2B (SPATA5L1) existuje podobná nemoc (OMIM #619578).
 

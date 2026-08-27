@@ -8,7 +8,7 @@ datum-reserse: 2026-08-26
 
 # České centrum pro fenogenomiku
 
-Národní výzkumná infrastruktura pro tvorbu a studium zvířecích modelů lidských nemocí. Součást Ústavu molekulární genetiky AV ČR (ÚMG). Sídlí v kampusu BIOCEV ve Vestci u Prahy. Ředitelem je [[radislav-sedlacek]].
+Národní výzkumná infrastruktura pro tvorbu a studium zvířecích modelů lidských nemocí. Součást Ústavu molekulární genetiky AV ČR (ÚMG). Sídlí v kampusu BIOCEV ve Vestci u Prahy. Ředitelem je Radislav Sedláček.
 
 ## Co centrum umí
 
@@ -28,8 +28,8 @@ Rodiče ze spolku [[spolek-spata5-cz]] oslovili právě CCP. Centrum pro ně vyv
 
 - [[projekt-ccp-spata5]] (projekt centra)
 - [[rd-factory]] (program centra)
-- [[radislav-sedlacek]] (ředitel)
-- [[jan-prochazka]] (vedoucí fenotypizačního modulu)
+- Radislav Sedláček (ředitel)
+- Jan Procházka (vedoucí fenotypizačního modulu)
 - [[spolek-spata5-cz]] (partner a plátce projektu)
 
 ## Zdroje

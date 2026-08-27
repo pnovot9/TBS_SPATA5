@@ -10,7 +10,7 @@ datum-reserse: 2026-08-26
 
 ## Tři fáze podle plánu spolku
 
-Zdroj: zazracnedeti.cz/vyzkum-leku/. Výzkum vede [[radislav-sedlacek]] na nekomerční bázi.
+Zdroj: zazracnedeti.cz/vyzkum-leku/. Výzkum vede Radislav Sedláček na nekomerční bázi.
 
 | Fáze | Délka | Náklady | Cíl |
 |---|---|---|---|
