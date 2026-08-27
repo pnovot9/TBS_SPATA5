@@ -21,7 +21,7 @@ Primární literatura k nemoci a genu. Řazeno chronologicky.
 | 2020 | Oesch, Bozarth | rufinamid u pacienta se SPATA5 | 31575436 | 10.1016/j.eplepsyres.2019.106211 |
 | 2021 | Braun a kol. | proteomika svalu, mitochondriální patologie | 34360601 | 10.3390/ijms22157835 |
 | 2021 | Richard a kol. | paralog SPATA5L1/AFG2B, 47 pacientů | viz DOI | 10.1016/j.ajhg.2021.08.003 |
-| 2022 | Ni a kol. | role v biogenezi ribozomů (CRISPR screen) | 35354024 | 10.1016/j.celrep.2022.110597 |
+| 2022 | Ni a kol. | role v biogenezi ribozomů (celogenomový CRISPR screen, značení ribozomů) | 35354024 | 10.1016/j.celrep.2022.110597 |
 | 2023 | Raggio a kol. | mitochondriální funkce v krevních buňkách | 36849973 | 10.1186/s40246-023-00463-x |
 | 2025 | Dai a kol. | kryo-EM struktura komplexu | 40268917 | 10.1038/s41467-025-58894-0 |
 | 2025 | Nou-Fontanet a kol. | ketogenní dieta u 5 pacientů | 40712368 | 10.1016/j.ejpn.2025.07.007 |
@@ -30,7 +30,7 @@ Primární literatura k nemoci a genu. Řazeno chronologicky.
 > ℹ **Fenotyp** je souhrn projevů nemoci u pacienta. **Příbuzenská rodina** znamená, že rodiče dítěte jsou pokrevně příbuzní.
 > ℹ **Paralog** je příbuzný gen, který vznikl zdvojením původního genu.
 > ℹ **Proteomika** je hromadné měření bílkovin ve vzorku. **Kryo-EM** zobrazuje rychle zmrazené molekuly elektronovým mikroskopem.
-> ℹ **Biogeneze ribozomů** je proces výroby ribozomů, buněčných továren na bílkoviny. **CRISPR screen** je pokus, který postupně vypíná mnoho genů a sleduje dopad na buňky.
+> ℹ **Biogeneze ribozomů** je proces výroby ribozomů, buněčných továren na bílkoviny. **Celogenomový CRISPR screen** je pokus, který v populaci buněk vyřadí metodou CRISPR jednotlivé geny, v každé buňce jiný, a sleduje dopad na buňky. **Značení ribozomů** odlišuje ribozomy, které v buňce už byly, od nově složených.
 > ℹ **Ketogenní dieta** je léčebná strava s vysokým podílem tuků a minimem sacharidů.
 
 Doplňkové práce:
@@ -54,3 +54,5 @@ Publikace české skupiny (CCP) k SPATA5 zatím neexistuje nebo nebyla dohledán
 ## Zdroje
 
 Každý PMID lze otevřít jako https://pubmed.ncbi.nlm.nih.gov/PMID/
+
+- Plný text Ni a kol. 2022 (metoda screenu a značení ribozomů, knihovna CRISPR Brunello): https://pmc.ncbi.nlm.nih.gov/articles/PMC9004343/
