@@ -8,7 +8,7 @@ datum-reserse: 2026-08-27
 
 # Úkoly a další kroky
 
-Akční body vyplývající z rozboru zahraničních organizací v [[inspirace]]. Stav k 2026-08-27.
+Jediný seznam úkolů projektu. Akční body vycházejí z rozboru zahraničních organizací v [[inspirace]] a z analýzy [[ai-prilezitosti]]. Stav k 2026-08-27.
 
 ## Krátkodobé kroky
 
@@ -24,10 +24,21 @@ Akční body vyplývající z rozboru zahraničních organizací v [[inspirace]]
 
 - [ ] **Posoudit vytvoření komunity pacientských dat po vzoru Citizen Health.** Göttingenská kohorta je pro nábor uzavřena ([[zahranicni-organizace]]). Možnosti jsou dvě: oslovit Citizen Health ohledně komunity SPATA5, nebo obdobný model vybudovat v Evropě. K projednání se spolkem [[spolek-spata5-cz]].
 
+## Otevřené otázky z rešerše
+
+Přeneseno z analýzy [[ai-prilezitosti]]. Stav k 2026-08-26, dosud nevyřešeno.
+
+- [ ] Zjistit přesný stav myšího modelu v CCP. Web říká jen "in development". Kontakt: jana.safrankova@img.cas.cz.
+- [ ] Ověřit, zda je SPATA5 formálně v programu [[rd-factory]], nebo běží čistě na smlouvě s ÚMG. Zdroje si odporují.
+- [ ] Zjistit, kolik peněz sbírka zatím vybrala. Donio se nepodařilo strojově přečíst.
+- [ ] Objasnit roli SPATA Foundation. Zjistit, zda se lze napojit na göttingenská data přirozeného průběhu.
+- [ ] Ověřit tvrzení HN o třetinové úmrtnosti do šesti let. V literatuře nedohledáno.
+- [ ] Zjistit, zda se česká skupina účastní 8. CCP konference (9. až 11. 9. 2026) s vlastními daty k SPATA5.
+
 ## Vazby
 
-- [[inspirace]] (rozbor, ze kterého úkoly vycházejí)
-- [[ai-prilezitosti]] (starší otevřené otázky, dosud nevyřešené)
+- [[inspirace]] (rozbor, ze kterého vycházejí krátkodobé a analytické úkoly)
+- [[ai-prilezitosti]] (analýza, ze které vycházejí otevřené otázky)
 
 ## Zdroje
 
