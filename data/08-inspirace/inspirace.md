@@ -8,16 +8,16 @@ datum-reserse: 2026-08-27
 
 # Inspirace ze světa
 
-Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoci. Slouží jako inspirace pro český projekt. Každá řeší jiný kus problému: objev léku, data pacientů, nebo diagnostiku.
+Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoci. Slouží jako referenční rámec pro český projekt. Každá pokrývá jinou část problému: objev léčiva, pacientská data, nebo diagnostiku.
 
 ## Komerční firmy
 
 - **Recursion** (recursion.com): americká biotechnologická firma. Trénuje AI modely na snímcích buněk a hledá tak nové léky. Má kandidáty v klinických zkouškách, i pro vzácné nemoci.
-- **Healx** (healx.ai): britská firma zaměřená přímo na vzácné nemoci. Pomocí AI znovu využívá a kombinuje už známé látky. Uvádí, že 90 % vzácných nemocí nemá žádnou léčbu.
+- **Healx** (healx.ai): britská firma zaměřená přímo na vzácné nemoci. Pomocí AI znovu využívá a kombinuje již známé látky. Uvádí, že 90 % vzácných nemocí nemá žádnou léčbu.
 
 ## Neziskové organizace
 
-- **Every Cure** (everycure.org): nezisková organizace. Hledá už schválené léky, které by šly použít na nemoci bez léčby. Jejich AI porovnává tisíce léků proti tisícům nemocí najednou. Platforma se jmenuje MATRIX a je otevřená: kód i seznamy nemocí, léků a indikací jsou veřejné na GitHubu pod licencí Apache-2.0. Ověřeno 2026-08-27 na https://github.com/everycure-org/matrix.
+- **Every Cure** (everycure.org): nezisková organizace. Vyhledává již schválená léčiva použitelná pro nemoci bez dostupné léčby. Její AI porovnává tisíce léčiv proti tisícům nemocí současně. Platforma se jmenuje MATRIX a je otevřená: kód i seznamy nemocí, léků a indikací jsou veřejné na GitHubu pod licencí Apache-2.0. Ověřeno 2026-08-27 na https://github.com/everycure-org/matrix.
 
 ## Pacientská data
 
@@ -27,15 +27,15 @@ Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoc
 
 - **Face2Gene** (face2gene.com): nástroj firmy FDNA pro lékaře. Z fotografie obličeje rozpozná rysy typické pro genetické syndromy a nabídne možné diagnózy. Používají ho velké nemocnice jako Mayo Clinic nebo Boston Children's Hospital.
 
-## Co z toho plyne pro SPATA5
+## Relevance pro projekt SPATA5
 
-Rozbor z 2026-08-27. Seřazeno podle toho, jak rychle se dá jednat. Konkrétní kroky shrnuje [[todo]].
+Rozbor z 2026-08-27. Položky jsou seřazeny podle dostupnosti a přínosu. Vyplývající akční body shrnuje [[todo]].
 
-1. **Healx má program pro pacientské skupiny.** Rare Treatment Accelerator přijímá žádosti od pacientských a akademických skupin. Přihláška je zdarma a nemá uzávěrku. Spolupráce je pro vybrané žadatele typicky bezplatná. SPATA5 splňuje podmínku vzácnosti (méně než 1 z 2 000). Zajímavé je to proto, že Healx hledá léčbu v už známých látkách. To může přinést výsledek dřív než genová terapie. Signál ketogenní diety na mitochondrie ([[lecba-a-vyzkum-svet]]) je přesně typ vodítka, na kterém takový screening staví. Kontakt: accelerate@healx.ai.
-2. **Every Cure dává predikce zdarma.** Nápad na repurposing jde poslat přes everycure.org/ideas. A protože je MATRIX otevřený, může si tým CCP predikce pro SPATA5 spustit i sám.
-3. **Citizen Health je vzor pro studii přirozeného průběhu.** Jejich partnerské komunity jsou nemoci stejného typu jako SPATA5: ADCY5, CACNA1A, CASK, CHD2, FOXG1, STXBP1. Z dat pacientů staví studie přirozeného průběhu a publikují je. Göttingenská kohorta ([[zahranicni-organizace]]) je uzavřená, takže tudy vede jedna z mála cest k novým dlouhodobým datům. Háček: platforma zatím cílí na USA.
-4. **Recursion zveřejňuje data, která stojí za prověření.** Otevřený dataset RxRx3 obsahuje přes 17 000 genových knockoutů a přes 1 600 schválených léků, prohlížet se dá nástrojem MapApp. ⚠ OVĚŘIT: zda je mezi knockouty SPATA5/AFG2A, jsme zatím nezjišťovali. Pokud ano, dají se zdarma najít léky s podobným nebo opačným buněčným otiskem.
-5. **Face2Gene je pro projekt nejméně podstatný.** Diagnózu dnes potvrzuje sekvenování a nemoc nemá výrazný obličejový vzorec ([[spata5-nemoc]]). Může ale pomoci najít dosud nediagnostikované pacienty.
+1. **Healx provozuje partnerský program pro pacientské skupiny.** Rare Treatment Accelerator přijímá žádosti od pacientských a akademických skupin. Podání žádosti je bezplatné a program nemá uzávěrku. Spolupráce je pro vybrané žadatele typicky bezplatná. SPATA5 splňuje podmínku vzácnosti (méně než 1 z 2 000). Healx se zaměřuje na repurposing známých látek. Ten může přinést terapeutický výsledek v kratším horizontu než genová terapie. Publikovaný účinek ketogenní diety na mitochondrie ([[lecba-a-vyzkum-svet]]) představuje mechanistické vodítko, na kterém takový screening staví. Kontakt: accelerate@healx.ai.
+2. **Every Cure poskytuje predikce bezplatně.** Návrh na repurposing lze podat přes everycure.org/ideas. Platforma MATRIX je navíc otevřená, takže tým CCP může predikce pro SPATA5 spustit i vlastními silami.
+3. **Citizen Health představuje model pro studii přirozeného průběhu.** Partnerské komunity platformy tvoří onemocnění stejné kategorie jako SPATA5: ADCY5, CACNA1A, CASK, CHD2, FOXG1, STXBP1. Z dat sdílených pacienty vznikají publikované studie přirozeného průběhu. Göttingenská kohorta ([[zahranicni-organizace]]) je pro nábor uzavřena, a tento přístup je proto jednou z mála cest k novým longitudinálním datům. Omezení: platforma se zatím soustředí na USA.
+4. **Recursion zveřejňuje data s potenciálem pro repurposing.** Otevřený dataset RxRx3 obsahuje přes 17 000 genových knockoutů a přes 1 600 schválených léčiv. Prohlížet jej lze nástrojem MapApp. ⚠ OVĚŘIT: zastoupení SPATA5/AFG2A mezi knockouty zatím nebylo ověřeno. Pokud je gen zastoupen, lze bez laboratorní práce identifikovat léčiva s podobným nebo opačným buněčným profilem.
+5. **Face2Gene má pro projekt nejnižší prioritu.** Diagnózu dnes potvrzuje sekvenování a onemocnění nemá výrazný obličejový fenotyp ([[spata5-nemoc]]). Nástroj může přispět k identifikaci dosud nediagnostikovaných pacientů.
 
 ## Vazby
 
