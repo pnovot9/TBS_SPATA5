@@ -8,7 +8,7 @@ datum-reserse: 2026-08-26
 
 # Lucie Zajícová
 
-Předsedkyně spolku [[spolek-spata5-cz]] a matka Julinky. Manželka [[jan-zajic]]. Na sbírce Donio vystupuje jako "Lucka".
+Předsedkyně spolku [[spolek-spata5-cz]] a matka Julinky. Manželka [[jan-zajic]].
 
 - Jediná členka statutárního orgánu spolku, jedná samostatně. Ve funkci od 4. 12. 2024 (zápis spolku).
 - Stejně jako manžel je zdravá přenašečka jedné mutace genu [[gen-spata5-afg2a]].
