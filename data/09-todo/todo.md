@@ -1,33 +1,33 @@
 ---
 id: todo
 typ: analyza
-nazev: TO DO
+nazev: Úkoly a další kroky
 tagy: [todo, dalsi-kroky, inspirace]
 datum-reserse: 2026-08-27
 ---
 
-# TO DO
+# Úkoly a další kroky
 
-Konkrétní kroky, které plynou z rozboru zahraničních organizací v [[inspirace]]. Stav k 2026-08-27.
+Akční body vyplývající z rozboru zahraničních organizací v [[inspirace]]. Stav k 2026-08-27.
 
-## Hned a zdarma
+## Krátkodobé kroky
 
-- [ ] **Přihlásit SPATA5 do Healx Rare Treatment Accelerator.** Přihláška je zdarma a nemá uzávěrku. První krok je dotazník způsobilosti na https://healx.ai/rare-treatment-accelerator/, dotazy na accelerate@healx.ai.
-- [ ] **Poslat SPATA5 do Every Cure.** Návrh na repurposing jde podat přes https://everycure.org/ideas/.
+- [ ] **Podat žádost do programu Healx Rare Treatment Accelerator.** Podání žádosti je bezplatné a program nemá uzávěrku. Prvním krokem je dotazník způsobilosti na https://healx.ai/rare-treatment-accelerator/. Kontaktní adresa programu: accelerate@healx.ai.
+- [ ] **Nominovat SPATA5 u organizace Every Cure.** Návrh na repurposing lze podat prostřednictvím formuláře na https://everycure.org/ideas/.
 
-## Jedno odpoledne práce
+## Analytické úkoly
 
-- [ ] **Prověřit SPATA5/AFG2A v datech Recursion.** Vyhledat gen v nástroji MapApp (https://www.rxrx.ai). Pokud je mezi knockouty, sepsat léky s podobným nebo opačným buněčným otiskem.
-- [ ] **Prohlédnout otevřený MATRIX.** Zjistit, zda jde spustit predikce pro SPATA5 lokálně: https://github.com/everycure-org/matrix.
+- [ ] **Ověřit zastoupení genu SPATA5/AFG2A v datech Recursion.** Vyhledat gen v nástroji MapApp (https://www.rxrx.ai). Pokud je mezi knockouty zastoupen, sestavit seznam schválených léčiv s podobným nebo opačným buněčným profilem.
+- [ ] **Posoudit platformu MATRIX.** Vyhodnotit, zda lze predikce pro SPATA5 spustit lokálně z veřejného repozitáře: https://github.com/everycure-org/matrix.
 
-## Strategické, k projednání
+## Strategická rozhodnutí
 
-- [ ] **Zvážit komunitu pacientských dat po vzoru Citizen Health.** Göttingenská kohorta je uzavřená ([[zahranicni-organizace]]). Buď oslovit Citizen Health kvůli SPATA5 komunitě, nebo jejich model zopakovat v Evropě. Projednat se spolkem [[spolek-spata5-cz]].
+- [ ] **Posoudit vytvoření komunity pacientských dat po vzoru Citizen Health.** Göttingenská kohorta je pro nábor uzavřena ([[zahranicni-organizace]]). Možnosti jsou dvě: oslovit Citizen Health ohledně komunity SPATA5, nebo obdobný model vybudovat v Evropě. K projednání se spolkem [[spolek-spata5-cz]].
 
 ## Vazby
 
-- [[inspirace]] (rozbor, ze kterého úkoly plynou)
-- [[ai-prilezitosti]] (starší otevřené otázky, zatím nevyřešené)
+- [[inspirace]] (rozbor, ze kterého úkoly vycházejí)
+- [[ai-prilezitosti]] (starší otevřené otázky, dosud nevyřešené)
 
 ## Zdroje
 
