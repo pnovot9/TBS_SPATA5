@@ -12,11 +12,12 @@ datum-reserse: 2026-08-26
 
 ## Role a výroky
 
-- Vede výzkum SPATA5 na nekomerční bázi (web spolku).
+- Vede výzkum SPATA5. Web spolku uvádí: "Výzkum vede docent Radislav Sedláček" (CCP, ÚMG AV ČR).
+- ⚠ OVĚŘIT: dřívější verze textu uváděla, že výzkum běží "na nekomerční bázi". Na https://www.zazracnedeti.cz/vyzkum-leku/ tato formulace není. Dohledat, odkud pochází, jinak tvrzení smazat.
 - Cíl podle Roklen24 (23. 12. 2024): "Cílem je vyvinout a pilotně otestovat genovou terapii, která by byla dostupná i u nás." Tamtéž: preklinický výzkum je stále efektivnější, vývoj u některých genetických nemocí dnes trvá kolem 2,5 roku.
 - V [[hn-clanek-2026]] přirovnává práci CCP k tvorbě "encyklopedie lidských genů". Výzkum vzácných onemocnění popisuje jako srdcovou záležitost centra (přesné znění citace se nepodařilo spolehlivě přečíst, jde o parafrázi).
 - Tvář programu [[rd-factory]] a Aliance pro výzkum a terapie vzácných nemocí (ohlášena 2023).
-- Podle profilu na biocev.eu také předsedá mezinárodnímu konsorciu pro výzkum funkce genů (IMPC kontext).
+- ⚠ OVĚŘIT: tvrzení, že předsedá mezinárodnímu konsorciu pro výzkum funkce genů (IMPC). Profil na biocev.eu zmiňuje IMPC jen u publikace z roku 2018, roli neuvádí. Ověřit na impc.org nebo v ÚMG.
 
 ## Mediální stopy
 
