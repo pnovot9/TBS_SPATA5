@@ -25,7 +25,7 @@ V Česku jsou známy jednotky případů. Veřejně popsáno je pět dětí ze �
 ## Michaela ("Michalka")
 
 - 15 let (prosinec 2025). Matka Petra Potocká, Stříbro na Tachovsku.
-- Farmakorezistentní epilepsie. Čtyřkombinace antiepileptik bez účinku.
+- Farmakorezistentní epilepsie. Čtyřkombinace antiepileptik bez účinku. ⚠ OVĚŘIT: údaj o čtyřkombinaci se při opakované rešerši nepodařilo potvrdit z textu Deník.cz. Ověřit v původním článku.
 - Citace matky z Deníku: "Zdraví pro dceru. Když se onemocnění nezhorší, bude to úspěch."
 
 ## Elenka

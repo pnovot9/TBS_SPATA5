@@ -36,7 +36,7 @@ Napříč studiemi se opakuje varianta c.989_991del (p.Thr330del).
 
 ## Příbuzná nemoc
 
-Gen AFG2B (SPATA5L1) je blízký příbuzný. Jeho poruchy působí podobný syndrom nebo izolovanou ztrátu sluchu (OMIM #619578, kohorta 47 pacientů, Richard a kol. 2021). Obě nemoci se zkoumají společně v Göttingenu.
+Gen AFG2B (SPATA5L1) je blízký příbuzný. Jeho poruchy působí podobný syndrom NEDHLS (OMIM #619616) nebo izolovanou ztrátu sluchu DFNB119 (OMIM #619615). Samotný gen má záznam OMIM *619578. Popsaná kohorta má 47 pacientů (Richard a kol. 2021). Obě nemoci se zkoumají společně v Göttingenu.
 
 ## Vazby
 

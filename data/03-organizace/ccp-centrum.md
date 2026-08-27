@@ -14,6 +14,7 @@ Národní výzkumná infrastruktura pro tvorbu a studium zvířecích modelů li
 
 - Tvorba geneticky upravených myších a potkaních modelů (CRISPR/Cas9, TALEN, mikroinjekce). Vytvořeno přes 1000 myších modelů.
 - Fenotypizace ve více než 15 specializacích: biochemie, kardiovaskulární systém, zrak, sluch, neurobiologie, metabolomika, imunologie, histopatologie.
+- ⚠ OVĚŘIT: čísla "přes 1000 modelů" a "více než 15 specializací" jsou převzata z prezentace centra na phenogenomics.cz. Konkrétní stránku s těmito čísly se při rešerši nepodařilo doložit.
 - Zobrazování: microCT, embryologie, bioimaging.
 - Preklinické testování léčiv na zavedených modelech nemocí.
 - Člen mezinárodních konsorcií IMPC (International Mouse Phenotyping Consortium) a Infrafrontier/EMMA.
