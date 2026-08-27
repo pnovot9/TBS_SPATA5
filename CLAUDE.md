@@ -17,13 +17,19 @@ static website that presents it.
 
 ## Rules for all future work
 
-0. **Ground truth first.** The vault documents a real disease and real
-   research. Every factual claim in `data/` must be backed by a source in
-   the article's "Zdroje" section (PMID, DOI, OMIM, Orphanet, or a press
-   URL). Never invent, embellish, or round facts. A claim that cannot be
-   verified in a primary source gets the `⚠ OVĚŘIT` marker with a note on
-   where the number came from. Never delete sources or verification flags.
-   When updating content, re-check the source still says what we claim.
+0. **Ground truth first, triple check everything.** The vault documents a
+   real disease and real research. Every factual claim in `data/` must be
+   backed by a source in the article's "Zdroje" section (PMID, DOI, OMIM,
+   Orphanet, or a press URL). Never invent, embellish, or round facts.
+   Any fact or information that is not verified, or that should be
+   re-verified, always gets the `⚠ OVĚŘIT` marker with a note on where it
+   came from and what to check. This applies to every kind of content:
+   numbers, dates, names, quotes, claims about people or organizations.
+   When in doubt, flag it. Before publishing a fact without the marker,
+   verify it three times: the claim matches the cited source, the source
+   is primary (or the best available), and the number or wording was
+   copied exactly. Never delete sources or verification flags. When
+   updating content, re-check that the source still says what we claim.
 1. Content changes happen in `data/`, never by editing generated HTML.
    After any vault change, run `python3 web/build.py` and commit the output.
 2. Every new feature or improvement must be documented in
