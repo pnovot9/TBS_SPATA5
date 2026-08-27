@@ -14,6 +14,7 @@ static website that presents it.
   - [architecture.md](web/_documentation/architecture.md): build pipeline, file layout, URL scheme
   - [design.md](web/_documentation/design.md): design system, tokens, dark mode, brand colors
   - [features.md](web/_documentation/features.md): every user-facing feature and how it works
+  - [content.md](web/_documentation/content.md): language, tone, and register rules for all text
 
 ## Rules for all future work
 
@@ -39,5 +40,10 @@ static website that presents it.
    styles, no per-page style blocks, no new colors outside the token list
    in design.md.
 4. Every page and view gets its own URL when it is introduced.
-5. Website text is Czech, written in short plain sentences.
+5. All text (vault and website) is Czech, written in short plain sentences
+   in a professional register. The audience is professionals: researchers,
+   clinicians, association representatives, donors. No colloquial phrasing,
+   no marketing tone, no cute headings. Precise domain terminology is
+   welcome. Full rules with examples:
+   [content.md](web/_documentation/content.md).
 6. Work on branches in worktrees, land via PR. Never commit to main.
