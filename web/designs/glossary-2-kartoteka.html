@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Návrh 2: Kartotéka | Slovník pojmů SPATA5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+/* Prototype-only styles. In production these move into styles.css as tokens. */
+.content.wide { max-width: 960px; }
+.gloss-search {
+  position: relative;
+  margin: 0 0 14px;
+}
+.gloss-search input {
+  width: 100%;
+  padding: 13px 16px 13px 42px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 15px var(--font-body);
+  box-shadow: var(--shadow);
+  transition: border-color .15s;
+}
+.gloss-search input:focus { border-color: var(--accent); outline: none; }
+.gloss-search svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  color: var(--ink-faint);
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.chip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-soft);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font: 500 13px var(--font-body);
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.chip small { opacity: .65; font-size: 11px; margin-left: 4px; }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+.gcard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color .15s, transform .18s cubic-bezier(.2,0,0,1);
+}
+.gcard:hover { border-color: var(--accent); transform: translateY(-2px); }
+.gcard-topic {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--purple);
+}
+.gcard h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+.gcard p { font-size: 14px; margin: 0; flex: 1; }
+.gcard-use {
+  border-top: 1px solid var(--line);
+  padding-top: 9px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+.gcard-use a { display: inline-block; margin-right: 10px; }
+.gloss-count { font-size: 12.5px; color: var(--ink-faint); margin-bottom: 14px; }
+.gloss-empty { color: var(--ink-faint); padding: 32px 0; display: none; }
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-name">SPATA<em>5</em></span></a>
+    <div class="brand-sub">Znalostní centrum</div>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a href="#">Overview</a>
+      <details class="nav-group"><summary class="nav-label">Nemoc a věda</summary><div><a href="#">SPATA5 onemocnění</a><a href="#">Gen SPATA5 (AFG2A)</a><a href="#">Diagnostika</a><a href="#">Léčba a výzkum ve světě</a><a href="#">Výskyt nemoci</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Český výzkum</summary><div><a href="#">Český výzkum SPATA5</a><a href="#">Fáze výzkumu a financování</a><a href="#">RD-Factory</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Organizace a pacienti</summary><div><a href="#">SPATA 5 CZ z.s.</a><a href="#">České centrum pro fenogenomiku</a><a href="#">Zahraniční organizace a studie</a><a href="#">České děti a rodiny</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Média a zdroje</summary><div><a href="#">Mediální pokrytí v čase</a><a href="#">Hlavní článek Hospodářských novin</a><a href="#">Vědecké publikace</a><a href="#">Databáze a registry</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Inspirace</summary><div><a href="#">Inspirace ze světa</a></div></details>
+      <details class="nav-group" open><summary class="nav-label">Analýzy &amp; To do</summary><div><a href="#">Kde může pomoci AI</a><a href="#">To do a další kroky</a><a href="#">Ověřit: všechny štítky</a><a href="#" class="active">Slovník pojmů</a></div></details>
+    </nav>
+    <button class="theme-toggle" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Tmavý režim">
+      <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.6 14.8A8.6 8.6 0 0 1 9.2 3.4a8.6 8.6 0 1 0 11.4 11.4Z"/></svg>
+      <span class="knob"></span>
+    </button>
+  </aside>
+  <main class="main">
+    <div class="content wide">
+      <div class="eyebrow">Analýzy &amp; To do</div>
+      <h1>Slovník pojmů</h1>
+      <p class="article-meta">Návrh 2: Kartotéka. Filtrování podle tematických oblastí, karty v mřížce, širší stránka.</p>
+      <p>Vysvětlení odborných pojmů z celého webu na jednom místě. Pojmy lze filtrovat podle oblasti nebo prohledat.</p>
+      <div class="gloss-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <input type="search" id="q" placeholder="Hledat pojem nebo část definice…" aria-label="Hledat pojem">
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Filtr podle oblasti"></div>
+      <div class="gloss-count" id="count"></div>
+      <div class="card-grid" id="grid"></div>
+      <p class="gloss-empty" id="empty">Žádný pojem neodpovídá hledání.</p>
+      <footer class="site-footer">Prototyp designu. Obsah je ukázka ze skutečných vysvětlivek.</footer>
+    </div>
+  </main>
+</div>
+<script src="glossary-data.js"></script>
+<script>
+(function () {
+  var grid = document.getElementById('grid');
+  var chips = document.getElementById('chips');
+  var q = document.getElementById('q');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  var active = null;
+  function esc(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+  var topics = [];
+  TERMS.forEach(function (x) { if (topics.indexOf(x.topic) < 0) topics.push(x.topic); });
+  topics.sort(function (a, b) { return a.localeCompare(b, 'cs'); });
+  function renderChips() {
+    var all = [['Vše', null]].concat(topics.map(function (t) { return [t, t]; }));
+    chips.innerHTML = all.map(function (p) {
+      var n = p[1] ? TERMS.filter(function (x) { return x.topic === p[1]; }).length : TERMS.length;
+      return '<button class="chip" type="button" data-topic="' + (p[1] || '') + '" aria-pressed="' +
+        (active === p[1]) + '">' + esc(p[0]) + '<small>' + n + '</small></button>';
+    }).join('');
+  }
+  function render() {
+    var needle = norm(q.value.trim());
+    var hits = TERMS.filter(function (x) {
+      if (active && x.topic !== active) return false;
+      return !needle || norm(x.t).indexOf(needle) >= 0 || norm(x.def).indexOf(needle) >= 0;
+    });
+    grid.innerHTML = hits.map(function (x) {
+      return '<div class="gcard"><div class="gcard-topic">' + esc(x.topic) + '</div>' +
+        '<h3>' + esc(x.t) + '</h3><p>' + esc(x.def) + '</p>' +
+        '<div class="gcard-use">Na webu: ' + x.use.map(function (u) {
+          return '<a href="#">' + esc(u[0]) + '</a>';
+        }).join('') + '</div></div>';
+    }).join('');
+    count.textContent = 'Zobrazeno pojmů: ' + hits.length + ' z ' + TERMS.length + '.';
+    empty.style.display = hits.length ? 'none' : 'block';
+  }
+  chips.addEventListener('click', function (e) {
+    var btn = e.target.closest('.chip');
+    if (!btn) return;
+    active = btn.dataset.topic || null;
+    renderChips();
+    render();
+  });
+  q.addEventListener('input', render);
+  renderChips();
+  render();
+})();
+</script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

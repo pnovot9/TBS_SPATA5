@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Návrh 3: Dvoupanelový slovník | Slovník pojmů SPATA5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+/* Prototype-only styles. In production these move into styles.css as tokens. */
+.content.wide { max-width: 1000px; }
+.dict {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-height: 540px;
+}
+.dict-list {
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  max-height: 640px;
+}
+.dict-search { padding: 14px; border-bottom: 1px solid var(--line); position: relative; }
+.dict-search input {
+  width: 100%;
+  padding: 9px 12px 9px 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 14px var(--font-body);
+  transition: border-color .15s;
+}
+.dict-search input:focus { border-color: var(--accent); outline: none; }
+.dict-search svg {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  color: var(--ink-faint);
+}
+.dict-terms { overflow-y: auto; flex: 1; padding: 6px 0 12px; }
+.dict-letter {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .09em;
+  color: var(--ink-faint);
+  padding: 12px 16px 3px;
+}
+.dict-terms button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 7px 16px;
+  border: 0;
+  border-left: 3px solid transparent;
+  background: none;
+  color: var(--ink-soft);
+  font: 14px var(--font-body);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.dict-terms button:hover { background: var(--accent-soft); color: var(--ink); }
+.dict-terms button[aria-current="true"] {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-weight: 600;
+}
+.dict-detail { padding: 30px 34px; }
+.dict-topic {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--purple);
+  margin-bottom: 6px;
+}
+.dict-detail h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+.dict-detail .def { font-size: 15.5px; }
+.dict-detail h3 {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--ink-faint);
+  margin: 26px 0 8px;
+}
+.use-list { list-style: none; margin: 0; padding: 0; }
+.use-list li { padding: 6px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.use-list li:last-child { border-bottom: 0; }
+.rel-terms { display: flex; flex-wrap: wrap; gap: 8px; }
+.rel-terms button {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink-soft);
+  border-radius: 999px;
+  padding: 4px 13px;
+  font: 500 13px var(--font-body);
+  cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+.rel-terms button:hover { border-color: var(--accent); color: var(--accent); }
+.dict-empty { padding: 24px 16px; font-size: 13.5px; color: var(--ink-faint); }
+@media (max-width: 860px) {
+  .dict { grid-template-columns: 1fr; }
+  .dict-list { border-right: 0; border-bottom: 1px solid var(--line); max-height: 300px; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-name">SPATA<em>5</em></span></a>
+    <div class="brand-sub">Znalostní centrum</div>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a href="#">Overview</a>
+      <details class="nav-group"><summary class="nav-label">Nemoc a věda</summary><div><a href="#">SPATA5 onemocnění</a><a href="#">Gen SPATA5 (AFG2A)</a><a href="#">Diagnostika</a><a href="#">Léčba a výzkum ve světě</a><a href="#">Výskyt nemoci</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Český výzkum</summary><div><a href="#">Český výzkum SPATA5</a><a href="#">Fáze výzkumu a financování</a><a href="#">RD-Factory</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Organizace a pacienti</summary><div><a href="#">SPATA 5 CZ z.s.</a><a href="#">České centrum pro fenogenomiku</a><a href="#">Zahraniční organizace a studie</a><a href="#">České děti a rodiny</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Média a zdroje</summary><div><a href="#">Mediální pokrytí v čase</a><a href="#">Hlavní článek Hospodářských novin</a><a href="#">Vědecké publikace</a><a href="#">Databáze a registry</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Inspirace</summary><div><a href="#">Inspirace ze světa</a></div></details>
+      <details class="nav-group" open><summary class="nav-label">Analýzy &amp; To do</summary><div><a href="#">Kde může pomoci AI</a><a href="#">To do a další kroky</a><a href="#">Ověřit: všechny štítky</a><a href="#" class="active">Slovník pojmů</a></div></details>
+    </nav>
+    <button class="theme-toggle" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Tmavý režim">
+      <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.6 14.8A8.6 8.6 0 0 1 9.2 3.4a8.6 8.6 0 1 0 11.4 11.4Z"/></svg>
+      <span class="knob"></span>
+    </button>
+  </aside>
+  <main class="main">
+    <div class="content wide">
+      <div class="eyebrow">Analýzy &amp; To do</div>
+      <h1>Slovník pojmů</h1>
+      <p class="article-meta">Návrh 3: Dvoupanelový slovník. Vlevo seznam s hledáním, vpravo detail pojmu se souvislostmi.</p>
+      <div class="dict">
+        <div class="dict-list">
+          <div class="dict-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+            <input type="search" id="q" placeholder="Hledat pojem…" aria-label="Hledat pojem">
+          </div>
+          <div class="dict-terms" id="terms"></div>
+        </div>
+        <div class="dict-detail" id="detail"></div>
+      </div>
+      <footer class="site-footer">Prototyp designu. Obsah je ukázka ze skutečných vysvětlivek.</footer>
+    </div>
+  </main>
+</div>
+<script src="glossary-data.js"></script>
+<script>
+(function () {
+  var termsEl = document.getElementById('terms');
+  var detail = document.getElementById('detail');
+  var q = document.getElementById('q');
+  var current = TERMS[0].t;
+  function esc(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+  function renderList() {
+    var needle = norm(q.value.trim());
+    var hits = TERMS.filter(function (x) {
+      return !needle || norm(x.t).indexOf(needle) >= 0 || norm(x.def).indexOf(needle) >= 0;
+    });
+    if (!hits.length) {
+      termsEl.innerHTML = '<div class="dict-empty">Žádný pojem neodpovídá hledání.</div>';
+      return;
+    }
+    var html = '', lastLetter = '';
+    hits.forEach(function (x) {
+      var L = norm(x.t)[0].toUpperCase();
+      if (L !== lastLetter) { html += '<div class="dict-letter">' + L + '</div>'; lastLetter = L; }
+      html += '<button type="button" data-t="' + esc(x.t) + '" aria-current="' + (x.t === current) + '">' + esc(x.t) + '</button>';
+    });
+    termsEl.innerHTML = html;
+  }
+  function renderDetail() {
+    var x = TERMS.filter(function (y) { return y.t === current; })[0];
+    var related = TERMS.filter(function (y) { return y.topic === x.topic && y.t !== x.t; }).slice(0, 4);
+    detail.innerHTML = '<div class="dict-topic">' + esc(x.topic) + '</div>' +
+      '<h2>' + esc(x.t) + '</h2>' +
+      '<p class="def">' + esc(x.def) + '</p>' +
+      '<h3>Kde na webu se pojem používá</h3>' +
+      '<ul class="use-list">' + x.use.map(function (u) {
+        return '<li><a href="#">' + esc(u[0]) + '</a></li>';
+      }).join('') + '</ul>' +
+      (related.length ? '<h3>Související pojmy z oblasti ' + esc(x.topic) + '</h3>' +
+        '<div class="rel-terms">' + related.map(function (r) {
+          return '<button type="button" data-t="' + esc(r.t) + '">' + esc(r.t) + '</button>';
+        }).join('') + '</div>' : '');
+  }
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-t]');
+    if (!btn) return;
+    current = btn.dataset.t;
+    renderList();
+    renderDetail();
+  });
+  q.addEventListener('input', renderList);
+  renderList();
+  renderDetail();
+})();
+</script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
