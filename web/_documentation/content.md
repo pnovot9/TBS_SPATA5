@@ -8,6 +8,10 @@ profesionálové: vědci, lékaři, zástupci spolku a dárci.
 - Čeština, krátké věty, jedna myšlenka na větu.
 - Odborné termíny se používají přesně (repurposing, knockout, fenotyp,
   longitudinální data). Nevysvětlujeme je opisem, kde je čtenář zná.
+- Odborné termíny v odstavci vysvětlují řádky `> ℹ` hned pod ním. Web z
+  nich vytvoří tlačítko s vysvětlivkami (viz features.md). Vysvětlení jsou
+  krátké slovníkové definice bez čísel a bez tvrzení, která by potřebovala
+  zdroj.
 - Bez pomlček uvnitř vět a bez středníků. Dvě věty místo jedné dlouhé.
 
 ## Rejstřík

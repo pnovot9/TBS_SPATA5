@@ -12,7 +12,16 @@ datum-reserse: 2026-08-26
 
 Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexomové sekvenování (WES), tedy přečtení všech kódujících částí DNA, případně cílený genetický panel. Ve všech publikovaných kohortách byla diagnóza stanovena právě exomem.
 
+> ℹ **Exom** je souhrn všech úseků DNA, podle kterých buňka vyrábí bílkoviny. Tvoří malou část celé DNA.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA.
+> ℹ **Cílený genetický panel** vyšetřuje jen předem vybranou sadu genů.
+> ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
+
 Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální onemocnění, takže děti nejdřív projdou negativním metabolickým vyšetřením. Studie z roku 2019 (PMID 30552426) našla SPATA5 jako příčinu u 3 % kohorty časných epileptických encefalopatií a uzavřela, že gen byl poddiagnostikován. Česká zkušenost to potvrzuje: Julinka Zajícová dostala diagnózu až v devíti letech (viz [[deti-a-rodiny]] a [[hn-clanek-2026]]).
+
+> ℹ **Mitochondriální onemocnění** jsou poruchy mitochondrií, buněčných elektráren.
+> ℹ **Metabolické vyšetření** hledá poruchy látkové výměny, obvykle z krve a moči.
+> ℹ **Epileptická encefalopatie** je těžká epilepsie, která sama poškozuje vývoj mozku.
 
 ## Podpůrná vyšetření
 
@@ -22,9 +31,19 @@ Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální o
 - Zrakové evokované potenciály (VEP)
 - Výzkumně: měření dýchání mitochondrií v krevních buňkách jako šetrná náhrada svalové biopsie (PMID 36849973)
 
+> ℹ **EEG** měří elektrickou aktivitu mozku elektrodami na hlavě. **Multifokální hroty** jsou ostré výboje z více míst mozku. **Hypsarytmie** je chaotický vzorec EEG typický pro infantilní spasmy.
+> ℹ **MRI** je magnetická rezonance, podrobné zobrazení mozku. **Hypomyelinizace** je nedostatek myelinu, izolačního obalu nervových vláken. **Atrofie** je úbytek mozkové tkáně. **Corpus callosum** je svazek vláken spojující obě poloviny mozku.
+> ℹ **BERA** měří odpověď mozkového kmene na zvuk. Funguje i u malých dětí. **Senzorineurální ztráta sluchu** vzniká poškozením vnitřního ucha nebo sluchového nervu.
+> ℹ **VEP** (zrakové evokované potenciály) měří odpověď mozku na zrakový podnět.
+> ℹ **Svalová biopsie** je odběr malého vzorku svalu k vyšetření. **Mitochondrie** jsou buněčné elektrárny.
+
 ## Varianty genu
 
 Databáze ClinVar k 26. 8. 2026 evidovala pro AFG2A celkem 971 variant. Z toho 105 patogenních a 53 pravděpodobně patogenních. Kapitola GeneReviews pro tento gen zatím nebyla nalezena.
+
+> ℹ **Patogenní varianta** je změna genu, která nemoc prokazatelně způsobuje. U **pravděpodobně patogenní** varianty jsou důkazy silné, ale ne úplné.
+> ℹ **ClinVar** je veřejná databáze změn v genech a jejich vztahu k nemocem.
+> ℹ **GeneReviews** jsou odborné přehledové kapitoly o dědičných nemocech.
 
 ## Vazby
 

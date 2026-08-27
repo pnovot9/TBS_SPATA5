@@ -10,6 +10,9 @@ datum-reserse: 2026-08-26
 
 Výzkum terapie SPATA5 onemocnění běží v Českém centru pro fenogenomiku ([[ccp-centrum]]) pod vedením Radislava Sedláčka a Jana Procházky. Iniciovali a z velké části zatím zaplatili ho rodiče nemocných dětí přes spolek [[spolek-spata5-cz]]. Média ho označují za celosvětově unikátní: pro tuto nemoc nikde jinde vývoj terapie neběží a publikovaný myší model dosud neexistuje.
 
+> ℹ **Myší model** je myš upravená tak, aby měla stejnou poruchu genu jako pacienti. Slouží ke studiu nemoci a testování léčby.
+> ℹ **Genová terapie** dodává do buněk funkční kopii genu.
+
 ## Co přesně vědci dělají
 
 Podle stránky projektu, inzerátu na postdoktorandskou pozici a vyjádření v médiích:
@@ -19,6 +22,12 @@ Podle stránky projektu, inzerátu na postdoktorandskou pozici a vyjádření v 
 - **Vývoj AAV vektorů pro genovou terapii** a studie jejich doručení do cílové tkáně.
 - **Testování účinnosti malých molekul**, tedy klasických léčiv.
 - Nástroje: CRISPR/Cas9 a další technologie CCP.
+
+> ℹ **Pacientská mutace** je stejná změna genu, jakou mají nemocné děti.
+> ℹ **Mitochondrie** jsou buněčné elektrárny. Vyrábějí energii pro chod buňky.
+> ℹ **AAV vektor** je virus, který sám nemoc nezpůsobuje. Je upravený tak, aby do buněk dopravil léčebný gen.
+> ℹ **Malé molekuly** jsou klasická léčiva, například ve formě tablet.
+> ℹ **CRISPR/Cas9** je nástroj pro cílené úpravy DNA.
 
 Cíl formuloval Sedláček pro Roklen24: vyvinout a pilotně otestovat genovou terapii dostupnou i v Česku.
 

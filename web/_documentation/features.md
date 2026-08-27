@@ -39,6 +39,32 @@ each source article. It is maintained by hand. When a flag is resolved,
 fix the source article, remove the marker there, and delete the matching
 row on the overview page. The page describes this workflow itself.
 
+## Term explanations (info popovers)
+
+Paragraphs, lists, and tables that use specialist terminology carry a small
+orange circled "i" button. For a paragraph it sits inline at the end of the
+text; for a list or table it sits on its own line right below. The button is
+slightly dimmed and brightens on hover to signal it is interactive. A click
+opens a modal window titled "Vysvětlení pojmů" with short plain-Czech
+explanations of the terms used in that block. The window stays open until
+the reader clicks the circled X in its top right corner, clicks outside the
+window, or presses Escape.
+
+Authoring: in the vault, add one line per term directly after the block,
+starting with `> ℹ` (a blockquote with the info character, so Obsidian
+renders it readably). Example:
+
+```
+> ℹ **Axon** je dlouhé vlákno nervové buňky. Vede signály k dalším buňkám.
+```
+
+Consecutive `> ℹ` lines merge into one window. build.py converts them into
+the button plus a native `<dialog>` element (opened with `showModal()`, so
+Escape and focus handling come from the browser). The button carries
+`aria-haspopup="dialog"` and `aria-controls`; open/close logic lives in
+`app.js`. Explanations are dictionary-level definitions only. Claims that go
+beyond a definition belong in the article body with a source, per rule 0.
+
 ## Timestamps
 
 - Footer of every page: "Web vygenerován YYYY-MM-DD HH:MM", stamped at

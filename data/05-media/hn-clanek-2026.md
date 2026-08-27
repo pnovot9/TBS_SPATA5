@@ -23,6 +23,9 @@ datum-reserse: 2026-08-26
 - Citovaní: Ján Zajíc, Radislav Sedláček, Jan Procházka.
 - Financování: vlastní zdroje rodičů plus sbírka, transparentní účet 2703049205/2010, web zazracnedeti.cz.
 
+> ℹ **Přenašeč** má jednu poškozenou a jednu zdravou kopii genu. Sám je zdravý, poškozenou kopii ale může předat dítěti.
+> ℹ **Pilotní studie** je první menší fáze výzkumu, která ověřuje proveditelnost.
+
 Poznámka ke spolehlivosti: článek není plně za paywallem a podařilo se ho načíst. Část doslovných citací se při strojovém čtení zkomolila. Tam, kde si nejsme jisti přesným zněním, uvádíme parafráze.
 
 ## Vazby

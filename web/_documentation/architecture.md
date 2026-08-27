@@ -24,7 +24,9 @@ hosted from the `web/dist/` folder as plain files.
 3. The article title is the markdown H1, with `nazev` as fallback.
 4. Converts the markdown subset the vault actually uses: h1 to h3, bullet
    and numbered lists, tables, bold, blockquotes, fenced code, bare URLs,
-   and `[text](url)` links. Mermaid code fences are dropped.
+   and `[text](url)` links. Mermaid code fences are dropped. Lines starting
+   with `> ℹ` become a term-explanation button and dialog attached to the
+   preceding block (see features.md).
 5. Resolves `[[wikilink]]` to `<a href="slug.html">Article title</a>`.
    A wikilink that points to no document stops the build with an error.
    This keeps the site and the vault in sync.

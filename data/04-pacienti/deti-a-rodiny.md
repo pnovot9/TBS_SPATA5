@@ -22,16 +22,24 @@ V Česku jsou známy jednotky případů. Veřejně popsáno je pět dětí ze �
 - Dětská mozková obrna, epilepsie, nedoslýchavost.
 - Spolu s Julinkou jsou to tři děti, pro které běží sbírka Donio "Staňte se součástí zázraku".
 
+> ℹ **Dětská mozková obrna** je porucha hybnosti způsobená poškozením mozku v raném vývoji.
+> ℹ **Nedoslýchavost** je částečná ztráta sluchu.
+
 ## Michaela ("Michalka")
 
 - 15 let (prosinec 2025). Matka Petra Potocká, Stříbro na Tachovsku.
 - Farmakorezistentní epilepsie. Čtyřkombinace antiepileptik bez účinku.
 - Citace matky z Deníku: "Zdraví pro dceru. Když se onemocnění nezhorší, bude to úspěch."
 
+> ℹ **Farmakorezistentní epilepsie** je epilepsie, kterou léky dostatečně netlumí. **Čtyřkombinace antiepileptik** znamená čtyři léky proti záchvatům podávané současně.
+
 ## Elenka
 
 - Narozena 2014. Původní diagnóza Westův syndrom byla v roce 2021 změněna na EHLMRS (SPATA5).
 - Těžká mentální retardace.
+
+> ℹ **Westův syndrom** je epilepsie kojenců se sériemi krátkých záškubů. Dnes se označuje jako infantilní epileptické spasmy.
+> ℹ **EHLMRS** je starší název SPATA5 onemocnění.
 
 ## Vazby
 

@@ -13,7 +13,10 @@ Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoc
 ## Komerční firmy
 
 - **Recursion** (recursion.com): americká biotechnologická firma. Trénuje AI modely na snímcích buněk a hledá tak nové léky. Má kandidáty v klinických zkouškách, i pro vzácné nemoci. Běží na infrastruktuře Google Cloud a spolu s MIT vyvinula Boltz-2, otevřenou alternativu k AlphaFold 3. Podrobněji v [[ai-prilezitosti]].
-- **Healx** (healx.ai): britská firma zaměřená přímo na vzácné nemoci. Pomocí AI znovu využívá a kombinuje již známé látky. Uvádí, že 90 % vzácných nemocí nemá žádnou léčbu.
+- **Healx** (healx.ai): britská firma zaměřená přímo na vzácné nemoci. Pomocí AI znovu využívá a kombinuje již známé látky (repurposing). Uvádí, že 90 % vzácných nemocí nemá žádnou léčbu.
+
+> ℹ **Repurposing** je využití již schváleného léku pro jinou nemoc, než pro kterou vznikl.
+> ℹ **Klinické zkoušky** ověřují léčbu na lidech.
 
 ## Neziskové organizace
 
@@ -36,6 +39,12 @@ Rozbor z 2026-08-27. Položky jsou seřazeny podle dostupnosti a přínosu. Vypl
 3. **Citizen Health představuje model pro studii přirozeného průběhu.** Partnerské komunity platformy tvoří onemocnění stejné kategorie jako SPATA5: ADCY5, CACNA1A, CASK, CHD2, FOXG1, STXBP1. Z dat sdílených pacienty vznikají publikované studie přirozeného průběhu. Göttingenská kohorta ([[zahranicni-organizace]]) je pro nábor uzavřena, a tento přístup je proto jednou z mála cest k novým longitudinálním datům. Omezení: platforma se zatím soustředí na USA.
 4. **Recursion zveřejňuje data s potenciálem pro repurposing.** Otevřený dataset RxRx3 obsahuje přes 17 000 genových knockoutů a přes 1 600 schválených léčiv. Prohlížet jej lze nástrojem MapApp. ⚠ OVĚŘIT: zastoupení SPATA5/AFG2A mezi knockouty zatím nebylo ověřeno. Pokud je gen zastoupen, lze bez laboratorní práce identifikovat léčiva s podobným nebo opačným buněčným profilem.
 5. **Face2Gene má pro projekt nejnižší prioritu.** Diagnózu dnes potvrzuje sekvenování a onemocnění nemá výrazný obličejový fenotyp ([[spata5-nemoc]]). Nástroj může přispět k identifikaci dosud nediagnostikovaných pacientů.
+
+> ℹ **Repurposing** je využití již schváleného léku pro jinou nemoc, než pro kterou vznikl. **Screening** je hromadné testování mnoha látek najednou.
+> ℹ **Mechanistické vodítko** je poznatek o mechanismu nemoci, který napovídá, kde léčbu hledat.
+> ℹ **Studie přirozeného průběhu** sleduje vývoj nemoci bez léčby. **Longitudinální data** jsou opakovaná měření týchž pacientů v čase.
+> ℹ **Genový knockout** je cílené vypnutí jednoho genu v buňce.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. **Obličejový fenotyp** je soubor rysů obličeje typických pro daný syndrom.
 
 ## Vazby
 
