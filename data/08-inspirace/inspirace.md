@@ -12,7 +12,7 @@ Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoc
 
 ## Komerční firmy
 
-- **Recursion** (recursion.com): americká biotechnologická firma. Trénuje AI modely na snímcích buněk a hledá tak nové léky. Má kandidáty v klinických zkouškách, i pro vzácné nemoci.
+- **Recursion** (recursion.com): americká biotechnologická firma. Trénuje AI modely na snímcích buněk a hledá tak nové léky. Má kandidáty v klinických zkouškách, i pro vzácné nemoci. Běží na infrastruktuře Google Cloud a spolu s MIT vyvinula Boltz-2, otevřenou alternativu k AlphaFold 3. Podrobněji v [[ai-prilezitosti]].
 - **Healx** (healx.ai): britská firma zaměřená přímo na vzácné nemoci. Pomocí AI znovu využívá a kombinuje již známé látky. Uvádí, že 90 % vzácných nemocí nemá žádnou léčbu.
 
 ## Neziskové organizace
