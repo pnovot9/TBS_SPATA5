@@ -23,7 +23,7 @@ Poznámka k pravopisu: v médiích vystupuje jako **Ján Zajíc**, na Doniu jako
 
 - Hospodářské noviny, 11. 5. 2026: hlavní rozhovor, viz [[hn-clanek-2026]]
 - Roklen24, 23. 12. 2024: tisková zpráva ke startu sbírky
-- Nepřímé zmínky: Deník.cz (31. 12. 2025), biotrin.cz
+- ⚠ OVĚŘIT: nepřímé zmínky Deník.cz (31. 12. 2025) a biotrin.cz. Zdroj neuveden odkazem, dohledat URL a datum, jinak řádek smazat.
 - Samostatný podcast, YouTube nebo TV rozhovor nebyl k 26. 8. 2026 dohledán
 
 ## Vazby
