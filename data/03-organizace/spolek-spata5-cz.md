@@ -16,7 +16,7 @@ Rodičovský spolek, který stojí za webem **zazracnedeti.cz** ("zázračné d�
 - IČ: 223 28 700, spisová značka L 79860, Městský soud v Praze
 - Datum zápisu: 4. 12. 2024
 - Sídlo: Nad Vápenkou 401, 250 83 Škvorec (okres Praha-východ)
-- Statutární orgán: předsedkyně [[lucie-zajicova]], jedná samostatně
+- Statutární orgán: předsedkyně Lucie Zajícová, jedná samostatně
 - Účel: podpora výzkumu a vývoje terapií syndromu EHLMRS (mutace genu SPATA5), podpora nemocných a jejich rodin, poradenství a osvěta
 
 ## Web zazracnedeti.cz
@@ -36,8 +36,8 @@ Podstránky: o nás, příběhy našich dětí, jak můžete pomoct, o nemoci SP
 
 ## Vazby
 
-- [[jan-zajic]] (spoluzakladatel, iniciátor)
-- [[lucie-zajicova]] (předsedkyně)
+- Ján Zajíc (spoluzakladatel, iniciátor)
+- Lucie Zajícová (předsedkyně)
 - [[deti-a-rodiny]] (děti, za které spolek jedná)
 - [[projekt-ccp-spata5]] (výzkum, který spolek inicioval a financuje)
 - [[faze-a-financovani]] (rozpočet a sbírky)
