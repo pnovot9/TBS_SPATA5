@@ -27,9 +27,10 @@ on the site is guaranteed to lead somewhere.
 Ground truth matters more than anything else on this site. The vault keeps
 a "Zdroje" section in each article with the primary sources (PubMed PMID,
 DOI, OMIM, Orphanet, press URLs). The generator renders bare URLs as
-clickable links, so every claim stays one click from its source. Claims
-that could not be verified in primary literature carry the `⚠ OVĚŘIT`
-marker, which the site renders as a highlighted flag. Never strip sources
+clickable links, so every claim stays one click from its source. Any fact
+that is not verified, or that should be re-verified, carries the
+`⚠ OVĚŘIT` marker, which the site renders as a highlighted flag. This is
+mandatory for all content, per rule 0 in CLAUDE.md. Never strip sources
 or verification flags when editing content.
 
 ## Timestamps
