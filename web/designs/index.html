@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPATA5: Výběr designu znalostního centra</title>
+<style>
+:root { --ink: #262d3d; --soft: #4e586e; --accent: #e56f0b; --line: #e4e7ec; --bg: #f7f7f9; --surface: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #e8eaf0; --soft: #b2b8c2; --accent: #f59b3f; --line: #333a4b; --bg: #171a22; --surface: #21252f; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); padding: 48px 24px; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; }
+h1 { font-size: 28px; margin-bottom: 8px; }
+.sub { color: var(--soft); margin-bottom: 32px; }
+a.card { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
+a.card:hover { border-color: var(--accent); }
+a.card h2 { font-size: 17px; margin-bottom: 3px; }
+a.card h2 span { color: var(--accent); margin-right: 8px; }
+a.card p { font-size: 14px; color: var(--soft); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Znalostní centrum SPATA5</h1>
+  <p class="sub">Čtyři návrhy designu. Každý má levé menu, tmavý režim a stejný obsah. Vyberte směr a ten se stane základem celého webu.</p>
+  <a class="card" href="design-1-atlas.html"><h2><span>1</span>Atlas</h2><p>Klidná encyklopedie. Patkové titulky, číslovaná čtecí cesta, důraz na pohodlné čtení dlouhých textů.</p></a>
+  <a class="card" href="design-2-laborator.html"><h2><span>2</span>Laboratoř</h2><p>Výzkumný dashboard. Tmavý boční panel, statistiky, fáze výzkumu a rejstřík dokumentů.</p></a>
+  <a class="card" href="design-3-nadeje.html"><h2><span>3</span>Naděje</h2><p>Teplý a lidský. Gradient z fialové do oranžové, velká dlaždicová navigace, tón blízký webu spolku.</p></a>
+  <a class="card" href="design-4-graf.html"><h2><span>4</span>Graf</h2><p>Znalosti jako síť. Úvodní mapa vazeb mezi uzly, kliknutím na uzel se otevře článek.</p></a>
+</div>
+</body>
+</html>
