@@ -279,6 +279,7 @@ body {
   font: italic 600 11px/1 var(--font-display);
   cursor: pointer;
   vertical-align: text-bottom;
+  text-indent: -1px;
   transition: opacity .15s, background .15s;
 }
 .term-info:hover { opacity: 1; background: var(--accent-soft); }
@@ -315,6 +316,9 @@ body {
 .term-def strong { color: var(--ink); }
 .term-close {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 14px;
   right: 14px;
   width: 26px;
