@@ -10,7 +10,7 @@ datum-reserse: 2026-08-26
 
 Otec Julinky, dívky se SPATA5 onemocněním. Spoluiniciátor českého výzkumu a spoluzakladatel rodičovské iniciativy, ze které vznikl spolek [[spolek-spata5-cz]].
 
-Poznámka k pravopisu: v médiích vystupuje jako **Ján Zajíc**, na Doniu jako "Honza". Zadání úlohy obsahovalo překlep "Jan Zájic". Nezaměňovat s historickou osobností Janem Zajícem (student, který se upálil v roce 1969).
+V médiích vystupuje jako **Ján Zajíc**, na Doniu jako "Honza".
 
 ## Příběh
 
