@@ -11,11 +11,13 @@ sbírá vše, co o nemoci a výzkumu víme, a prezentuje to jako přehledný web
 
 ## Jak si web otevřít
 
-Hotový web je uložený přímo v repozitáři. Stáhněte si repozitář (tlačítko
-**Code** a volba "Download ZIP", nebo `git clone`), rozbalte ho a poklepejte
-na soubor `web/dist/index.html`. Otevře se v prohlížeči a funguje celý,
-včetně odkazů mezi stránkami. Nic se neinstaluje a žádný server není
-potřeba.
+Web běží na adrese **https://pnovot9.github.io/TBS_SPATA5/**. Stačí
+kliknout, nic se neinstaluje.
+
+Funguje i bez internetu. Stáhněte si repozitář (tlačítko **Code** a volba
+"Download ZIP", nebo `git clone`), rozbalte ho a poklepejte na soubor
+`web/dist/index.html`. Otevře se v prohlížeči a funguje celý, včetně
+odkazů mezi stránkami. Žádný server není potřeba.
 
 Vše ostatní v tomto souboru je jen pro editory obsahu. Kdo chce web pouze
 číst, nepotřebuje z něj nic.
