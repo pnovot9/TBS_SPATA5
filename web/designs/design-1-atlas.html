@@ -18,7 +18,11 @@
   --accent: #e56f0b;
   --accent-soft: #fdf1e4;
   --purple: #6a1b9a;
-  --sidebar-bg: #f5f6f8;
+  --sidebar-bg: #2b3140;
+  --sidebar-ink: #c8cdd8;
+  --sidebar-dim: #8a92a5;
+  --sidebar-line: #3d4456;
+  --sidebar-accent: #f59b3f;
   --shadow: 0 1px 2px rgba(38, 45, 61, .06);
   --font-display: "Source Serif 4", Georgia, serif;
   --font-body: "Inter", -apple-system, sans-serif;
@@ -34,6 +38,7 @@
   --accent-soft: #33302a;
   --purple: #b57fd6;
   --sidebar-bg: #161a22;
+  --sidebar-line: #262c3a;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -56,7 +61,8 @@ a { color: inherit; }
   width: 268px;
   flex-shrink: 0;
   background: var(--sidebar-bg);
-  border-right: 1px solid var(--line);
+  color: var(--sidebar-ink);
+  border-right: 1px solid var(--sidebar-line);
   padding: 28px 20px;
   position: sticky;
   top: 0;
@@ -69,48 +75,77 @@ a { color: inherit; }
   font-weight: 700;
   font-size: 21px;
   letter-spacing: -.01em;
+  color: #fff;
 }
-.brand-name em { color: var(--accent); font-style: normal; }
-.brand-sub { font-size: 11.5px; color: var(--ink-faint); margin-bottom: 28px; }
-.nav-group { margin-bottom: 22px; }
+.brand-name em { color: var(--sidebar-accent); font-style: normal; }
+.brand-sub { font-size: 11.5px; color: var(--sidebar-dim); margin-bottom: 28px; }
+.nav-group { margin-bottom: 6px; }
 .nav-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 10.5px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .09em;
-  color: var(--ink-faint);
-  margin-bottom: 6px;
-  padding-left: 10px;
+  color: var(--sidebar-dim);
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color .15s, background .15s;
 }
+.nav-label::-webkit-details-marker { display: none; }
+.nav-label::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid var(--sidebar-dim);
+  border-bottom: 1.5px solid var(--sidebar-dim);
+  transform: rotate(-45deg);
+  transition: transform .2s cubic-bezier(.2,0,0,1);
+}
+.nav-group[open] > .nav-label::after { transform: rotate(45deg); }
+.nav-label:hover { color: #fff; background: rgba(255, 255, 255, .05); }
+.nav-group[open] > .nav-label { color: var(--sidebar-accent); }
+.nav-group[open] > .nav-label::after { border-color: var(--sidebar-accent); }
+.nav-group > div { padding: 2px 0 8px; }
+@keyframes nav-reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: none; }
+}
+.nav-group[open] > div { animation: nav-reveal .2s cubic-bezier(.2,0,0,1); }
 .nav a {
   display: block;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 22px;
   border-radius: 6px;
   text-decoration: none;
-  color: var(--ink-soft);
+  color: var(--sidebar-ink);
   font-size: 14px;
   transition: background .15s, color .15s;
 }
-.nav a:hover { background: var(--surface); color: var(--ink); }
+.nav a:hover { background: rgba(255, 255, 255, .05); color: #fff; }
 .nav a.active {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: rgba(245, 127, 23, .14);
+  color: var(--sidebar-accent);
   font-weight: 600;
 }
+.nav > a { padding-left: 10px; }
 .theme-btn {
   margin-top: 10px;
   width: 100%;
   padding: 8px 10px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--sidebar-line);
   border-radius: 8px;
-  background: var(--surface);
-  color: var(--ink-soft);
+  background: transparent;
+  color: var(--sidebar-ink);
   font: inherit;
   font-size: 13px;
   cursor: pointer;
-  transition: border-color .15s;
+  transition: border-color .15s, color .15s;
 }
-.theme-btn:hover { border-color: var(--accent); }
+.theme-btn:hover { border-color: var(--sidebar-accent); color: var(--sidebar-accent); }
 
 /* Main */
 .main { flex: 1; min-width: 0; }
@@ -219,43 +254,51 @@ blockquote {
     <div class="brand"><span class="brand-name">SPATA<em>5</em></span></div>
     <div class="brand-sub">Znalostní centrum</div>
     <nav class="nav" aria-label="Hlavní navigace">
-      <div class="nav-group">
-        <a href="#" class="active">Domů</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-label">Nemoc a věda</div>
-        <a href="#">Nemoc SPATA5</a>
-        <a href="#">Gen SPATA5 / AFG2A</a>
-        <a href="#">Diagnostika</a>
-        <a href="#">Léčba a výzkum ve světě</a>
-        <a href="#">Epidemiologie</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-label">Český výzkum</div>
-        <a href="#">Projekt CCP</a>
-        <a href="#">Fáze a financování</a>
-        <a href="#">RD Factory</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-label">Lidé</div>
-        <a href="#">Jan Zajíc</a>
-        <a href="#">Lucie Zajícová</a>
-        <a href="#">Radislav Sedláček</a>
-        <a href="#">Jan Procházka</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-label">Organizace a pacienti</div>
-        <a href="#">Spolek SPATA5 CZ</a>
-        <a href="#">Centrum CCP</a>
-        <a href="#">Zahraniční organizace</a>
-        <a href="#">Děti a rodiny</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-label">Média a zdroje</div>
-        <a href="#">Chronologie médií</a>
-        <a href="#">Vědecké publikace</a>
-        <a href="#">Databáze</a>
-      </div>
+      <a href="#" class="active">Domů</a>
+      <details class="nav-group" open>
+        <summary class="nav-label">Nemoc a věda</summary>
+        <div>
+          <a href="#">Nemoc SPATA5</a>
+          <a href="#">Gen SPATA5 / AFG2A</a>
+          <a href="#">Diagnostika</a>
+          <a href="#">Léčba a výzkum ve světě</a>
+          <a href="#">Epidemiologie</a>
+        </div>
+      </details>
+      <details class="nav-group">
+        <summary class="nav-label">Český výzkum</summary>
+        <div>
+          <a href="#">Projekt CCP</a>
+          <a href="#">Fáze a financování</a>
+          <a href="#">RD Factory</a>
+        </div>
+      </details>
+      <details class="nav-group">
+        <summary class="nav-label">Lidé</summary>
+        <div>
+          <a href="#">Jan Zajíc</a>
+          <a href="#">Lucie Zajícová</a>
+          <a href="#">Radislav Sedláček</a>
+          <a href="#">Jan Procházka</a>
+        </div>
+      </details>
+      <details class="nav-group">
+        <summary class="nav-label">Organizace a pacienti</summary>
+        <div>
+          <a href="#">Spolek SPATA5 CZ</a>
+          <a href="#">Centrum CCP</a>
+          <a href="#">Zahraniční organizace</a>
+          <a href="#">Děti a rodiny</a>
+        </div>
+      </details>
+      <details class="nav-group">
+        <summary class="nav-label">Média a zdroje</summary>
+        <div>
+          <a href="#">Chronologie médií</a>
+          <a href="#">Vědecké publikace</a>
+          <a href="#">Databáze</a>
+        </div>
+      </details>
     </nav>
     <button class="theme-btn" id="themeBtn" type="button">Tmavý režim</button>
   </aside>
