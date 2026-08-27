@@ -23,7 +23,8 @@ Every color, font, and shadow is a CSS custom property on `:root` in
 hex value mid-stylesheet is a bug.
 
 Sidebar tokens (`--sidebar-*`) are separate because the sidebar stays dark
-in both themes.
+in both themes. The term-explanation dialog uses two dedicated tokens,
+`--shadow-pop` and `--backdrop`, defined in both themes.
 
 ## Typography
 

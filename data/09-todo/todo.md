@@ -15,10 +15,15 @@ Jediný seznam úkolů projektu. Akční body vycházejí z rozboru zahraniční
 - [ ] **Podat žádost do programu Healx Rare Treatment Accelerator.** Podání žádosti je bezplatné a program nemá uzávěrku. Prvním krokem je dotazník způsobilosti na https://healx.ai/rare-treatment-accelerator/. Kontaktní adresa programu: accelerate@healx.ai.
 - [ ] **Nominovat SPATA5 u organizace Every Cure.** Návrh na repurposing lze podat prostřednictvím formuláře na https://everycure.org/ideas/.
 
+> ℹ **Repurposing** je využití již schváleného léku pro jinou nemoc, než pro kterou vznikl.
+
 ## Analytické úkoly
 
 - [ ] **Ověřit zastoupení genu SPATA5/AFG2A v datech Recursion.** Vyhledat gen v nástroji MapApp (https://www.rxrx.ai). Pokud je mezi knockouty zastoupen, sestavit seznam schválených léčiv s podobným nebo opačným buněčným profilem.
 - [ ] **Posoudit platformu MATRIX.** Vyhodnotit, zda lze predikce pro SPATA5 spustit lokálně z veřejného repozitáře: https://github.com/everycure-org/matrix.
+
+> ℹ **Knockout** je cílené vypnutí genu v buňce. **Buněčný profil** je otisk toho, jak zásah změní vzhled a chování buněk.
+> ℹ **Predikce** zde znamená počítačový odhad, které léky by mohly na nemoc působit.
 
 ## Strategická rozhodnutí
 

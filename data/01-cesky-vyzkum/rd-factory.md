@@ -10,6 +10,9 @@ datum-reserse: 2026-08-26
 
 Širší český program pro výzkum vzácných nemocí. Společná platforma [[ccp-centrum]] a Ústavu molekulární a translační medicíny UP Olomouc (ÚMTM). Kdokoli (lékaři, pacientské organizace) může nominovat gen nebo nemoc. Vybrané projekty dostanou zdarma vývoj myšího modelu a preklinický výzkum.
 
+> ℹ **Myší model** je myš upravená tak, aby napodobila lidskou nemoc.
+> ℹ **Preklinický výzkum** probíhá na buňkách a zvířatech, ještě před zkouškami na lidech.
+
 ## Časová osa
 
 - 1. 10. 2024: otevřená výzva k nominacím

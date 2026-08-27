@@ -27,12 +27,22 @@ Primární literatura k nemoci a genu. Řazeno chronologicky.
 | 2025 | Nou-Fontanet a kol. | ketogenní dieta u 5 pacientů | 40712368 | 10.1016/j.ejpn.2025.07.007 |
 | 2026 | Nou-Fontanet a kol. | souhrn 51 pacientů | 41933351 | 10.1186/s13023-026-04204-w |
 
+> ℹ **Fenotyp** je souhrn projevů nemoci u pacienta. **Příbuzenská rodina** znamená, že rodiče dítěte jsou pokrevně příbuzní.
+> ℹ **Paralog** je příbuzný gen, který vznikl zdvojením původního genu.
+> ℹ **Proteomika** je hromadné měření bílkovin ve vzorku. **Kryo-EM** zobrazuje rychle zmrazené molekuly elektronovým mikroskopem.
+> ℹ **Biogeneze ribozomů** je proces výroby ribozomů, buněčných továren na bílkoviny. **CRISPR screen** je pokus, který postupně vypíná mnoho genů a sleduje dopad na buňky.
+> ℹ **Ketogenní dieta** je léčebná strava s vysokým podílem tuků a minimem sacharidů.
+
 Doplňkové práce:
 
 - Editorial ke ketogenní dietě: Catsman-Berrevoets, EJPN 2025, PMID 40846618
 - Recyklace RSL24D1 (preprint): https://www.biorxiv.org/content/10.1101/2025.11.07.687187.full.pdf
 - Pokles ribozomů v raném neurovývoji: Nat Cell Biol 2025, DOI 10.1038/s41556-025-01708-8
 - SPATA5 u fetální ventrikulomegalie: Sci Rep 2025, PMID 40603987
+
+> ℹ **Preprint** je vědecký článek zveřejněný před recenzním řízením.
+> ℹ **Ventrikulomegalie** je rozšíření mozkových komor. **Fetální ventrikulomegalie** je zjištěna už u plodu.
+> ℹ **Editorial** je komentář redakce nebo odborníka k publikované studii.
 
 Publikace české skupiny (CCP) k SPATA5 zatím neexistuje nebo nebyla dohledána. Sledovat: https://www.phenogenomics.cz/research-and-education/publications/
 

@@ -18,6 +18,12 @@ Národní výzkumná infrastruktura pro tvorbu a studium zvířecích modelů li
 - Preklinické testování léčiv na zavedených modelech nemocí.
 - Člen mezinárodních konsorcií IMPC (International Mouse Phenotyping Consortium) a Infrafrontier/EMMA.
 
+> ℹ **CRISPR/Cas9 a TALEN** jsou nástroje pro cílené úpravy DNA. **Mikroinjekce** je vpravení upraveného materiálu tenkou jehlou do zárodku.
+> ℹ **Fenotypizace** je systematické měření projevů nemoci, zde u zvířecích modelů.
+> ℹ **Metabolomika** je hromadné měření malých molekul látkové výměny. **Histopatologie** je vyšetření tkání pod mikroskopem.
+> ℹ **MicroCT** je rentgenové 3D zobrazení ve vysokém rozlišení. **Bioimaging** je souhrnné označení pro zobrazovací metody v biologii.
+> ℹ **Preklinické testování** probíhá na buňkách a zvířatech před zkouškami na lidech.
+
 Myší geny se s lidskými shodují zhruba z 98 %. ⚠ OVĚŘIT: číslo pochází z mediálních textů o CCP. Odborné zdroje uvádějí spíše podíl myších genů s lidským protějškem (kolem 99 %), sekvenční shoda je nižší. Dohledat přesnou formulaci a primární zdroj. Na myších modelech lze díky této podobnosti studovat lidské nemoci a testovat terapie. Sedláček práci centra přirovnává k tvorbě "encyklopedie lidských genů".
 
 ## Role v příběhu SPATA5

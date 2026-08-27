@@ -16,3 +16,25 @@
     btn.setAttribute('aria-label', dark ? 'Světlý režim' : 'Tmavý režim');
   }
 })();
+(function () {
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.term-info');
+    if (btn) {
+      var dlg = document.getElementById(btn.getAttribute('aria-controls'));
+      if (dlg) dlg.showModal();
+      return;
+    }
+    var close = e.target.closest('.term-close');
+    if (close) {
+      close.closest('dialog').close();
+      return;
+    }
+    var open = e.target.closest('dialog.term-dialog[open]');
+    if (open) {
+      var r = open.getBoundingClientRect();
+      var outside = e.clientX < r.left || e.clientX > r.right ||
+        e.clientY < r.top || e.clientY > r.bottom;
+      if (outside) open.close();
+    }
+  });
+})();
