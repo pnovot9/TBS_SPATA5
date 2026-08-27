@@ -16,6 +16,9 @@ sbírá vše, co o nemoci a výzkumu víme, a prezentuje to jako přehledný web
   s primárními prameny (PMID, DOI, OMIM, Orphanet).
 - `web/`: statický web vygenerovaný z vaultu. Podrobnosti ve složce
   [web/_documentation](web/_documentation/).
+- `_guides/`: příručky pro netechnické spolupracovníky. Začněte souborem
+  [introduction_how_to.html](_guides/introduction_how_to.html), otevřete
+  ho v prohlížeči.
 
 ## Zásada číslo jedna: ověřená fakta
 

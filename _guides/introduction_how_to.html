@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jak pracovat se znalostní bází SPATA5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Samostatná příručka. Barvy a písma jsou převzaté z web/styles.css,
+   aby příručka vypadala stejně jako web, ale soubor funguje i sám o sobě. */
+:root {
+  --bg: #fbfbfc;
+  --surface: #ffffff;
+  --ink: #262d3d;
+  --ink-soft: #4e586e;
+  --ink-faint: #707786;
+  --line: #e4e7ec;
+  --accent: #e56f0b;
+  --accent-soft: #fdf1e4;
+  --warn-bg: #fdf6e4;
+  --shadow: 0 1px 2px rgba(38, 45, 61, .06);
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1e28;
+    --surface: #222735;
+    --ink: #e8eaf0;
+    --ink-soft: #b2b8c2;
+    --ink-faint: #8b93a3;
+    --line: #333a4b;
+    --accent: #f59b3f;
+    --accent-soft: #33302a;
+    --warn-bg: #322d20;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+.eyebrow {
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .75rem;
+}
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.25;
+}
+h1 { font-size: 2.2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 .75rem; }
+h3 { font-size: 1.15rem; margin: 1.75rem 0 .5rem; }
+p, li { color: var(--ink-soft); }
+strong { color: var(--ink); }
+a { color: var(--accent); }
+a:focus-visible, code:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .88em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: .1em .35em;
+  color: var(--ink);
+}
+pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+figure { margin: 1.5rem 0; }
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: block;
+}
+figcaption {
+  font-size: .85rem;
+  color: var(--ink-faint);
+  margin-top: .5rem;
+}
+.verify-example {
+  background: var(--warn-bg);
+  border-radius: 4px;
+  padding: .1em .35em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.table-wrap { overflow-x: auto; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .92rem;
+}
+th, td {
+  text-align: left;
+  padding: .5rem .75rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+th { color: var(--ink); }
+.step {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+.step h3 { margin-top: 0; }
+.footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: .85rem;
+  color: var(--ink-faint);
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="eyebrow">Příručka SPATA5</div>
+  <h1>Jak pracovat se znalostní bází</h1>
+  <p>Tato příručka vysvětluje, jak je znalostní báze SPATA5 postavená a jak
+  do ní přidat nebo upravit obsah. Není potřeba nic programovat. Stačí umět
+  upravit textový soubor a spustit jeden příkaz.</p>
+
+  <h2>Jak to celé funguje</h2>
+  <p>Repozitář má dvě hlavní složky.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Složka</th><th>Co v ní je</th><th>Kdo do ní sahá</th></tr>
+    <tr><td><code>data/</code></td><td>Všechny texty. Obyčejné soubory
+      <code>.md</code>, jeden soubor na jeden článek.</td>
+      <td>Vy. Tady se píše a upravuje.</td></tr>
+    <tr><td><code>web/</code></td><td>Hotový web. Vygenerované stránky
+      HTML.</td><td>Skript. Ručně se tu nic neupravuje.</td></tr>
+  </table>
+  </div>
+  <p>Mezi nimi stojí skript <code>web/build.py</code>. Přečte všechny
+  články ve <code>data/</code> a vyrobí z nich web. Z každého článku
+  vznikne jedna stránka. Menu, odkazy mezi stránkami a seznam posledních
+  změn skript složí sám.</p>
+
+  <h2>Jak si web otevřít</h2>
+  <p>Aktuální verze webu je vždy uložená v repozitáři. Otevřete soubor
+  <code>web/index.html</code> v prohlížeči, například poklepáním. Nic se
+  neinstaluje a žádný server není potřeba.</p>
+  <figure>
+    <img src="img/guide-uvodni-strana.png" alt="Úvodní strana webu: tmavý boční panel s menu a mapa znalostního grafu" width="1440" height="900">
+    <figcaption>Úvodní strana. Menu vlevo odpovídá složkám ve
+    <code>data/</code>, obsah stránky pochází z <code>data/INDEX.md</code>.</figcaption>
+  </figure>
+
+  <h2>Jak upravit existující článek</h2>
+  <div class="step">
+    <h3>1. Najděte soubor článku</h3>
+    <p>Články leží ve složkách <code>data/00-nemoc/</code> až
+    <code>data/09-todo/</code>. Například stránka „Výskyt nemoci" je soubor
+    <code>data/00-nemoc/epidemiologie.md</code>.</p>
+  </div>
+  <div class="step">
+    <h3>2. Upravte text</h3>
+    <p>Soubor otevřete v libovolném textovém editoru nebo v Obsidianu.
+    Píše se běžný text s několika značkami.</p>
+<pre><code>## Kolik pacientů je známo
+
+Odborná literatura (duben 2026): **51 publikovaných pacientů**.
+
+Podrobnosti shrnuje [[spata5-nemoc]].</code></pre>
+    <p><code>##</code> je nadpis, <code>**tučně**</code> zvýrazní text a
+    <code>[[spata5-nemoc]]</code> vytvoří odkaz na jiný článek. Odkazuje se
+    jménem souboru bez přípony.</p>
+  </div>
+  <div class="step">
+    <h3>3. Přegenerujte web</h3>
+    <p>V kořenové složce repozitáře spusťte v terminálu:</p>
+<pre><code>python3 web/build.py</code></pre>
+    <p>Skript vypíše <code>OK: 23 článků + index.html</code>. Pak stačí
+    obnovit stránku v prohlížeči a změna je vidět.</p>
+  </div>
+  <div class="step">
+    <h3>4. Uložte změnu do gitu</h3>
+    <p>Upravený soubor ve <code>data/</code> a přegenerované soubory ve
+    <code>web/</code> patří do jednoho společného commitu.</p>
+  </div>
+  <figure>
+    <img src="img/guide-clanek.png" alt="Stránka článku Výskyt nemoci s nadpisem, datem rešerše a textem" width="1440" height="900">
+    <figcaption>Takto vypadá hotový článek na webu. Datum poslední změny
+    doplní skript sám z historie gitu.</figcaption>
+  </figure>
+
+  <h2>Jak přidat nový článek</h2>
+  <div class="step">
+    <h3>1. Založte soubor ve správné složce</h3>
+    <p>Složka určuje, ve které skupině menu se článek objeví.</p>
+    <div class="table-wrap">
+    <table>
+      <tr><th>Složka</th><th>Skupina v menu</th></tr>
+      <tr><td><code>00-nemoc</code></td><td>Nemoc a věda</td></tr>
+      <tr><td><code>01-cesky-vyzkum</code></td><td>Český výzkum</td></tr>
+      <tr><td><code>02-lide</code></td><td>Lidé</td></tr>
+      <tr><td><code>03-organizace</code>, <code>04-pacienti</code></td><td>Organizace a pacienti</td></tr>
+      <tr><td><code>05-media</code>, <code>06-zdroje</code></td><td>Média a zdroje</td></tr>
+      <tr><td><code>07-ai</code></td><td>Analýzy</td></tr>
+      <tr><td><code>08-inspirace</code></td><td>Inspirace</td></tr>
+      <tr><td><code>09-todo</code></td><td>TO DO</td></tr>
+    </table>
+    </div>
+  </div>
+  <div class="step">
+    <h3>2. Začněte hlavičkou a nadpisem</h3>
+    <p>Každý článek začíná krátkou hlavičkou mezi <code>---</code> a
+    nadpisem s <code>#</code>. Nadpis se stane názvem stránky.</p>
+<pre><code>---
+id: novy-clanek
+typ: tema
+nazev: Nový článek
+datum-reserse: 2026-08-27
+---
+
+# Nový článek
+
+Text článku.
+
+## Zdroje
+
+- Popis zdroje. PMID 12345678.</code></pre>
+    <p>Každé tvrzení v článku musí mít zdroj v sekci Zdroje.</p>
+  </div>
+  <div class="step">
+    <h3>3. Přidejte článek do INDEX.md</h3>
+    <p>Do <code>data/INDEX.md</code> doplňte odkaz
+    <code>[[novy-clanek]]</code> do příslušné sekce. Podle pořadí v tomto
+    souboru se řadí položky v menu webu.</p>
+  </div>
+  <div class="step">
+    <h3>4. Přegenerujte web a uložte</h3>
+    <p>Znovu <code>python3 web/build.py</code>. Nová stránka i položka v
+    menu vzniknou samy. Commit obsahuje nový soubor ve <code>data/</code>
+    i vygenerované HTML.</p>
+  </div>
+
+  <h2>Značka pro neověřené údaje</h2>
+  <p>Když si údajem nejste jistí, napište před něj
+  <span class="verify-example">⚠ OVĚŘIT</span> s poznámkou, odkud údaj
+  pochází a co je potřeba dohledat. Web značku zvýrazní, takže čtenář vždy
+  vidí, kde si nejsme jistí. Značky se nikdy nemažou bez ověření.</p>
+  <figure>
+    <img src="img/guide-overit.png" alt="Odstavec článku se zvýrazněnou žlutou značkou OVĚŘIT" width="658" height="238">
+    <figcaption>Zvýrazněná značka v článku o výskytu nemoci.</figcaption>
+  </figure>
+
+  <h2>Co skript hlídá</h2>
+  <p>Skript při chybě skončí a napíše, co je špatně. Hlídá dvě věci.</p>
+  <ul>
+    <li>Každý odkaz <code>[[...]]</code> musí vést na existující soubor.
+    Při překlepu vypíše <code>CHYBA: [[jmeno]] nikam nevede</code>.</li>
+    <li>Každý článek musí ležet ve složce, která patří do některé skupiny
+    menu. Článek se tak nemůže ztratit.</li>
+  </ul>
+  <p>Na úvodní stranu skript také sám doplní seznam deseti naposledy
+  změněných článků.</p>
+  <figure>
+    <img src="img/guide-posledni-zmeny.png" alt="Seznam posledních změn s názvy článků a daty" width="864" height="374">
+    <figcaption>Seznam posledních změn na úvodní straně. Plní se
+    automaticky.</figcaption>
+  </figure>
+
+  <h2>Co potřebujete mít nainstalované</h2>
+  <p>Jen pro generování webu: Python 3.7 nebo novější a git. Nic dalšího.
+  Pro čtení webu a úpravy textů nepotřebujete nic.</p>
+
+  <div class="footer">Příručka ke znalostní bázi SPATA5. Podrobná
+  technická dokumentace je ve složce <code>web/_documentation/</code>.</div>
+</div>
+</body>
+</html>

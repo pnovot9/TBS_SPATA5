@@ -10,6 +10,10 @@ static website that presents it.
   and `[[wikilinks]]`. `data/INDEX.md` defines the reading order.
 - `web/` is the generated website plus its generator. See
   [web/_documentation/architecture.md](web/_documentation/architecture.md).
+- `_guides/` holds guides for non-technical contributors:
+  - [introduction_how_to.html](_guides/introduction_how_to.html): how the
+    vault and the generator work together, how to edit and add articles.
+    Open it in a browser.
 - `web/_documentation/` holds all developer documentation:
   - [architecture.md](web/_documentation/architecture.md): build pipeline, file layout, URL scheme
   - [design.md](web/_documentation/design.md): design system, tokens, dark mode, brand colors
