@@ -12,7 +12,7 @@ Předsedkyně spolku [[spolek-spata5-cz]] a matka Julinky. Manželka [[jan-zajic
 
 - Jediná členka statutárního orgánu spolku, jedná samostatně. Ve funkci od 4. 12. 2024 (zápis spolku).
 - Stejně jako manžel je zdravá přenašečka jedné mutace genu [[gen-spata5-afg2a]].
-- ⚠ OVĚŘIT: Roklen24 v jedné shrnuté větě spojil se Zajícem jméno "Lucia Wijacká". Podle rejstříku a Donia je manželkou Zajíce Lucie Zajícová. Lucia Wijacká je matka dvojčat z druhé rodiny, viz [[deti-a-rodiny]].
+- Nezaměňovat s Lucií Wijackou. Roklen24 obě ženy uvádí odděleně: Zajíc "s manželkou Lucií vychovává dvanáctiletou Julinku", zatímco "Lucia Wijacká, matka dvojčat Miriamky a Karolínky". Wijacká patří k druhé rodině, viz [[deti-a-rodiny]].
 
 ## Vazby
 
@@ -24,3 +24,4 @@ Předsedkyně spolku [[spolek-spata5-cz]] a matka Julinky. Manželka [[jan-zajic
 
 - https://rejstrik-firem.kurzy.cz/22328700/spata-5-cz-zs/
 - https://www.donio.cz/lekprokajkumiriajuli
+- https://roklen24.cz/?quick_news=nadeje-na-zazrak-rodice-nemocnych-deti-chteji-diky-sbirce-podporit-vyzkum-lecby-spata5 (23. 12. 2024)
