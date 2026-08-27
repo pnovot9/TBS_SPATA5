@@ -33,6 +33,12 @@ that is not verified, or that should be re-verified, carries the
 mandatory for all content, per rule 0 in CLAUDE.md. Never strip sources
 or verification flags when editing content.
 
+The article `overit-flags` (menu group "Analýzy & To do") collects every
+open `⚠ OVĚŘIT` flag in one place, grouped by kind, with a wikilink to
+each source article. It is maintained by hand. When a flag is resolved,
+fix the source article, remove the marker there, and delete the matching
+row on the overview page. The page describes this workflow itself.
+
 ## Timestamps
 
 - Footer of every page: "Web vygenerován YYYY-MM-DD HH:MM", stamped at
