@@ -72,3 +72,7 @@ Popis repozitáře na GitHubu:
 
 > Znalostní centrum o vzácné nemoci SPATA5 a o českém výzkumu genové terapie.
 > Obsidian vault je zdroj pravdy, skript z něj generuje statický web.
+
+---
+
+TBS v názvu znamená "To Be Solved".
