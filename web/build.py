@@ -24,9 +24,8 @@ GROUPS = [
     ("Český výzkum", ["01-cesky-vyzkum"]),
     ("Organizace a pacienti", ["03-organizace", "04-pacienti"]),
     ("Média a zdroje", ["05-media", "06-zdroje"]),
-    ("Analýzy", ["07-ai"]),
     ("Inspirace", ["08-inspirace"]),
-    ("TO DO", ["09-todo"]),
+    ("Analýzy", ["07-ai", "09-todo"]),
 ]
 
 WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
