@@ -1,0 +1,61 @@
+# Architecture
+
+The website is a static site generated from the Obsidian vault in `data/`.
+No framework, no dependencies, no server-side code. Python 3 standard
+library only.
+
+## Data flow
+
+```
+data/**/*.md  ->  web/build.py  ->  web/*.html
+data/INDEX.md ->                ->  web/index.html
+```
+
+Run `python3 web/build.py` from anywhere. It rewrites every generated page.
+Generated HTML is committed, so the site can be hosted from the `web/`
+folder as plain files.
+
+## What build.py does
+
+1. Reads every `data/*/*.md` (hidden folders like `.obsidian` are skipped).
+2. Parses frontmatter (`id`, `typ`, `nazev`, `datum-reserse`). The `id`
+   becomes the page slug and the URL: `<id>.html`.
+3. The article title is the markdown H1, with `nazev` as fallback.
+4. Converts the markdown subset the vault actually uses: h1 to h3, bullet
+   and numbered lists, tables, bold, blockquotes, fenced code, bare URLs,
+   and `[text](url)` links. Mermaid code fences are dropped.
+5. Resolves `[[wikilink]]` to `<a href="slug.html">Article title</a>`.
+   A wikilink that points to no document stops the build with an error.
+   This keeps the site and the vault in sync.
+6. Builds the left menu per page. Groups map from vault folders (see
+   GROUPS in build.py). Order inside a group follows the first appearance
+   of each article in `INDEX.md`.
+7. Reads each file's last-change date from git (`git log -1 --format=%cs`).
+   Uncommitted files fall back to file modification time.
+8. Writes `index.html` from `INDEX.md` (the mermaid map section is cut)
+   and appends a recent-changes list of the 10 newest articles.
+9. Self-check at the end: every document must appear in the menu.
+
+## File layout
+
+- `web/build.py`: the whole generator, one file.
+- `web/styles.css`: the only stylesheet. See design.md.
+- `web/app.js`: the only script. Theme toggle logic.
+- `web/*.html`: generated pages. Never edit by hand.
+- `web/designs/`: the four original design prototypes, kept for reference.
+  They are standalone files and not part of the generated site.
+- `web/_documentation/`: this documentation.
+
+## URL scheme
+
+Flat. One article equals one page equals one URL: `<vault id>.html`.
+`index.html` is the home page. Asset links are relative, which works
+because every page sits in the same folder.
+
+## Local preview
+
+```bash
+python3 -m http.server 8741 -d web
+```
+
+Then open http://localhost:8741.
