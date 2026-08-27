@@ -44,17 +44,11 @@ Rychlá orientace: nemoc [[spata5-nemoc]] je způsobena poruchou genu [[gen-spat
 - [[vedecke-publikace]] (zdroj): odborná literatura s PMID a DOI
 - [[databaze]] (zdroj): OMIM, Orphanet, ClinVar a další
 
-## Další kroky
+## Analýzy a další kroky
 
-- [[ai-prilezitosti]] (analyza): kde může pomoci AI a jaké otázky jsou otevřené
-
-## Inspirace
-
+- [[ai-prilezitosti]] (analyza): kde může pomoci AI
 - [[inspirace]] (analyza): zahraniční firmy a neziskovky spojující AI a vzácné nemoci
-
-## TO DO
-
-- [[todo]] (analyza): konkrétní kroky plynoucí z rozboru inspirace
+- [[todo]] (analyza): úkoly a otevřené otázky z obou analýz
 
 ## Vizuální mapa
 
