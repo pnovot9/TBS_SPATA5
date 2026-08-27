@@ -26,7 +26,7 @@ Seznam Zprávy (27. 12. 2024) a BIOTRIN (20. 1. 2025) jmenují SPATA5 mezi prvn�
 
 - [[ccp-centrum]] (provozovatel)
 - [[projekt-ccp-spata5]] (souběžný projekt)
-- [[radislav-sedlacek]] (tvář programu v médiích)
+- Radislav Sedláček (tvář programu v médiích)
 
 ## Zdroje
 

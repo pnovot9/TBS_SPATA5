@@ -7,7 +7,7 @@ datum-reserse: 2026-08-26
 
 # Mapa znalostního grafu
 
-Rychlá orientace: nemoc [[spata5-nemoc]] je způsobena poruchou genu [[gen-spata5-afg2a]]. V Česku ji má jen několik dětí ([[deti-a-rodiny]]). Jejich rodiče založili spolek [[spolek-spata5-cz]] a zaplatili start výzkumu [[projekt-ccp-spata5]] v centru [[ccp-centrum]] pod vedením [[radislav-sedlacek]] a [[jan-prochazka]]. Cílem je genová terapie. Plán a rozpočet popisuje [[faze-a-financovani]].
+Rychlá orientace: nemoc [[spata5-nemoc]] je způsobena poruchou genu [[gen-spata5-afg2a]]. V Česku ji má jen několik dětí ([[deti-a-rodiny]]). Jejich rodiče založili spolek [[spolek-spata5-cz]] a zaplatili start výzkumu [[projekt-ccp-spata5]] v centru [[ccp-centrum]] pod vedením Radislava Sedláčka a Jana Procházky. Cílem je genová terapie. Plán a rozpočet popisuje [[faze-a-financovani]].
 
 ## Nemoc a věda
 
@@ -22,13 +22,6 @@ Rychlá orientace: nemoc [[spata5-nemoc]] je způsobena poruchou genu [[gen-spat
 - [[projekt-ccp-spata5]] (projekt): co přesně čeští vědci dělají
 - [[faze-a-financovani]]: tři fáze výzkumu, rozpočet 33 až 49 mil. Kč, sbírky
 - [[rd-factory]] (projekt): širší český program pro vzácné nemoci
-
-## Lidé
-
-- [[jan-zajic]]: otec Julinky, iniciátor výzkumu
-- [[lucie-zajicova]]: předsedkyně spolku
-- [[radislav-sedlacek]]: ředitel CCP, vede výzkum
-- [[jan-prochazka]]: vedoucí fenotypizace v CCP
 
 ## Organizace a pacienti
 
@@ -60,10 +53,6 @@ graph TD
     DETI -->|rodiče založili| SPOLEK[spolek-spata5-cz]
     SPOLEK -->|financuje a inicioval| PROJEKT[projekt-ccp-spata5]
     PROJEKT -->|běží v| CCP[ccp-centrum]
-    SEDLACEK[radislav-sedlacek] -->|vede| PROJEKT
-    PROCHAZKA[jan-prochazka] -->|vede fenotypizaci| PROJEKT
-    ZAJIC[jan-zajic] -->|spoluzaložil| SPOLEK
-    ZAJICOVA[lucie-zajicova] -->|předsedá| SPOLEK
     CCP -->|provozuje| RDF[rd-factory]
     PROJEKT -->|plán a rozpočet| FAZE[faze-a-financovani]
     NEMOC -->|světový výzkum| SVET[lecba-a-vyzkum-svet]

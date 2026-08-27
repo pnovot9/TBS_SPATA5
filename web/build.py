@@ -22,11 +22,10 @@ OUT = WEB / "dist"
 GROUPS = [
     ("Nemoc a věda", ["00-nemoc"]),
     ("Český výzkum", ["01-cesky-vyzkum"]),
-    ("Lidé", ["02-lide"]),
     ("Organizace a pacienti", ["03-organizace", "04-pacienti"]),
     ("Média a zdroje", ["05-media", "06-zdroje"]),
-    ("Analýzy & To do", ["07-ai", "09-todo"]),
     ("Inspirace", ["08-inspirace"]),
+    ("Analýzy & To do", ["07-ai", "09-todo"]),
 ]
 
 WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
@@ -135,7 +134,7 @@ def md_to_html(body, slugs):
 
 
 def sidebar(nav, active_slug):
-    parts = [f'<a href="index.html"{" class=\"active\"" if active_slug == "index" else ""}>Domů</a>']
+    parts = [f'<a href="index.html"{" class=\"active\"" if active_slug == "index" else ""}>Overview</a>']
     for group, docs in nav:
         is_open = any(slug == active_slug for slug, _ in docs)
         links = "".join(
