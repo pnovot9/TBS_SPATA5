@@ -9,6 +9,17 @@ Jejich rodiče založili spolek [SPATA5 CZ](https://www.zazracnedeti.cz/) a
 zaplatili start výzkumu v Českém centru pro fenogenomiku. Tento repozitář
 sbírá vše, co o nemoci a výzkumu víme, a prezentuje to jako přehledný web.
 
+## Jak si web otevřít
+
+Hotový web je uložený přímo v repozitáři. Stáhněte si repozitář (tlačítko
+**Code** a volba "Download ZIP", nebo `git clone`), rozbalte ho a poklepejte
+na soubor `web/dist/index.html`. Otevře se v prohlížeči a funguje celý,
+včetně odkazů mezi stránkami. Nic se neinstaluje a žádný server není
+potřeba.
+
+Vše ostatní v tomto souboru je jen pro editory obsahu. Kdo chce web pouze
+číst, nepotřebuje z něj nic.
+
 ## Co v repozitáři je
 
 - `data/`: znalostní vault (Obsidian). Jediný zdroj pravdy pro veškerý
@@ -26,8 +37,10 @@ vždy viděl, kde si nejsme jistí.
 
 ## Jak web vygenerovat a prohlédnout
 
-Potřebujete Python 3.7 nebo novější a `git` (skript z něj čte data
-posledních změn). Nic se neinstaluje, žádné knihovny navíc, žádný Node.
+Tato část je pro editory. Build je potřeba jen po změně obsahu ve složce
+`data/` nebo souborů ve `web/assets/`. Potřebujete Python 3.7 nebo novější
+a `git` (skript z něj čte data posledních změn). Nic se neinstaluje, žádné
+knihovny navíc, žádný Node.
 
 Vygenerujte web z vaultu:
 
