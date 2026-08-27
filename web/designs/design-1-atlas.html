@@ -132,20 +132,43 @@ a { color: inherit; }
   font-weight: 600;
 }
 .nav > a { padding-left: 10px; }
-.theme-btn {
-  margin-top: 10px;
-  width: 100%;
-  padding: 8px 10px;
+.theme-toggle {
+  margin-top: 16px;
+  position: relative;
+  width: 56px;
+  height: 28px;
   border: 1px solid var(--sidebar-line);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--sidebar-ink);
-  font: inherit;
-  font-size: 13px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .25);
   cursor: pointer;
-  transition: border-color .15s, color .15s;
+  padding: 0;
+  display: block;
 }
-.theme-btn:hover { border-color: var(--sidebar-accent); color: var(--sidebar-accent); }
+.theme-toggle:hover { border-color: var(--sidebar-accent); }
+.theme-toggle .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  transition: opacity .2s;
+}
+.theme-toggle .sun { left: 7px; color: var(--sidebar-accent); }
+.theme-toggle .moon { right: 7px; color: var(--sidebar-dim); }
+.theme-toggle .knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+  transition: transform .2s cubic-bezier(.2, 0, 0, 1);
+}
+.theme-toggle[aria-checked="true"] .knob { transform: translateX(28px); background: var(--sidebar-ink); }
+.theme-toggle[aria-checked="true"] .sun { opacity: .45; }
+.theme-toggle[aria-checked="false"] .moon { opacity: .45; }
 
 /* Main */
 .main { flex: 1; min-width: 0; }
@@ -300,7 +323,11 @@ blockquote {
         </div>
       </details>
     </nav>
-    <button class="theme-btn" id="themeBtn" type="button">Tmavý režim</button>
+    <button class="theme-toggle" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Tmavý režim">
+      <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.6 14.8A8.6 8.6 0 0 1 9.2 3.4a8.6 8.6 0 1 0 11.4 11.4Z"/></svg>
+      <span class="knob"></span>
+    </button>
   </aside>
 
   <main class="main">
@@ -346,7 +373,8 @@ blockquote {
   });
   function apply() {
     if (dark) { root.setAttribute('data-theme', 'dark'); } else { root.removeAttribute('data-theme'); }
-    btn.textContent = dark ? 'Světlý režim' : 'Tmavý režim';
+    btn.setAttribute('aria-checked', dark ? 'true' : 'false');
+    btn.setAttribute('aria-label', dark ? 'Světlý režim' : 'Tmavý režim');
   }
 })();
 </script>

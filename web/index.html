@@ -3,33 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SPATA5: Výběr designu znalostního centra</title>
-<style>
-:root { --ink: #262d3d; --soft: #4e586e; --accent: #e56f0b; --line: #e4e7ec; --bg: #f7f7f9; --surface: #fff; }
-@media (prefers-color-scheme: dark) {
-  :root { --ink: #e8eaf0; --soft: #b2b8c2; --accent: #f59b3f; --line: #333a4b; --bg: #171a22; --surface: #21252f; }
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); padding: 48px 24px; line-height: 1.6; }
-.wrap { max-width: 760px; margin: 0 auto; }
-h1 { font-size: 28px; margin-bottom: 8px; }
-.sub { color: var(--soft); margin-bottom: 32px; }
-a.card { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
-a.card:hover { border-color: var(--accent); }
-a.card h2 { font-size: 17px; margin-bottom: 3px; }
-a.card h2 span { color: var(--accent); margin-right: 8px; }
-a.card p { font-size: 14px; color: var(--soft); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-</style>
+<title>SPATA5 Znalostní centrum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
-  <h1>Znalostní centrum SPATA5</h1>
-  <p class="sub">Čtyři návrhy designu. Každý má levé menu, tmavý režim a stejný obsah. Vyberte směr a ten se stane základem celého webu.</p>
-  <a class="card" href="designs/design-1-atlas.html"><h2><span>1</span>Atlas</h2><p>Klidná encyklopedie. Patkové titulky, číslovaná čtecí cesta, důraz na pohodlné čtení dlouhých textů.</p></a>
-  <a class="card" href="designs/design-2-laborator.html"><h2><span>2</span>Laboratoř</h2><p>Výzkumný dashboard. Tmavý boční panel, statistiky, fáze výzkumu a rejstřík dokumentů.</p></a>
-  <a class="card" href="designs/design-3-nadeje.html"><h2><span>3</span>Naděje</h2><p>Teplý a lidský. Gradient z fialové do oranžové, velká dlaždicová navigace, tón blízký webu spolku.</p></a>
-  <a class="card" href="designs/design-4-graf.html"><h2><span>4</span>Graf</h2><p>Znalosti jako síť. Úvodní mapa vazeb mezi uzly, kliknutím na uzel se otevře článek.</p></a>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-name">SPATA<em>5</em></span></a>
+    <div class="brand-sub">Znalostní centrum</div>
+    <nav class="nav" aria-label="Hlavní navigace">
+<a href="index.html" class="active">Domů</a>
+<details class="nav-group"><summary class="nav-label">Nemoc a věda</summary><div><a href="spata5-nemoc.html">SPATA5 onemocnění</a><a href="gen-spata5-afg2a.html">Gen SPATA5 (AFG2A)</a><a href="diagnostika.html">Diagnostika</a><a href="lecba-a-vyzkum-svet.html">Léčba a výzkum ve světě</a><a href="epidemiologie.html">Výskyt nemoci</a></div></details>
+<details class="nav-group"><summary class="nav-label">Český výzkum</summary><div><a href="projekt-ccp-spata5.html">Český výzkum SPATA5</a><a href="faze-a-financovani.html">Fáze výzkumu a financování</a><a href="rd-factory.html">RD-Factory</a></div></details>
+<details class="nav-group"><summary class="nav-label">Lidé</summary><div><a href="jan-zajic.html">Ján Zajíc</a><a href="lucie-zajicova.html">Ing. Lucie Zajícová</a><a href="radislav-sedlacek.html">Radislav Sedláček</a><a href="jan-prochazka.html">Jan Procházka</a></div></details>
+<details class="nav-group"><summary class="nav-label">Organizace a pacienti</summary><div><a href="spolek-spata5-cz.html">SPATA 5 CZ z.s.</a><a href="ccp-centrum.html">České centrum pro fenogenomiku</a><a href="zahranicni-organizace.html">Zahraniční organizace a studie</a><a href="deti-a-rodiny.html">České děti a rodiny</a></div></details>
+<details class="nav-group"><summary class="nav-label">Média a zdroje</summary><div><a href="media-chronologie.html">Mediální pokrytí v čase</a><a href="hn-clanek-2026.html">Hlavní článek Hospodářských novin</a><a href="vedecke-publikace.html">Vědecké publikace</a><a href="databaze.html">Databáze a registry</a></div></details>
+<details class="nav-group"><summary class="nav-label">Analýzy</summary><div><a href="ai-prilezitosti.html">Kde může pomoci AI</a></div></details>
+    </nav>
+    <button class="theme-toggle" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Tmavý režim">
+      <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.6 14.8A8.6 8.6 0 0 1 9.2 3.4a8.6 8.6 0 1 0 11.4 11.4Z"/></svg>
+      <span class="knob"></span>
+    </button>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <div class="eyebrow">Znalostní centrum</div>
+<h1>Mapa znalostního grafu</h1>
+<p>Rychlá orientace: nemoc <a href="spata5-nemoc.html">SPATA5 onemocnění</a> je způsobena poruchou genu <a href="gen-spata5-afg2a.html">Gen SPATA5 (AFG2A)</a>. V Česku ji má jen několik dětí (<a href="deti-a-rodiny.html">České děti a rodiny</a>). Jejich rodiče založili spolek <a href="spolek-spata5-cz.html">SPATA 5 CZ z.s.</a> a zaplatili start výzkumu <a href="projekt-ccp-spata5.html">Český výzkum SPATA5</a> v centru <a href="ccp-centrum.html">České centrum pro fenogenomiku</a> pod vedením <a href="radislav-sedlacek.html">Radislav Sedláček</a> a <a href="jan-prochazka.html">Jan Procházka</a>. Cílem je genová terapie. Plán a rozpočet popisuje <a href="faze-a-financovani.html">Fáze výzkumu a financování</a>.</p>
+<h2>Nemoc a věda</h2>
+<ul><li><a href="spata5-nemoc.html">SPATA5 onemocnění</a> (nemoc): co onemocnění dělá, příznaky, prognóza</li><li><a href="gen-spata5-afg2a.html">Gen SPATA5 (AFG2A)</a> (gen): gen, protein a mechanismus nemoci</li><li><a href="diagnostika.html">Diagnostika</a>: jak se nemoc pozná</li><li><a href="lecba-a-vyzkum-svet.html">Léčba a výzkum ve světě</a>: co dnes pomáhá a co se zkoumá ve světě</li><li><a href="epidemiologie.html">Výskyt nemoci</a>: kolik pacientů je známo a odkud</li></ul>
+<h2>Český výzkum</h2>
+<ul><li><a href="projekt-ccp-spata5.html">Český výzkum SPATA5</a> (projekt): co přesně čeští vědci dělají</li><li><a href="faze-a-financovani.html">Fáze výzkumu a financování</a>: tři fáze výzkumu, rozpočet 33 až 49 mil. Kč, sbírky</li><li><a href="rd-factory.html">RD-Factory</a> (projekt): širší český program pro vzácné nemoci</li></ul>
+<h2>Lidé</h2>
+<ul><li><a href="jan-zajic.html">Ján Zajíc</a>: otec Julinky, iniciátor výzkumu</li><li><a href="lucie-zajicova.html">Ing. Lucie Zajícová</a>: předsedkyně spolku</li><li><a href="radislav-sedlacek.html">Radislav Sedláček</a>: ředitel CCP, vede výzkum</li><li><a href="jan-prochazka.html">Jan Procházka</a>: vedoucí fenotypizace v CCP</li></ul>
+<h2>Organizace a pacienti</h2>
+<ul><li><a href="spolek-spata5-cz.html">SPATA 5 CZ z.s.</a> (organizace): rodičovský spolek, web zazracnedeti.cz</li><li><a href="ccp-centrum.html">České centrum pro fenogenomiku</a> (organizace): České centrum pro fenogenomiku</li><li><a href="zahranicni-organizace.html">Zahraniční organizace a studie</a>: SPATA Foundation, studie v Göttingenu</li><li><a href="deti-a-rodiny.html">České děti a rodiny</a> (pacienti): veřejně známé české děti s diagnózou</li></ul>
+<h2>Média a zdroje</h2>
+<ul><li><a href="media-chronologie.html">Mediální pokrytí v čase</a> (media): všechny nalezené články a výstupy</li><li><a href="hn-clanek-2026.html">Hlavní článek Hospodářských novin</a> (media): klíčový článek Hospodářských novin</li><li><a href="vedecke-publikace.html">Vědecké publikace</a> (zdroj): odborná literatura s PMID a DOI</li><li><a href="databaze.html">Databáze a registry</a> (zdroj): OMIM, Orphanet, ClinVar a další</li></ul>
+<h2>Další kroky</h2>
+<ul><li><a href="ai-prilezitosti.html">Kde může pomoci AI</a> (analyza): kde může pomoci AI a jaké otázky jsou otevřené</li></ul>
+      <footer class="site-footer">Znalostní báze spolku SPATA5 CZ. Datum rešerše: 2026-08-26.</footer>
+    </div>
+  </main>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
