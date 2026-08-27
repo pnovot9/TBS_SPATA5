@@ -8,10 +8,12 @@ Fails if any [[wikilink]] points to a document that does not exist.
 """
 import datetime
 import html
+import json
 import re
 import shutil
 import subprocess
 import sys
+import unicodedata
 from pathlib import Path
 
 WEB = Path(__file__).resolve().parent
@@ -87,6 +89,102 @@ def term_block(defs, n, slugs):
               f'<button class="term-close" type="button" aria-label="Zavřít">&#215;</button>'
               f'<h4 class="term-title">Vysvětlení pojmů</h4>{body}</dialog>')
     return btn, dialog
+
+
+BOLD = re.compile(r"\*\*([^*]+)\*\*")
+
+
+def gloss_key(term):
+    """Lowercase sort/search key without diacritics."""
+    return "".join(c for c in unicodedata.normalize("NFD", term.lower())
+                   if not unicodedata.combining(c))
+
+
+def parse_term_defs(line):
+    """Split one '> ℹ' line into (term, definition) pairs.
+
+    A bold span opens a new term only at the start of a sentence; bold
+    mid-sentence ('U **pravděpodobně patogenní** varianty') stays inside
+    the current definition.
+    """
+    starts = []
+    for m in BOLD.finditer(line):
+        before = line[:m.start()].rstrip()
+        if not before or before.endswith((".", "!", "?")):
+            starts.append(m)
+    pairs = []
+    for j, m in enumerate(starts):
+        end = starts[j + 1].start() if j + 1 < len(starts) else len(line)
+        pairs.append((m.group(1).strip(), line[m.start():end].strip()))
+    return pairs
+
+
+def collect_glossary(docs):
+    """Gather every '> ℹ' definition in the vault, merged per term.
+
+    Duplicate terms keep the longest definition. Related terms are the
+    other terms explained in the same articles.
+    """
+    terms = {}
+    for slug, doc in docs.items():
+        here = []
+        for line in doc["body"].splitlines():
+            if not line.startswith("> ℹ"):
+                continue
+            for term, definition in parse_term_defs(line[len("> ℹ"):].strip()):
+                k = gloss_key(term)
+                e = terms.setdefault(k, {"term": term, "def": definition,
+                                         "uses": set(), "rel": set()})
+                if len(definition) > len(e["def"]):
+                    e["def"] = definition
+                e["uses"].add(slug)
+                here.append(k)
+        for k in here:
+            terms[k]["rel"].update(x for x in here if x != k)
+    return terms
+
+
+def glossary_page(docs, slugs, rank, group_of):
+    terms = collect_glossary(docs)
+    assert len(terms) > 50, f"slovník podezřele malý: {len(terms)} pojmů"
+    order = sorted(terms)
+    data = []
+    for k in order:
+        e = terms[k]
+        def_html = inline(e["def"], slugs)
+        uses = sorted(e["uses"], key=lambda s: (rank.get(s, 999), s))
+        data.append({
+            "t": e["term"],
+            "group": group_of.get(uses[0], ""),
+            "def": def_html,
+            "plain": re.sub(r"<[^>]+>", "", def_html),
+            "uses": [[docs[s]["title"], f"{s}.html"] for s in uses],
+            "rel": [terms[r]["term"] for r in order if r in e["rel"]][:6],
+        })
+    article = (
+        "<h1>Slovník pojmů</h1>\n"
+        f'<p class="article-meta">Pojmů: {len(data)}. '
+        "Sestaveno automaticky z vysvětlivek na celém webu.</p>\n"
+        "<p>Vysvětlení odborných pojmů z celého webu na jednom místě. "
+        "Vlevo vyberte nebo vyhledejte pojem. Vpravo se zobrazí definice "
+        "a odkazy na stránky, kde se pojem používá.</p>\n"
+        '<div class="dict">\n'
+        '<div class="dict-list">\n'
+        '<div class="dict-search">\n'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        'stroke-width="2" stroke-linecap="round" aria-hidden="true">'
+        '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>\n'
+        '<input type="search" id="glossQ" placeholder="Hledat pojem…" '
+        'aria-label="Hledat pojem">\n'
+        "</div>\n"
+        '<div class="dict-terms" id="glossTerms"></div>\n'
+        "</div>\n"
+        '<div class="dict-detail" id="glossDetail"></div>\n'
+        "</div>\n"
+        f'<script id="glossData" type="application/json">'
+        f'{json.dumps(data, ensure_ascii=False).replace("</", "<\\/")}</script>'
+    )
+    return article
 
 
 def md_to_html(body, slugs):
@@ -250,6 +348,8 @@ def main():
     for group, folders in GROUPS:
         members = [(s, d["title"]) for s, d in docs.items() if d["folder"] in folders]
         members.sort(key=lambda st: (rank.get(st[0], 999), st[0]))
+        if group == "Analýzy & To do":
+            members.append(("slovnik-pojmu", "Slovník pojmů"))
         nav.append((group, members))
 
     slugs = {s: d["title"] for s, d in docs.items()}
@@ -271,6 +371,14 @@ def main():
                            article=article,
                            footer_meta=footer)
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
+
+    page = PAGE.format(title="Slovník pojmů | SPATA5",
+                       nav=sidebar(nav, "slovnik-pojmu"),
+                       eyebrow="Analýzy &amp; To do",
+                       article=glossary_page(docs, slugs, rank, group_of),
+                       footer_meta=footer)
+    page = page.replace('<div class="content">', '<div class="content content-wide">', 1)
+    (OUT / "slovnik-pojmu.html").write_text(page, encoding="utf-8")
 
     body = re.sub(r"^# .+$", "", index_body, count=1, flags=re.M)
     newest = sorted(docs.items(), key=lambda sd: sd[1]["changed"], reverse=True)[:10]

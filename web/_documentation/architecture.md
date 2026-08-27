@@ -37,23 +37,28 @@ hosted from the `web/dist/` folder as plain files.
    Uncommitted files fall back to file modification time.
 8. Writes `index.html` from `INDEX.md` (the mermaid map section is cut)
    and appends a recent-changes list of the 10 newest articles.
-9. Self-check at the end: every document must appear in the menu.
+9. Writes `slovnik-pojmu.html`, the glossary generated from every `> ℹ`
+   line in the vault. See features.md, section "Glossary page".
+10. Self-check at the end: every document must appear in the menu.
 
 ## File layout
 
 - `web/build.py`: the whole generator, one file.
 - `web/assets/styles.css`: the only stylesheet. See design.md.
-- `web/assets/app.js`: the only script. Theme toggle logic.
+- `web/assets/app.js`: the only script. Theme toggle, term dialogs, and
+  the glossary page behavior.
 - `web/dist/`: the generated site. Pages plus copies of the assets.
   Never edit by hand.
-- `web/designs/`: the four original design prototypes, kept for reference.
-  They are standalone files and not part of the generated site.
+- `web/designs/`: design prototypes, kept for reference. The four
+  original site designs plus the three glossary designs. They are
+  standalone files and not part of the generated site.
 - `web/_documentation/`: this documentation.
 
 ## URL scheme
 
 Flat. One article equals one page equals one URL: `<vault id>.html`.
-`index.html` is the home page. Asset links are relative, which works
+`index.html` is the home page. `slovnik-pojmu.html` is the generated
+glossary and has no vault article behind it. Asset links are relative, which works
 because every page sits in `web/dist/` next to the copied assets.
 
 ## Local preview

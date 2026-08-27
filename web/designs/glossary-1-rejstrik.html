@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Návrh 1: Rejstřík A až Z | Slovník pojmů SPATA5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+/* Prototype-only styles. In production these move into styles.css as tokens. */
+.gloss-search {
+  position: relative;
+  margin: 0 0 22px;
+}
+.gloss-search input {
+  width: 100%;
+  padding: 12px 16px 12px 42px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 15px var(--font-body);
+  box-shadow: var(--shadow);
+  transition: border-color .15s;
+}
+.gloss-search input:focus { border-color: var(--accent); outline: none; }
+.gloss-search svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  color: var(--ink-faint);
+}
+.letter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.letter-bar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.letter-bar a:hover { background: var(--accent-soft); color: var(--accent); border-bottom: 0; }
+.letter-bar a.off { opacity: .3; pointer-events: none; }
+.letter-head {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+  margin: 34px 0 6px;
+  scroll-margin-top: 64px;
+}
+.entry { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.entry:last-child { border-bottom: 0; }
+.entry-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+.entry-term {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+.topic-tag {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--purple);
+  background: color-mix(in srgb, var(--purple) 10%, transparent);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.entry p { margin-bottom: 6px; }
+.entry-use { font-size: 13px; color: var(--ink-faint); }
+.entry-use a { margin-left: 6px; }
+.gloss-count { font-size: 12.5px; color: var(--ink-faint); margin-bottom: 16px; }
+.gloss-empty { color: var(--ink-faint); padding: 32px 0; display: none; }
+mark { background: var(--accent-soft); color: inherit; border-radius: 3px; padding: 0 1px; }
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-name">SPATA<em>5</em></span></a>
+    <div class="brand-sub">Znalostní centrum</div>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a href="#">Overview</a>
+      <details class="nav-group"><summary class="nav-label">Nemoc a věda</summary><div><a href="#">SPATA5 onemocnění</a><a href="#">Gen SPATA5 (AFG2A)</a><a href="#">Diagnostika</a><a href="#">Léčba a výzkum ve světě</a><a href="#">Výskyt nemoci</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Český výzkum</summary><div><a href="#">Český výzkum SPATA5</a><a href="#">Fáze výzkumu a financování</a><a href="#">RD-Factory</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Organizace a pacienti</summary><div><a href="#">SPATA 5 CZ z.s.</a><a href="#">České centrum pro fenogenomiku</a><a href="#">Zahraniční organizace a studie</a><a href="#">České děti a rodiny</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Média a zdroje</summary><div><a href="#">Mediální pokrytí v čase</a><a href="#">Hlavní článek Hospodářských novin</a><a href="#">Vědecké publikace</a><a href="#">Databáze a registry</a></div></details>
+      <details class="nav-group"><summary class="nav-label">Inspirace</summary><div><a href="#">Inspirace ze světa</a></div></details>
+      <details class="nav-group" open><summary class="nav-label">Analýzy &amp; To do</summary><div><a href="#">Kde může pomoci AI</a><a href="#">To do a další kroky</a><a href="#">Ověřit: všechny štítky</a><a href="#" class="active">Slovník pojmů</a></div></details>
+    </nav>
+    <button class="theme-toggle" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Tmavý režim">
+      <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.6 14.8A8.6 8.6 0 0 1 9.2 3.4a8.6 8.6 0 1 0 11.4 11.4Z"/></svg>
+      <span class="knob"></span>
+    </button>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <div class="eyebrow">Analýzy &amp; To do</div>
+      <h1>Slovník pojmů</h1>
+      <p class="article-meta">Návrh 1: Rejstřík A až Z. Jedna souvislá stránka, abecední lišta, vyhledávání se zvýrazněním shody.</p>
+      <p>Vysvětlení odborných pojmů z celého webu na jednom místě. Každý pojem uvádí definici, tematickou oblast a odkazy na stránky, kde se používá.</p>
+      <div class="gloss-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <input type="search" id="q" placeholder="Hledat pojem nebo část definice…" aria-label="Hledat pojem">
+      </div>
+      <div class="letter-bar" id="letters"></div>
+      <div class="gloss-count" id="count"></div>
+      <div id="list"></div>
+      <p class="gloss-empty" id="empty">Žádný pojem neodpovídá hledání.</p>
+      <footer class="site-footer">Prototyp designu. Obsah je ukázka ze skutečných vysvětlivek.</footer>
+    </div>
+  </main>
+</div>
+<script src="glossary-data.js"></script>
+<script>
+(function () {
+  var list = document.getElementById('list');
+  var letters = document.getElementById('letters');
+  var q = document.getElementById('q');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  function esc(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+  function hl(s, needle) {
+    if (!needle) return esc(s);
+    var n = norm(s), i = n.indexOf(needle);
+    if (i < 0) return esc(s);
+    return esc(s.slice(0, i)) + '<mark>' + esc(s.slice(i, i + needle.length)) + '</mark>' + esc(s.slice(i + needle.length));
+  }
+  function render() {
+    var needle = norm(q.value.trim());
+    var hits = TERMS.filter(function (x) {
+      return !needle || norm(x.t).indexOf(needle) >= 0 || norm(x.def).indexOf(needle) >= 0 || norm(x.topic).indexOf(needle) >= 0;
+    });
+    var groups = {};
+    hits.forEach(function (x) {
+      var L = norm(x.t)[0].toUpperCase();
+      (groups[L] = groups[L] || []).push(x);
+    });
+    var alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    letters.innerHTML = alpha.map(function (L) {
+      return '<a href="#pismeno-' + L + '"' + (groups[L] ? '' : ' class="off"') + '>' + L + '</a>';
+    }).join('');
+    list.innerHTML = Object.keys(groups).sort().map(function (L) {
+      return '<h2 class="letter-head" id="pismeno-' + L + '">' + L + '</h2>' +
+        groups[L].map(function (x) {
+          return '<div class="entry"><div class="entry-head">' +
+            '<h3 class="entry-term">' + hl(x.t, needle) + '</h3>' +
+            '<span class="topic-tag">' + esc(x.topic) + '</span></div>' +
+            '<p>' + hl(x.def, needle) + '</p>' +
+            '<div class="entry-use">Na webu:' + x.use.map(function (u) {
+              return '<a href="#">' + esc(u[0]) + '</a>';
+            }).join('') + '</div></div>';
+        }).join('');
+    }).join('');
+    count.textContent = 'Zobrazeno pojmů: ' + hits.length + ' z ' + TERMS.length + '.';
+    empty.style.display = hits.length ? 'none' : 'block';
+  }
+  q.addEventListener('input', render);
+  render();
+})();
+</script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
