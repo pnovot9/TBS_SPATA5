@@ -21,7 +21,7 @@ Jde o ultravzácné onemocnění. Čísla se liší podle zdroje a data:
 V Česku jsou známy **jednotky případů**. Veřejně popsáno je 5 dětí, viz [[deti-a-rodiny]].
 
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
-> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 dává definitivní diagnózu jen genetické vyšetření a standardem je sekvenování exomu. U části pacientů je potřeba doplnit čipovou analýzu, která najde velké delece.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 dává definitivní diagnózu jen genetické vyšetření, obvykle sekvenování exomu nebo cílený genetický panel. Vzácně je potřeba i čipová analýza, která najde velké delece. V literatuře je takový pacient popsán jeden (PMID 30552426).
 
 ## Klíčové publikované kohorty
 

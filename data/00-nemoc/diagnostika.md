@@ -10,10 +10,10 @@ datum-reserse: 2026-08-26
 
 ## Jak se nemoc pozná
 
-Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexomové sekvenování (WES), tedy přečtení všech kódujících částí DNA, případně cílený genetický panel. Ve většině publikovaných případů stanovil diagnózu exom. U jednoho pacienta bylo nutné doplnit čipovou analýzu, která odhalila deleci exonů 12 a 13 na druhé alele (PMID 30552426).
+Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexomové sekvenování (WES), tedy přečtení všech kódujících částí DNA, případně cílený genetický panel. V publikovaných případech stanovil diagnózu exom. U jednoho pacienta ji uzavřela až souběžně provedená čipová analýza, která odhalila deleci exonů 12 a 13 o velikosti 51 kb na druhé alele (PMID 30552426).
 
 > ℹ **Exom** je souhrn všech úseků DNA, podle kterých buňka vyrábí bílkoviny. Tvoří malou část celé DNA.
-> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 dává definitivní diagnózu jen genetické vyšetření a standardem je sekvenování exomu. U části pacientů je potřeba doplnit čipovou analýzu, která najde velké delece.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 dává definitivní diagnózu jen genetické vyšetření, obvykle sekvenování exomu nebo cílený genetický panel. Vzácně je potřeba i čipová analýza, která najde velké delece. V literatuře je takový pacient popsán jeden (PMID 30552426).
 > ℹ **Cílený genetický panel** vyšetřuje jen předem vybranou sadu genů.
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
 
