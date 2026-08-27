@@ -10,13 +10,13 @@ datum-reserse: 2026-08-26
 
 ## SPATA Foundation
 
-Mezinárodní pacientská organizace rodin s poruchami SPATA5 a SPATA5L1. Spolupracuje na studii přirozeného průběhu nemoci v Göttingenu. Detailní rešerše samotné nadace zatím neproběhla. ⚠ OVĚŘIT: doplnit web, sídlo a aktivity nadace.
+Mezinárodní pacientská organizace rodin s poruchami SPATA5 a SPATA5L1. Spolupracuje na studii přirozeného průběhu nemoci v Göttingenu. Web: https://www.spatafoundation.org/ (odkaz uvádí citovaná stránka ERN ITHACA). Detailní rešerše samotné nadace zatím neproběhla. ⚠ OVĚŘIT: doplnit sídlo a aktivity nadace z jejího webu.
 
 ## Studie v Göttingenu (natural history)
 
 - Studie hlubokého fenotypování a přirozeného průběhu nemocí AFG2A (SPATA5) a AFG2B (SPATA5L1).
 - Vede Barbara Vona, Institut humánní genetiky, University Medical Center Göttingen.
-- Vyhlášeno přes síť ERN ITHACA (leden 2024). Nábor pacientů je uzavřen.
+- Vyhlášeno přes síť ERN ITHACA (leden 2024). Nábor pacientů je uzavřen. ⚠ OVĚŘIT: datum leden 2024 na citované stránce ERN ITHACA uvedeno není. Dohledat, odkud údaj pochází.
 - Kohorta obsahuje kolem 30 dosud nepublikovaných pacientů.
 - Význam: data o přirozeném průběhu jsou nutným základem pro budoucí klinické studie terapie. Bez nich nejde měřit, zda lék funguje.
 

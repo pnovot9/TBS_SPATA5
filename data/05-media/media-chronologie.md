@@ -21,7 +21,7 @@ Všechny nalezené výstupy k SPATA5 a k českému výzkumu vzácných nemocí k
 | 23. 12. 2024 | Roklen24 | "Naděje na zázrak." Mluví Zajíc, Wijacká, Sedláček. Smlouva s ÚMG, shání se ~4 mil. Kč na pilot. | ano |
 | 27. 12. 2024 | Seznam Zprávy | "Češi chtějí vyvíjet další léky na vzácné nemoci." SPATA5 mezi prvními cíli RD-Factory. Mluví Sedláček a Lucie Šťovíčková (FN Motol). | ano |
 | 20. 1. 2025 | biotrin.cz | Přehled úspěchů české vědy včetně genových terapií. SPATA5 zmíněna u RD-Factory. | ano |
-| 28. 2. 2025 | avcr.cz | Výsledky 1. kola RD-Factory (seznam 11 nemocí bez SPATA5). Mluví Sedláček, Arellanesová (ČAVO). | ne ⚠ |
+| 28. 2. 2025 | avcr.cz | Výsledky 1. kola RD-Factory (seznam 11 nemocí bez SPATA5). Mluví Sedláček, Arellanesová (ČAVO). | ne (rozpor se Seznam Zprávy, viz štítek v [[rd-factory]]) |
 | 2025 | vzacni.cz | "Projekt RD-Factory: pacienti přinášejí nové impulzy." Statistiky nominací. | nepřímo |
 | 31. 12. 2025 | Deník.cz | Příběh Michaely ze Stříbra a její matky Petry Potocké. | ano |
 | 14. 1. 2026 | phenogenomics.cz | "Bridging the Gap Between Genes and Therapy." Shrnutí 7. CCP konference, SPATA5 v portfoliu. | ano |

@@ -23,7 +23,7 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 
 ## Nadějné dílčí výsledky
 
-**Ketogenní dieta.** Série 5 pacientů s farmakorezistentní epilepsií (Nou-Fontanet a kol., 2025, PMID 40712368): počet záchvatů u čtyř dětí na dietě klesl o 30 %, 70 % a 100 %, u čtvrtého dítěte se nezměnil (0 %). Lepší výsledky mělo časné nasazení. V laboratoři navíc médium napodobující ketogenní dietu upravilo tvar, dynamiku a výrobu ATP mitochondrií v buňkách pacientů. To je zatím nejsilnější publikovaný terapeutický signál.
+**Ketogenní dieta.** Série 5 pacientů s farmakorezistentní epilepsií (Nou-Fontanet a kol., 2025, PMID 40712368): dietu dostaly čtyři děti. Počet záchvatů u tří z nich klesl o 30 %, 70 % a 100 %, u čtvrtého dítěte se nezměnil (0 %). Lepší výsledky mělo časné nasazení. V laboratoři navíc médium napodobující ketogenní dietu upravilo tvar, dynamiku a výrobu ATP mitochondrií v buňkách pacientů. To je zatím nejsilnější publikovaný terapeutický signál.
 
 > ℹ **Ketogenní dieta** je léčebná strava s vysokým podílem tuků a minimem sacharidů. Tělo pak získává energii převážně z tuků.
 > ℹ **Farmakorezistentní epilepsie** je epilepsie, kterou léky dostatečně netlumí.

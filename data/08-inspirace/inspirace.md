@@ -28,7 +28,7 @@ Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoc
 
 ## Diagnostika
 
-- **Face2Gene** (face2gene.com): nástroj firmy FDNA pro lékaře. Z fotografie obličeje rozpozná rysy typické pro genetické syndromy a nabídne možné diagnózy. Používají ho velké nemocnice jako Mayo Clinic nebo Boston Children's Hospital.
+- **Face2Gene** (face2gene.com): nástroj firmy FDNA pro lékaře. Z fotografie obličeje rozpozná rysy typické pro genetické syndromy a nabídne možné diagnózy. Používají ho velké nemocnice jako Mayo Clinic nebo Boston Children's Hospital. ⚠ OVĚŘIT: tvrzení o obou nemocnicích pochází jen z marketingu výrobce (face2gene.com). Dohledat nezávislý zdroj.
 
 ## Relevance pro projekt SPATA5
 

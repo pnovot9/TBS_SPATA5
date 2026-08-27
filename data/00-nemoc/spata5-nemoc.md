@@ -40,7 +40,7 @@ Nemoc se v literatuře objevuje pod několika jmény. Všechna označují toté�
 | Mentální postižení | 97,9 % |
 | Porucha sluchu (senzorineurální) | 93,6 % |
 | Mikrocefalie (malý obvod hlavy) | 85,7 % |
-| Porucha zraku (kortikální) | 79,5 % |
+| Porucha zraku | 79,5 % |
 | Epilepsie | 74,7 % |
 | Snížený svalový tonus (hypotonie) | 71,7 % |
 | Spasticita | 60,9 % |
@@ -58,10 +58,10 @@ U epilepsie je typický generalizovaný začátek záchvatů (70,8 %). Nejčast�
 
 ## Průběh a prognóza
 
-- Nemoc se projeví už v kojeneckém věku. Rodiče si všimnou opoždění vývoje a poruchy sluchu. Záchvaty typicky začínají mezi 6. a 13. měsícem života.
+- Nemoc se projeví už v kojeneckém věku. Rodiče si všimnou opoždění vývoje a poruchy sluchu. Záchvaty typicky začínají mezi 6. a 12. měsícem života (PMID 27246907). V kohortě z roku 2025 byl průměrný začátek 13,6 měsíce (PMID 40712368).
 - Většina postižených dětí se nenaučí samostatně sedět ani mluvit. Mentálně zůstávají na úrovni kojence.
 - Popsána je ale i velmi mírná forma. Jedna dívka se stejnými mutacemi měla jen izolovanou ztrátu sluchu (PMID 28293831). Šíře projevů je tedy velká.
-- Vědecká literatura úmrtnost přesně nevyčísluje. Průměrný věk žijících pacientů v kohortě z roku 2026 byl 8,35 roku. ⚠ OVĚŘIT: článek [[hn-clanek-2026]] uvádí, že zhruba třetina dětí umírá do šesti let věku. Toto číslo se nám v odborné literatuře nepodařilo dohledat.
+- V kohortě z roku 2026 zemřeli 3 z 51 pacientů (4,9 %), ve věku 3 let, 4,9 roku a 13,4 roku. Průměrný věk pacientů při zařazení do studie byl 8,35 roku (plný text PMID 41933351). ⚠ OVĚŘIT: článek [[hn-clanek-2026]] uvádí, že zhruba třetina dětí umírá do šesti let věku. Publikovaná kohorta z roku 2026 uvádí úmrtnost jen 4,9 %, s číslem z HN je tedy v rozporu.
 - Kauzální léčba neexistuje. Co dnes pomáhá, shrnuje [[lecba-a-vyzkum-svet]].
 
 > ℹ **Mutace** je změna v DNA. Zde jde o poškození genu SPATA5.

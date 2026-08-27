@@ -16,7 +16,7 @@ datum-reserse: 2026-08-26
 ## Časová osa
 
 - 1. 10. 2024: otevřená výzva k nominacím
-- 1. kolo: 44 nominací, vybráno 12 nemocí. ⚠ OVĚŘIT: avcr.cz uvádí seznam jen 11 nemocí, rozpor 12 vs. 11 zatím nevysvětlen. U poloviny vznikl myší model do 6 měsíců.
+- 1. kolo: 44 nominací, vybráno 12 nemocí. ⚠ OVĚŘIT: zdroje se rozcházejí ve dvou číslech. Podle vzacni.cz mělo 1. kolo 44 nominací a 12 vybraných nemocí, podle avcr.cz (28. 2. 2025) 45 nominací a seznam jen 11 nemocí. Ani jeden rozpor zatím není vysvětlen. U poloviny vznikl myší model do 6 měsíců.
 - 2. kolo: 45 nominací, uzávěrka červen 2025
 - Nyní kontinuální příjem nominací. Interim výsledky 3. výzvy zveřejněny v lednu 2026.
 - Připojily se 2 francouzské instituce, jednání s USA.
