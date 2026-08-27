@@ -1,6 +1,7 @@
 # Web
 
 Znalostní centrum SPATA5. Statický web vygenerovaný z vaultu v `../data/`.
+Podrobná dokumentace je ve složce [_documentation](_documentation/).
 
 ## Jak to funguje
 
