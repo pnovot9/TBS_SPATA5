@@ -28,10 +28,11 @@ V Česku jsou známy jednotky případů. Veřejně popsáno je pět dětí ze �
 ## Michaela ("Michalka")
 
 - 15 let (prosinec 2025). Matka Petra Potocká, Stříbro na Tachovsku.
-- Farmakorezistentní epilepsie. Čtyřkombinace antiepileptik bez účinku. ⚠ OVĚŘIT: údaj o čtyřkombinaci se při opakované rešerši nepodařilo potvrdit z textu Deník.cz. Ověřit v původním článku.
-- Citace matky z Deníku: "Zdraví pro dceru. Když se onemocnění nezhorší, bude to úspěch."
+- Farmakorezistentní epilepsie. Podle webu spolku bere čtyřkombinaci léků, které nezabírají, a rodina zvládá záchvaty několikrát denně (zazracnedeti.cz).
+- Deník.cz (31. 12. 2025) uvádí, že epileptické záchvaty prodělává každý den, několikrát skončila na jednotce intenzivní péče a léky záchvaty zcela nezastaví: "Bere je, protože bez nich by to bylo ještě horší." Počet léků článek neuvádí.
+- Novoroční přání matky v Deníku: "Zdraví pro dceru." Dodává, že úspěchem bude, když se onemocnění nezhorší. ⚠ OVĚŘIT: obě části jsou v článku odděleny uvozovkami, druhá věta ale postrádá otevírací uvozovku. Nelze proto s jistotou určit, zda šlo o jeden souvislý výrok, nebo o dva. Ověřit v tištěném vydání.
 
-> ℹ **Farmakorezistentní epilepsie** je epilepsie, kterou léky dostatečně netlumí. **Čtyřkombinace antiepileptik** znamená čtyři léky proti záchvatům podávané současně.
+> ℹ **Farmakorezistentní epilepsie** je epilepsie, kterou léky dostatečně netlumí. **Čtyřkombinace léků** znamená čtyři léky podávané současně.
 
 ## Elenka
 
