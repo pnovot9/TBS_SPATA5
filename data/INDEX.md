@@ -42,6 +42,7 @@ Rychlá orientace: nemoc [[spata5-nemoc]] je způsobena poruchou genu [[gen-spat
 - [[ai-prilezitosti]] (analyza): kde může pomoci AI
 - [[inspirace]] (analyza): zahraniční firmy a neziskovky spojující AI a vzácné nemoci
 - [[todo]] (analyza): úkoly a otevřené otázky z obou analýz
+- [[overit-flags]] (analyza): všechny štítky ⚠ OVĚŘIT na jednom místě
 
 ## Vizuální mapa
 

@@ -1,12 +1,12 @@
 ---
 id: todo
 typ: analyza
-nazev: Úkoly a další kroky
+nazev: To do a další kroky
 tagy: [todo, dalsi-kroky, inspirace]
 datum-reserse: 2026-08-27
 ---
 
-# Úkoly a další kroky
+# To do a další kroky
 
 Jediný seznam úkolů projektu. Akční body vycházejí z rozboru zahraničních organizací v [[inspirace]] a z analýzy [[ai-prilezitosti]]. Stav k 2026-08-27.
 
