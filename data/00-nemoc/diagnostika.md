@@ -13,7 +13,7 @@ datum-reserse: 2026-08-26
 Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexomové sekvenování (WES), tedy přečtení všech kódujících částí DNA, případně cílený genetický panel. Ve všech publikovaných kohortách byla diagnóza stanovena právě exomem.
 
 > ℹ **Exom** je souhrn všech úseků DNA, podle kterých buňka vyrábí bílkoviny. Tvoří malou část celé DNA.
-> ℹ **Sekvenování** je přečtení pořadí písmen v DNA.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 je to jediný způsob, jak stanovit definitivní diagnózu.
 > ℹ **Cílený genetický panel** vyšetřuje jen předem vybranou sadu genů.
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
 

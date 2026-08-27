@@ -44,7 +44,7 @@ Rozbor z 2026-08-27. Položky jsou seřazeny podle dostupnosti a přínosu. Vypl
 > ℹ **Mechanistické vodítko** je poznatek o mechanismu nemoci, který napovídá, kde léčbu hledat.
 > ℹ **Studie přirozeného průběhu** sleduje vývoj nemoci bez léčby. **Longitudinální data** jsou opakovaná měření týchž pacientů v čase.
 > ℹ **Genový knockout** je cílené vypnutí jednoho genu v buňce.
-> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. **Obličejový fenotyp** je soubor rysů obličeje typických pro daný syndrom.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 je to jediný způsob, jak stanovit definitivní diagnózu. **Obličejový fenotyp** je soubor rysů obličeje typických pro daný syndrom.
 
 ## Vazby
 

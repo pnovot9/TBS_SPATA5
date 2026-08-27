@@ -21,7 +21,7 @@ Jde o ultravzácné onemocnění. Čísla se liší podle zdroje a data:
 V Česku jsou známy **jednotky případů**. Veřejně popsáno je 5 dětí, viz [[deti-a-rodiny]].
 
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
-> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. Používá se ke stanovení diagnózy.
+> ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 je to jediný způsob, jak stanovit definitivní diagnózu.
 
 ## Klíčové publikované kohorty
 
