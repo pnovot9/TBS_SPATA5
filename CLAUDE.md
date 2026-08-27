@@ -36,7 +36,7 @@ static website that presents it.
 2. Every new feature or improvement must be documented in
    `web/_documentation/` in the same PR that ships it. New doc files get
    linked from this file.
-3. All styling lives in `web/styles.css` as token-based rules. No inline
+3. All styling lives in `web/assets/styles.css` as token-based rules. No inline
    styles, no per-page style blocks, no new colors outside the token list
    in design.md.
 4. Every page and view gets its own URL when it is introduced.

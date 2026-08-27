@@ -7,13 +7,14 @@ library only.
 ## Data flow
 
 ```
-data/**/*.md  ->  web/build.py  ->  web/*.html
-data/INDEX.md ->                ->  web/index.html
+data/**/*.md  ->  web/build.py  ->  web/dist/*.html
+data/INDEX.md ->                ->  web/dist/index.html
+web/assets/*  ->                ->  web/dist/*  (copied)
 ```
 
-Run `python3 web/build.py` from anywhere. It rewrites every generated page.
-Generated HTML is committed, so the site can be hosted from the `web/`
-folder as plain files.
+Run `python3 web/build.py` from anywhere. It rewrites every generated page
+and copies the assets. Generated output is committed, so the site can be
+hosted from the `web/dist/` folder as plain files.
 
 ## What build.py does
 
@@ -39,9 +40,10 @@ folder as plain files.
 ## File layout
 
 - `web/build.py`: the whole generator, one file.
-- `web/styles.css`: the only stylesheet. See design.md.
-- `web/app.js`: the only script. Theme toggle logic.
-- `web/*.html`: generated pages. Never edit by hand.
+- `web/assets/styles.css`: the only stylesheet. See design.md.
+- `web/assets/app.js`: the only script. Theme toggle logic.
+- `web/dist/`: the generated site. Pages plus copies of the assets.
+  Never edit by hand.
 - `web/designs/`: the four original design prototypes, kept for reference.
   They are standalone files and not part of the generated site.
 - `web/_documentation/`: this documentation.
@@ -50,12 +52,12 @@ folder as plain files.
 
 Flat. One article equals one page equals one URL: `<vault id>.html`.
 `index.html` is the home page. Asset links are relative, which works
-because every page sits in the same folder.
+because every page sits in `web/dist/` next to the copied assets.
 
 ## Local preview
 
 ```bash
-python3 -m http.server 8741 -d web
+python3 -m http.server 8741 -d web/dist
 ```
 
 Then open http://localhost:8741.

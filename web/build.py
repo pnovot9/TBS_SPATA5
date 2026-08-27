@@ -2,18 +2,22 @@
 """Generate the SPATA5 knowledge center from the Obsidian vault in ../data.
 
 Usage: python3 build.py   (from the web/ directory, or anywhere)
-Reads data/**/*.md, writes one HTML page per article plus index.html.
+Reads data/**/*.md, writes one HTML page per article plus index.html into
+web/dist/, and copies web/assets/ there so dist/ is hostable as-is.
 Fails if any [[wikilink]] points to a document that does not exist.
 """
 import datetime
 import html
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 WEB = Path(__file__).resolve().parent
 DATA = WEB.parent / "data"
+ASSETS = WEB / "assets"
+OUT = WEB / "dist"
 
 GROUPS = [
     ("Nemoc a věda", ["00-nemoc"]),
@@ -185,6 +189,12 @@ PAGE = """<!doctype html>
 
 
 def main():
+    OUT.mkdir(exist_ok=True)
+    for stale in OUT.glob("*.html"):
+        stale.unlink()
+    for asset in ASSETS.iterdir():
+        shutil.copy2(asset, OUT / asset.name)
+
     docs = {}
     for path in sorted(DATA.glob("*/*.md")):
         if path.parent.name.startswith("."):
@@ -224,7 +234,7 @@ def main():
                            eyebrow=html.escape(group_of.get(slug, "")),
                            article=article,
                            footer_meta=footer)
-        (WEB / f"{slug}.html").write_text(page, encoding="utf-8")
+        (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
 
     body = re.sub(r"^# .+$", "", index_body, count=1, flags=re.M)
     newest = sorted(docs.items(), key=lambda sd: sd[1]["changed"], reverse=True)[:10]
@@ -240,7 +250,7 @@ def main():
                        eyebrow="Znalostní centrum",
                        article=article,
                        footer_meta=footer)
-    (WEB / "index.html").write_text(page, encoding="utf-8")
+    (OUT / "index.html").write_text(page, encoding="utf-8")
 
     in_nav = {s for _, members in nav for s, _ in members}
     missing = set(docs) - in_nav
