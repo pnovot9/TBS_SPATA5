@@ -124,7 +124,15 @@ body {
   color: var(--sidebar-accent);
   font-weight: 600;
 }
-.nav > a { padding-left: 10px; }
+.nav > a {
+  padding: 7px 10px;
+  margin-bottom: 6px;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--sidebar-dim);
+}
 
 /* Theme slider */
 .theme-toggle {
