@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "spata5-web",
+      "name": "web",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8741", "-d", "web/dist"],
-      "port": 8741
+      "runtimeArgs": ["-m", "http.server", "8931", "-d", "web/dist"],
+      "port": 8931
     }
   ]
 }

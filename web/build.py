@@ -104,8 +104,18 @@ def md_to_html(body, slugs):
             terms += 1
             btn, dialog = term_block(defs, terms, slugs)
             prev = out.pop()
-            if prev.endswith("</p>"):
-                out.append(prev[:-len("</p>")] + " " + btn + "</p>")
+            for close in ("</p>", "</li></ul>", "</li></ol>", "</blockquote>"):
+                if prev.endswith(close):
+                    body = prev[:-len(close)]
+                    # Bind the button to the last word so it never wraps alone.
+                    m = re.search(r"([^\s>]+)$", body)
+                    if m:
+                        body = (body[:m.start()]
+                                + f'<span class="term-anchor">{m.group(1)} {btn}</span>')
+                    else:
+                        body += " " + btn
+                    out.append(body + close)
+                    break
             else:
                 out.append(prev)
                 out.append(f'<p class="term-attach">{btn}</p>')
