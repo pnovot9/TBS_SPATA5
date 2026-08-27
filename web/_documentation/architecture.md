@@ -61,3 +61,13 @@ python3 -m http.server 8741 -d web/dist
 ```
 
 Then open http://localhost:8741.
+
+## Deployment
+
+The site is published at https://pnovot9.github.io/TBS_SPATA5/ through
+GitHub Pages. The workflow `.github/workflows/pages.yml` runs on every
+push to `main` and uploads the committed `web/dist/` folder as it is.
+There is no build step in CI. The committed output is the deployed site,
+so `python3 web/build.py` must run before commit, as rule 1 in CLAUDE.md
+already requires. All links are relative, which is why the same files
+work on Pages, over `file://`, and on a local server.
