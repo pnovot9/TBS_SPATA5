@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPATA5 Znalostní centrum, Návrh 1: Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbfc;
+  --surface: #ffffff;
+  --ink: #262d3d;
+  --ink-soft: #4e586e;
+  --ink-faint: #707786;
+  --line: #e4e7ec;
+  --accent: #e56f0b;
+  --accent-soft: #fdf1e4;
+  --purple: #6a1b9a;
+  --sidebar-bg: #f5f6f8;
+  --shadow: 0 1px 2px rgba(38, 45, 61, .06);
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #1a1e28;
+  --surface: #222735;
+  --ink: #e8eaf0;
+  --ink-soft: #b2b8c2;
+  --ink-faint: #8b93a3;
+  --line: #333a4b;
+  --accent: #f59b3f;
+  --accent-soft: #33302a;
+  --purple: #b57fd6;
+  --sidebar-bg: #161a22;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+  font-size: 15.5px;
+  transition: background .3s, color .3s;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+.layout { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+  width: 268px;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--line);
+  padding: 28px 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.brand { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -.01em;
+}
+.brand-name em { color: var(--accent); font-style: normal; }
+.brand-sub { font-size: 11.5px; color: var(--ink-faint); margin-bottom: 28px; }
+.nav-group { margin-bottom: 22px; }
+.nav-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+  padding-left: 10px;
+}
+.nav a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-size: 14px;
+  transition: background .15s, color .15s;
+}
+.nav a:hover { background: var(--surface); color: var(--ink); }
+.nav a.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+.theme-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+.theme-btn:hover { border-color: var(--accent); }
+
+/* Main */
+.main { flex: 1; min-width: 0; }
+.content { max-width: 760px; margin: 0 auto; padding: 56px 40px 96px; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+.eyebrow::after { content: ""; width: 42px; height: 1px; background: var(--accent); }
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.015em;
+  margin-bottom: 20px;
+}
+.lead {
+  font-size: 18px;
+  color: var(--ink-soft);
+  margin-bottom: 44px;
+  max-width: 620px;
+}
+.lead strong { color: var(--ink); font-weight: 600; }
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 52px 0 16px;
+  letter-spacing: -.01em;
+}
+
+/* Reading path: order matters, so numbering is earned */
+.path { list-style: none; counter-reset: step; }
+.path li {
+  counter-increment: step;
+  display: flex;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.path li::before {
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 34px;
+  padding-top: 1px;
+}
+.path a { font-weight: 600; text-decoration: none; }
+.path a:hover { color: var(--accent); }
+.path p { font-size: 14px; color: var(--ink-faint); margin-top: 2px; }
+
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform .2s cubic-bezier(.2,0,0,1), border-color .2s;
+}
+.card:hover { transform: translateY(-2px); border-color: var(--accent); }
+.card h3 { font-size: 15.5px; font-weight: 600; margin-bottom: 4px; }
+.card p { font-size: 13.5px; color: var(--ink-faint); }
+.card .count { font-size: 11px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+
+blockquote {
+  border-left: 3px solid var(--purple);
+  padding: 4px 0 4px 20px;
+  margin: 36px 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+@media (max-width: 860px) {
+  .layout { flex-direction: column; }
+  .sidebar { width: 100%; height: auto; position: static; border-right: 0; border-bottom: 1px solid var(--line); }
+  .content { padding: 36px 22px 64px; }
+  h1 { font-size: 32px; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-name">SPATA<em>5</em></span></div>
+    <div class="brand-sub">Znalostní centrum</div>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <div class="nav-group">
+        <a href="#" class="active">Domů</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Nemoc a věda</div>
+        <a href="#">Nemoc SPATA5</a>
+        <a href="#">Gen SPATA5 / AFG2A</a>
+        <a href="#">Diagnostika</a>
+        <a href="#">Léčba a výzkum ve světě</a>
+        <a href="#">Epidemiologie</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Český výzkum</div>
+        <a href="#">Projekt CCP</a>
+        <a href="#">Fáze a financování</a>
+        <a href="#">RD Factory</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Lidé</div>
+        <a href="#">Jan Zajíc</a>
+        <a href="#">Lucie Zajícová</a>
+        <a href="#">Radislav Sedláček</a>
+        <a href="#">Jan Procházka</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Organizace a pacienti</div>
+        <a href="#">Spolek SPATA5 CZ</a>
+        <a href="#">Centrum CCP</a>
+        <a href="#">Zahraniční organizace</a>
+        <a href="#">Děti a rodiny</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Média a zdroje</div>
+        <a href="#">Chronologie médií</a>
+        <a href="#">Vědecké publikace</a>
+        <a href="#">Databáze</a>
+      </div>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button">Tmavý režim</button>
+  </aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="eyebrow">Znalostní centrum</div>
+      <h1>Vše, co víme o nemoci SPATA5, na jednom místě</h1>
+      <p class="lead">Nemoc SPATA5 způsobuje porucha genu AFG2A. V Česku ji má jen <strong>několik dětí</strong>. Jejich rodiče založili spolek a zaplatili start výzkumu v Českém centru pro fenogenomiku. Cílem je genová terapie.</p>
+
+      <h2>Kudy začít</h2>
+      <ol class="path">
+        <li><div><a href="#">Nemoc SPATA5</a><p>Co onemocnění dělá, příznaky a prognóza.</p></div></li>
+        <li><div><a href="#">Gen SPATA5 / AFG2A</a><p>Gen, protein a mechanismus nemoci.</p></div></li>
+        <li><div><a href="#">Projekt CCP</a><p>Co přesně čeští vědci dělají.</p></div></li>
+        <li><div><a href="#">Fáze a financování</a><p>Tři fáze výzkumu a rozpočet 33 až 49 mil. Kč.</p></div></li>
+      </ol>
+
+      <blockquote>Díky vaší podpoře máme naději najít lék pro naše děti.</blockquote>
+
+      <h2>Sekce znalostní báze</h2>
+      <div class="cards">
+        <a class="card" href="#"><span class="count">5 článků</span><h3>Nemoc a věda</h3><p>Příznaky, gen, diagnostika a světový výzkum.</p></a>
+        <a class="card" href="#"><span class="count">3 články</span><h3>Český výzkum</h3><p>Projekt v CCP, fáze, rozpočet a sbírky.</p></a>
+        <a class="card" href="#"><span class="count">4 profily</span><h3>Lidé</h3><p>Rodiče, vědci a vedení výzkumu.</p></a>
+        <a class="card" href="#"><span class="count">4 články</span><h3>Organizace a pacienti</h3><p>Spolek, centrum CCP a zahraniční partneři.</p></a>
+        <a class="card" href="#"><span class="count">3 přehledy</span><h3>Média a zdroje</h3><p>Články, publikace s PMID a odborné databáze.</p></a>
+        <a class="card" href="#"><span class="count">1 analýza</span><h3>AI příležitosti</h3><p>Kde může pomoci AI a jaké otázky jsou otevřené.</p></a>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('spata5-theme'); } catch (e) {}
+  var dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  apply();
+  btn.addEventListener('click', function () {
+    dark = !dark;
+    apply();
+    try { localStorage.setItem('spata5-theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+  function apply() {
+    if (dark) { root.setAttribute('data-theme', 'dark'); } else { root.removeAttribute('data-theme'); }
+    btn.textContent = dark ? 'Světlý režim' : 'Tmavý režim';
+  }
+})();
+</script>
+</body>
+</html>
