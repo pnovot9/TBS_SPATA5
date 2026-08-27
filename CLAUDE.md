@@ -31,6 +31,14 @@ static website that presents it.
    is primary (or the best available), and the number or wording was
    copied exactly. Never delete sources or verification flags. When
    updating content, re-check that the source still says what we claim.
+   **Dual-agent verification (mandatory).** Before any PR that adds or
+   changes factual claims, data, or statistics in `data/` is opened,
+   launch two fresh, independent agents (Agent tool), each verifying
+   every touched claim from scratch against its cited source — neither
+   agent sees the other's findings or this conversation's reasoning.
+   Each agent reports per claim: matches source / mismatch / source not
+   found. Any disagreement between the agents, or any mismatch, blocks
+   the PR until resolved or the claim gets the `⚠ OVĚŘIT` marker.
 1. Content changes happen in `data/`, never by editing generated HTML.
    After any vault change, run `python3 web/build.py` and commit the output.
 2. Every new feature or improvement must be documented in
