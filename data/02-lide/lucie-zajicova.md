@@ -1,12 +1,12 @@
 ---
 id: lucie-zajicova
 typ: osoba
-nazev: Ing. Lucie Zajícová
+nazev: Lucie Zajícová
 tagy: [osoba, rodic, spolek]
 datum-reserse: 2026-08-26
 ---
 
-# Ing. Lucie Zajícová
+# Lucie Zajícová
 
 Předsedkyně spolku [[spolek-spata5-cz]] a matka Julinky. Manželka [[jan-zajic]]. Na sbírce Donio vystupuje jako "Lucka".
 
