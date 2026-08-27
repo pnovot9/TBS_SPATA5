@@ -22,7 +22,6 @@ OUT = WEB / "dist"
 GROUPS = [
     ("Nemoc a věda", ["00-nemoc"]),
     ("Český výzkum", ["01-cesky-vyzkum"]),
-    ("Lidé", ["02-lide"]),
     ("Organizace a pacienti", ["03-organizace", "04-pacienti"]),
     ("Média a zdroje", ["05-media", "06-zdroje"]),
     ("Analýzy", ["07-ai"]),

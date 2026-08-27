@@ -24,7 +24,6 @@ Vstupní bod je [INDEX.md](INDEX.md). Obsahuje mapu celého grafu a odkazy na v�
 ```
 00-nemoc/          co je SPATA5 onemocnění, gen, diagnostika, léčba, výskyt
 01-cesky-vyzkum/   projekt v Českém centru pro fenogenomiku, fáze, financování, RD-Factory
-02-lide/           klíčové osoby (Zajíc, Zajícová, Sedláček, Procházka)
 03-organizace/     spolek SPATA 5 CZ, CCP, zahraniční pacientské organizace
 04-pacienti/       příběhy českých dětí a rodin (veřejně publikované informace)
 05-media/          chronologie mediálního pokrytí, klíčový článek HN

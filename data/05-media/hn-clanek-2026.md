@@ -20,7 +20,7 @@ datum-reserse: 2026-08-26
 - Projevy: těžká epilepsie, ztráta sluchu, mentální postižení.
 - Příběh Julinky: diagnóza v devíti letech, opoždění vývoje od 8 měsíců, těžká epilepsie od dvou let. Oba rodiče jsou přenašeči, Julie zdědila dvě poškozené kopie genu.
 - Rodina Zajícova založila spolek a spojila se s CCP. Pilotní studie začala na přelomu roku (2025/2026).
-- Citovaní: [[jan-zajic]], [[radislav-sedlacek]], [[jan-prochazka]].
+- Citovaní: Ján Zajíc, Radislav Sedláček, Jan Procházka.
 - Financování: vlastní zdroje rodičů plus sbírka, transparentní účet 2703049205/2010, web zazracnedeti.cz.
 
 Poznámka ke spolehlivosti: článek není plně za paywallem a podařilo se ho načíst. Část doslovných citací se při strojovém čtení zkomolila. Tam, kde si nejsme jisti přesným zněním, uvádíme parafráze.
@@ -28,7 +28,7 @@ Poznámka ke spolehlivosti: článek není plně za paywallem a podařilo se ho 
 ## Vazby
 
 - [[projekt-ccp-spata5]] (popisovaný výzkum)
-- [[jan-zajic]] (hlavní protagonista)
+- Ján Zajíc (hlavní protagonista)
 - [[deti-a-rodiny]] (Julinka)
 - [[media-chronologie]] (kontext ostatního pokrytí)
 
