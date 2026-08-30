@@ -14,6 +14,10 @@ profesionálové: vědci, lékaři, zástupci spolku a dárci.
   zdroj. Delší kontext a vztah pojmu k nemoci patří do souboru
   `data/09-todo/slovnik-rozsireni.md` (viz features.md), kde každé tvrzení
   kryje zdroj.
+- Každý nový pojem `> ℹ` dostává ve stejném PR i záznam v
+  `slovnik-rozsireni.md` s kontextem a odstavcem `**Vztah k nemoci:**`.
+  Odstavec vztahu se vynechá jen tam, kde pojem k nemoci žádný vztah
+  nemá. Pravidlo 7 v [CLAUDE.md](../../CLAUDE.md).
 - Bez pomlček uvnitř vět a bez středníků. Dvě věty místo jedné dlouhé.
 
 ## Rejstřík
