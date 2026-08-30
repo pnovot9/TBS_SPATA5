@@ -21,7 +21,7 @@ Nemoc se v literatuře objevuje pod několika jmény. Všechna označují toté�
 - NEDHSB: Neurodevelopmental disorder with hearing loss, seizures, and brain abnormalities (OMIM #616577)
 - AFG2A-related encephalopathy (AFG2A-RE, nejnovější označení)
 - Orphanet ORPHA:457351: syndrom mikrocefalie, mentálního postižení, senzorineurální ztráty sluchu, epilepsie a abnormálního svalového tonu
-- Fenotyp se podobá mitochondriálním onemocněním, proto diagnóza často dlouho uniká. Souhrn z roku 2026 píše, že hlavní klinické rysy nemoci napodobují mitochondriální onemocnění (plný text PMID 41933351). Studie z roku 2019 uzavřela, že gen byl poddiagnostikován (PMID 30552426).
+- Fenotyp se podobá mitochondriálním onemocněním, proto diagnóza často dlouho uniká. Souhrn z roku 2026 píše, že hlavní klinické rysy nemoci mohou napodobovat mitochondriální onemocnění (plný text PMID 41933351). Studie z roku 2019 uvádí, že gen mohl být v dřívějších studiích poddiagnostikován (PMID 30552426).
 - ⚠ OVĚŘIT: dříve zde uvedená podobnost se syndromem PEHO nemá dohledaný zdroj. Hledání „SPATA5 PEHO" na PubMed nedává žádný výsledek. Přehled PEHO a PEHO-like poruch (PMID 28899015) gen SPATA5 neuvádí a nezmiňují ho ani citované zdroje tohoto článku. Dohledat původ tvrzení, jinak zmínku o PEHO odstranit. Stejnou značku má heslo PEHO ve slovníku pojmů.
 
 > ℹ **Encefalopatie** je obecné označení pro postižení mozku.

@@ -17,7 +17,7 @@ Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexo
 > ℹ **Cílený genetický panel** vyšetřuje jen předem vybranou sadu genů.
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
 
-Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální onemocnění, takže děti nejdřív projdou negativním metabolickým vyšetřením. Studie z roku 2019 (PMID 30552426) našla SPATA5 jako příčinu u 3 % kohorty časných epileptických encefalopatií a uzavřela, že gen byl poddiagnostikován. Česká zkušenost to potvrzuje: Julinka Zajícová dostala diagnózu až v devíti letech (viz [[deti-a-rodiny]] a [[hn-clanek-2026]]).
+Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální onemocnění, takže děti nejdřív projdou negativním metabolickým vyšetřením. Studie z roku 2019 (PMID 30552426) našla SPATA5 jako příčinu u 3 % kohorty časných epileptických encefalopatií a uvádí, že gen mohl být v dřívějších studiích poddiagnostikován. Česká zkušenost to potvrzuje: Julinka Zajícová dostala diagnózu až v devíti letech (viz [[deti-a-rodiny]] a [[hn-clanek-2026]]).
 
 > ℹ **Mitochondriální onemocnění** jsou poruchy mitochondrií, buněčných elektráren.
 > ℹ **Metabolické vyšetření** hledá poruchy látkové výměny, obvykle z krve a moči.
