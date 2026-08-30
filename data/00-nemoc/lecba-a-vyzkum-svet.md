@@ -14,12 +14,10 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 
 - antiepileptika, i když epilepsie u 82 % pacientů na léky nereaguje
 - rehabilitace a fyzioterapie
-- sluchadla nebo kochleární implantát při ztrátě sluchu ⚠ OVĚŘIT: citovaný souhrn (PMID 41933351) sluchovou rehabilitaci neuvádí a publikovaný zdroj specifický pro SPATA5 se nepodařilo dohledat. Kandidátem je ruský přehled epilepsií se ztrátou sluchu (PMID 36719116). Útržky jeho plného textu na webu popisují pacienta se SPATA5, který dostal nejdřív sluchadla a poté kochleární implantát. Plný text je za paywallem a nebylo možné ho ověřit.
 - podpora výživy a řešení zažívacích obtíží
 
 > ℹ **Kauzální léčba** odstraňuje příčinu nemoci. **Symptomatická péče** mírní jen její projevy.
 > ℹ **Antiepileptika** jsou léky proti epileptickým záchvatům.
-> ℹ **Kochleární implantát** je elektronická náhrada vnitřního ucha.
 
 ## Nadějné dílčí výsledky
 
@@ -64,4 +62,3 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 - Kryo-EM a terapeutické rysy: https://www.nature.com/articles/s41467-025-58894-0
 - Natural history studie: https://ern-ithaca.eu/for-clinicians/calls-for-collaboration/deep-phenotyping-and-natural-history-of-afg2a-spata5-and-afg2b-spata5l1-disorders/
 - Souhrn léčby: https://pubmed.ncbi.nlm.nih.gov/41933351/
-- Možný zdroj ke sluchové rehabilitaci (neověřeno, plný text za paywallem): https://pubmed.ncbi.nlm.nih.gov/36719116/ (Burd 2023, rusky)
