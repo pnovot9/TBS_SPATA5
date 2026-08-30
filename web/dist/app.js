@@ -80,6 +80,10 @@
     detailEl.innerHTML = '<div class="dict-group">' + esc(x.group) + '</div>' +
       '<h2>' + esc(x.t) + '</h2>' +
       '<p class="dict-def">' + x.def + '</p>' +
+      (x.ctx || []).map(function (c) {
+        return '<p class="dict-def">' + c + '</p>';
+      }).join('') +
+      (x.dis ? '<h3>Vztah k nemoci SPATA5</h3><p class="dict-def">' + x.dis + '</p>' : '') +
       '<h3>Kde na webu se pojem používá</h3>' +
       '<ul class="dict-uses">' + x.uses.map(function (u) {
         return '<li><a href="' + esc(u[1]) + '">' + esc(u[0]) + '</a></li>';
