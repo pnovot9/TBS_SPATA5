@@ -17,7 +17,7 @@ Definitivní diagnózu dává jen genetické vyšetření. Standardem je celoexo
 > ℹ **Cílený genetický panel** vyšetřuje jen předem vybranou sadu genů.
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
 
-Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální onemocnění, takže děti nejdřív projdou negativním metabolickým vyšetřením. Studie z roku 2019 (PMID 30552426) našla SPATA5 jako příčinu u 3 % kohorty časných epileptických encefalopatií a uzavřela, že gen byl poddiagnostikován. Česká zkušenost to potvrzuje: Julinka Zajícová dostala diagnózu až v devíti letech (viz [[deti-a-rodiny]] a [[hn-clanek-2026]]).
+Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální onemocnění, takže děti nejdřív projdou negativním metabolickým vyšetřením. Studie z roku 2019 (PMID 30552426) našla SPATA5 jako příčinu u 3 % kohorty časných epileptických encefalopatií a uvádí, že gen mohl být v dřívějších studiích poddiagnostikován. Česká zkušenost to potvrzuje: Julinka Zajícová dostala diagnózu až v devíti letech (viz [[deti-a-rodiny]] a [[hn-clanek-2026]]).
 
 > ℹ **Mitochondriální onemocnění** jsou poruchy mitochondrií, buněčných elektráren.
 > ℹ **Metabolické vyšetření** hledá poruchy látkové výměny, obvykle z krve a moči.
@@ -27,7 +27,7 @@ Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální o
 
 - EEG: multifokální hroty, hypsarytmie u infantilních spasmů
 - MRI mozku: hypomyelinizace (39 %), atrofie mozku (34 %), tenké corpus callosum (29 %)
-- Vyšetření sluchu (BERA, audiometrie): senzorineurální ztráta sluchu
+- Vyšetření sluchu (BERA): senzorineurální ztráta sluchu. V publikované kohortě odhalila BERA poruchu sluchu už u novorozence a sluchové evokované potenciály ji potvrdily u dalších pacientů (PMID 27683084).
 - Zrakové evokované potenciály (VEP)
 - Výzkumně: měření dýchání mitochondrií v krevních buňkách jako šetrná náhrada svalové biopsie (PMID 36849973)
 
@@ -56,5 +56,6 @@ Databáze ClinVar k 26. 8. 2026 evidovala pro AFG2A celkem 971 variant. Z toho 1
 - Poddiagnostikování a kombinace exomu s čipovou analýzou: https://pubmed.ncbi.nlm.nih.gov/30552426/ (Papuc 2019)
 - Nálezy MRI a EEG: https://pubmed.ncbi.nlm.nih.gov/41933351/ a https://pubmed.ncbi.nlm.nih.gov/27246907/
 - Mitochondriální test z krve: https://pubmed.ncbi.nlm.nih.gov/36849973/
+- BERA a sluchové evokované potenciály u pacientů: https://pubmed.ncbi.nlm.nih.gov/27683084/ (Buchert 2016, plný text https://pmc.ncbi.nlm.nih.gov/articles/PMC5041579/)
 - ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/?term=AFG2A%5Bgene%5D
 - Orphanet diagnostické testy: https://www.orpha.net/en/diagnostic-tests/diagnostic/499349

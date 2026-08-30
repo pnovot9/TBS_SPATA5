@@ -21,14 +21,13 @@ Nemoc se v literatuře objevuje pod několika jmény. Všechna označují toté�
 - NEDHSB: Neurodevelopmental disorder with hearing loss, seizures, and brain abnormalities (OMIM #616577)
 - AFG2A-related encephalopathy (AFG2A-RE, nejnovější označení)
 - Orphanet ORPHA:457351: syndrom mikrocefalie, mentálního postižení, senzorineurální ztráty sluchu, epilepsie a abnormálního svalového tonu
-- Fenotyp se podobá syndromu PEHO a mitochondriálním onemocněním, proto diagnóza často dlouho uniká
+- Fenotyp se podobá mitochondriálním onemocněním, proto diagnóza často dlouho uniká. Souhrn z roku 2026 píše, že hlavní klinické rysy nemoci mohou napodobovat mitochondriální onemocnění (plný text PMID 41933351). Studie z roku 2019 uvádí, že gen mohl být v dřívějších studiích poddiagnostikován (PMID 30552426).
 
 > ℹ **Encefalopatie** je obecné označení pro postižení mozku.
 > ℹ **Mikrocefalie** znamená menší obvod hlavy, než odpovídá věku.
 > ℹ **Senzorineurální ztráta sluchu** vzniká poškozením vnitřního ucha nebo sluchového nervu.
 > ℹ **Svalový tonus** je klidové napětí svalů.
 > ℹ **Fenotyp** je souhrn pozorovatelných projevů nemoci.
-> ℹ **Syndrom PEHO** je jiné vzácné vrozené onemocnění mozku s podobnými projevy.
 > ℹ **Mitochondriální onemocnění** jsou poruchy mitochondrií, buněčných elektráren.
 
 ## Hlavní projevy
@@ -85,6 +84,7 @@ U epilepsie je typický generalizovaný začátek záchvatů (70,8 %). Nejčast�
 - Orphanet: http://www.orpha.net/ORDO/Orphanet_457351
 - Začátek záchvatů: https://pubmed.ncbi.nlm.nih.gov/27246907/ a https://pubmed.ncbi.nlm.nih.gov/40712368/
 - Mírná forma: https://pubmed.ncbi.nlm.nih.gov/28293831/
-- Plný text kohorty 51 pacientů (úmrtí a věk při úmrtí): https://pmc.ncbi.nlm.nih.gov/articles/PMC13049760/
+- Plný text kohorty 51 pacientů (úmrtí a věk při úmrtí, podobnost s mitochondriálními onemocněními): https://pmc.ncbi.nlm.nih.gov/articles/PMC13049760/
+- Poddiagnostikování genu: https://pubmed.ncbi.nlm.nih.gov/30552426/ (Papuc 2019)
 - Nepublikovaná studie přirozeného průběhu (možná stopa k číslu z HN, sběr uzavřen): https://ern-ithaca.eu/our-research-activities/calls-for-collaboration/deep-phenotyping-and-natural-history-of-afg2a-spata5-and-afg2b-spata5l1-disorders/
 - Popis pro laiky: https://www.zazracnedeti.cz/en/about-spata5-disease/

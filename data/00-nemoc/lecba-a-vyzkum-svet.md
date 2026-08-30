@@ -14,12 +14,10 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 
 - antiepileptika, i když epilepsie u 82 % pacientů na léky nereaguje
 - rehabilitace a fyzioterapie
-- sluchadla nebo kochleární implantát při ztrátě sluchu
 - podpora výživy a řešení zažívacích obtíží
 
 > ℹ **Kauzální léčba** odstraňuje příčinu nemoci. **Symptomatická péče** mírní jen její projevy.
 > ℹ **Antiepileptika** jsou léky proti epileptickým záchvatům.
-> ℹ **Kochleární implantát** je elektronická náhrada vnitřního ucha.
 
 ## Nadějné dílčí výsledky
 

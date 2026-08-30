@@ -144,10 +144,6 @@ Starší název je Westův syndrom. Na EEG je s nimi spojena hypsarytmie.
 
 **Vztah k nemoci:** Buněčné linie s CRISPR knockoutem SPATA5 patří mezi publikované modely nemoci (PMID 35354024).
 
-## Kochleární implantát
-
-**Vztah k nemoci:** Přehled péče na tomto webu ho uvádí vedle sluchadel jako součást symptomatické péče při ztrátě sluchu. Viz [[lecba-a-vyzkum-svet]].
-
 ## Kohorta
 
 **Vztah k nemoci:** Největší publikovanou kohortou je souhrn 51 pacientů z roku 2026 (Nou-Fontanet a kol., PMID 41933351). Z toho 45 pacientů pochází z literatury a 6 je nových.
@@ -257,10 +253,6 @@ Nemoc se dědí autozomálně recesivně. Každý člověk má dvě kopie genu a
 ## Symptomatická péče
 
 **Vztah k nemoci:** U SPATA5 je dnes jedinou dostupnou péčí. Podle stránky českého projektu zahrnuje léčbu záchvatů, rehabilitaci sluchu, podporu výživy a intenzivní pohybovou, komunikační a vývojovou péči. Viz [[lecba-a-vyzkum-svet]].
-
-## Syndrom PEHO
-
-**Vztah k nemoci:** Podle článku [[spata5-nemoc]] se fenotyp SPATA5 syndromu PEHO podobá a podobnost přispívá k tomu, že diagnóza dlouho uniká. ⚠ OVĚŘIT: přímý publikovaný zdroj podobnosti s PEHO se při kontrole nepodařilo dohledat (PubMed, srpen 2026). Doložit citací, nebo tvrzení z webu stáhnout.
 
 ## Varianta
 
