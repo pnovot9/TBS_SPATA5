@@ -144,20 +144,52 @@ def collect_glossary(docs):
     return terms
 
 
-def glossary_page(docs, slugs, rank, group_of):
+def parse_gloss_extra(body):
+    """Parse the 'typ: slovnik' vault file into {term key: {ctx, dis}}.
+
+    Each '## Term' section holds context paragraphs plus an optional
+    '**Vztah k nemoci:**' paragraph shown as its own section on the web.
+    """
+    extra, cur = {}, None
+    for line in body.splitlines():
+        if line.startswith("## "):
+            name = line[3:].strip()
+            cur = (None if name in ("Zdroje", "Vazby")
+                   else extra.setdefault(gloss_key(name), {"ctx": [], "dis": ""}))
+            continue
+        line = line.strip()
+        if cur is None or not line or line.startswith("#"):
+            continue
+        if line.startswith("**Vztah k nemoci:**"):
+            cur["dis"] = line[len("**Vztah k nemoci:**"):].strip()
+        else:
+            cur["ctx"].append(line)
+    return extra
+
+
+def glossary_page(docs, slugs, rank, group_of, extra_body):
     terms = collect_glossary(docs)
     assert len(terms) > 50, f"slovník podezřele malý: {len(terms)} pojmů"
+    extra = parse_gloss_extra(extra_body) if extra_body else {}
+    unknown = set(extra) - set(terms)
+    assert not unknown, f"slovnik-rozsireni: neznámé pojmy {unknown}"
     order = sorted(terms)
     data = []
     for k in order:
         e = terms[k]
+        x = extra.get(k, {"ctx": [], "dis": ""})
         def_html = inline(e["def"], slugs)
+        ctx_html = [inline(p, slugs) for p in x["ctx"]]
+        dis_html = inline(x["dis"], slugs) if x["dis"] else ""
         uses = sorted(e["uses"], key=lambda s: (rank.get(s, 999), s))
         data.append({
             "t": e["term"],
             "group": group_of.get(uses[0], ""),
             "def": def_html,
-            "plain": re.sub(r"<[^>]+>", "", def_html),
+            "ctx": ctx_html,
+            "dis": dis_html,
+            "plain": re.sub(r"<[^>]+>", "",
+                            " ".join([def_html] + ctx_html + [dis_html])),
             "uses": [[docs[s]["title"], f"{s}.html"] for s in uses],
             "rel": [terms[r]["term"] for r in order if r in e["rel"]][:6],
         })
@@ -330,10 +362,14 @@ def main():
         shutil.copy2(asset, OUT / asset.name)
 
     docs = {}
+    gloss_extra_body = None
     for path in sorted(DATA.glob("*/*.md")):
         if path.parent.name.startswith("."):
             continue
         meta, body, title = parse_doc(path)
+        if meta.get("typ") == "slovnik":
+            gloss_extra_body = body
+            continue
         slug = meta.get("id", path.stem)
         docs[slug] = {"meta": meta, "body": body, "title": title,
                       "folder": path.parent.name, "changed": last_changed(path)}
@@ -375,7 +411,8 @@ def main():
     page = PAGE.format(title="Slovník pojmů | SPATA5",
                        nav=sidebar(nav, "slovnik-pojmu"),
                        eyebrow="Analýzy &amp; To do",
-                       article=glossary_page(docs, slugs, rank, group_of),
+                       article=glossary_page(docs, slugs, rank, group_of,
+                                             gloss_extra_body),
                        footer_meta=footer)
     page = page.replace('<div class="content">', '<div class="content content-wide">', 1)
     (OUT / "slovnik-pojmu.html").write_text(page, encoding="utf-8")

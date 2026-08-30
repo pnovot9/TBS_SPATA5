@@ -11,7 +11,9 @@ profesionálové: vědci, lékaři, zástupci spolku a dárci.
 - Odborné termíny v odstavci vysvětlují řádky `> ℹ` hned pod ním. Web z
   nich vytvoří tlačítko s vysvětlivkami (viz features.md). Vysvětlení jsou
   krátké slovníkové definice bez čísel a bez tvrzení, která by potřebovala
-  zdroj.
+  zdroj. Delší kontext a vztah pojmu k nemoci patří do souboru
+  `data/09-todo/slovnik-rozsireni.md` (viz features.md), kde každé tvrzení
+  kryje zdroj.
 - Bez pomlček uvnitř vět a bez středníků. Dvě věty místo jedné dlouhé.
 
 ## Rejstřík
