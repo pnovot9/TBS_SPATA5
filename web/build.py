@@ -27,6 +27,7 @@ GROUPS = [
     ("Organizace a pacienti", ["03-organizace", "04-pacienti"]),
     ("Média a zdroje", ["05-media", "06-zdroje"]),
     ("Inspirace", ["08-inspirace"]),
+    ("Dostupné zdroje dat", ["10-zdroje-dat"]),
     ("Analýzy & To do", ["07-ai", "09-todo"]),
 ]
 
