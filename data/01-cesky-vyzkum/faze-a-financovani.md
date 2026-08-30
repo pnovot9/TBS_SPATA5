@@ -19,7 +19,7 @@ Zdroj: zazracnedeti.cz/vyzkum-leku/. Výzkum vede Radislav Sedláček na nekomer
 | 3. Klinické studie | minimálně 4 až 5 let | 10 až 20 mil. Kč | ověření terapie u pacientů |
 
 > ℹ **Myší model** je myš upravená tak, aby napodobila lidskou nemoc. **Genová terapie** dodává do buněk funkční kopii genu.
-> ℹ **Preklinické studie** probíhají na buňkách a zvířatech. **Klinické studie** ověřují léčbu na lidech.
+> ℹ **Preklinický výzkum** probíhá na buňkách a zvířatech. **Klinické studie** ověřují léčbu na lidech.
 > ℹ **SÚKL** je Státní ústav pro kontrolu léčiv. **EMA** je Evropská agentura pro léčivé přípravky.
 
 Celkový odhad: **33 až 49 mil. Kč**. Pro srovnání uvedly Seznam Zprávy cenu hotové genové terapie Zolgensma kolem 52 mil. Kč za jednu dávku.

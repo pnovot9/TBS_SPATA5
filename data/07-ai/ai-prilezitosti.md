@@ -66,7 +66,7 @@ Evo 2 je pro projekt nejzajímavější. Pracuje přímo s DNA, takže nepotřeb
 
 Možné využití jsou dvě. Ohodnotit dopad všech dosud popsaných variant v genu SPATA5/AFG2A a použít pořadí jako podklad pro výběr varianty do myšího modelu ([[projekt-ccp-spata5]]). A dále zařadit varianty nejasného významu, které se objeví u nově diagnostikovaných dětí ([[diagnostika]]). NVIDIA k modelu zveřejnila návod pro gen BRCA1, který lze na AFG2A přepsat. ⚠ OVĚŘIT: přenositelnost návodu na AFG2A nebyla vyzkoušena, jde o odhad z dokumentace. Výsledky modelu jsou predikce, ne diagnóza, a pro klinické použití je nutné je ověřit laboratorně.
 
-> ℹ **Varianta nejasného významu** je nalezená odchylka v DNA, u které se zatím neví, zda nemoc způsobuje.
+> ℹ **Varianta nejasného významu (VUS)** je nalezená odchylka v DNA, u které se zatím neví, zda nemoc způsobuje.
 
 ## Otevřené otázky k dořešení
 

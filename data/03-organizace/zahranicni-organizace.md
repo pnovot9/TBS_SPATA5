@@ -23,7 +23,7 @@ Mezinárodní pacientská organizace rodin s poruchami SPATA5 a SPATA5L1. Spolup
 > ℹ **Hluboké fenotypování** je podrobný popis všech projevů nemoci u každého pacienta.
 > ℹ **Studie přirozeného průběhu** sleduje, jak se nemoc vyvíjí bez léčby.
 > ℹ **Kohorta** je skupina pacientů sledovaná v jedné studii.
-> ℹ **Klinická studie** ověřuje léčbu na lidech.
+> ℹ **Klinické studie** ověřují léčbu na lidech.
 
 ## ERN ITHACA
 

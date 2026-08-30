@@ -41,7 +41,7 @@ Doplňkové práce:
 - SPATA5 u fetální ventrikulomegalie: Sci Rep 2025, PMID 40603987
 
 > ℹ **Preprint** je vědecký článek zveřejněný před recenzním řízením.
-> ℹ **Ventrikulomegalie** je rozšíření mozkových komor. **Fetální ventrikulomegalie** je zjištěna už u plodu.
+> ℹ **Ventrikulomegalie** je rozšíření mozkových komor. **Fetální ventrikulomegalie** je rozšíření mozkových komor zjištěné už u plodu.
 > ℹ **Editorial** je komentář redakce nebo odborníka k publikované studii.
 
 Publikace české skupiny (CCP) k SPATA5 zatím neexistuje nebo nebyla dohledána. Sledovat: https://www.phenogenomics.cz/research-and-education/publications/
