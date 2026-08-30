@@ -156,10 +156,6 @@ Starší název je Westův syndrom. Na EEG je s nimi spojena hypsarytmie.
 
 **Vztah k nemoci:** Kryo-EM vyřešila v roce 2025 strukturu komplexu s proteinem AFG2A (PMID 40268917). Struktura obsahuje lidsky specifické rysy, které by podle autorů šly využít terapeuticky.
 
-## Kryoelektronová mikroskopie
-
-**Vztah k nemoci:** Touto metodou byla v roce 2025 vyřešena struktura komplexu s proteinem AFG2A (PMID 40268917). Struktura obsahuje lidsky specifické rysy, které by podle autorů šly využít terapeuticky.
-
 ## Malé molekuly
 
 **Vztah k nemoci:** Český projekt v CCP testuje účinnost malých molekul vedle vývoje genové terapie. Viz [[projekt-ccp-spata5]].

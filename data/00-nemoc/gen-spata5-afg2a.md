@@ -30,7 +30,7 @@ Věda dnes zná dvě propojené role. Obě dávají smysl u nemoci, která nič�
 > ℹ **Proteinový komplex** je skupina bílkovin, které se spojí a pracují jako jeden celek.
 > ℹ **Pre-60S** je nedozrálá velká podjednotka ribozomu. Před dokončením ještě prochází úpravami.
 > ℹ **Cytoplazma** je vnitřní prostor buňky mimo jádro.
-> ℹ **Kryoelektronová mikroskopie** zobrazuje rychle zmrazené molekuly elektronovým mikroskopem. Ukáže jejich tvar do velkého detailu.
+> ℹ **Kryo-EM** (kryoelektronová mikroskopie) zobrazuje rychle zmrazené molekuly elektronovým mikroskopem. Ukáže jejich tvar do velkého detailu.
 > ℹ **Ribozomopatie** jsou nemoci způsobené poruchou výroby nebo funkce ribozomů.
 
 **2. Mitochondrie.** Nervové buňky s nefunkčním SPATA5 mají porušenou rovnováhu spojování a dělení mitochondrií, nižší výrobu ATP a kratší axony (Puusepp a kol., 2018, PMID 29343804). Snížená mitochondriální funkce byla změřena i přímo v krevních buňkách jednoho pacienta (kazuistika, Raggio a kol., 2023, PMID 36849973).

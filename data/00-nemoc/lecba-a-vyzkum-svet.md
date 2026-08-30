@@ -16,7 +16,7 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 - rehabilitace a fyzioterapie
 - podpora výživy a řešení zažívacích obtíží
 
-> ℹ **Kauzální léčba** odstraňuje příčinu nemoci. **Symptomatická péče** mírní jen její projevy.
+> ℹ **Kauzální léčba** odstraňuje příčinu nemoci. **Symptomatická péče** mírní projevy nemoci, ne její příčinu.
 > ℹ **Antiepileptika** jsou léky proti epileptickým záchvatům.
 
 ## Nadějné dílčí výsledky
@@ -39,9 +39,9 @@ Kauzální léčba neexistuje. Nemoc zatím nelze vyléčit ani zastavit. Péče
 - **Modely nemoci.** Publikované jsou: knockdown v potkaních neuronech, pacientské fibroblasty, krevní buňky pacientů a buněčné linie s CRISPR knockoutem. ⚠ OVĚŘIT: publikovaný myší ani zebrafish model nebyl při rešerši nalezen. Český projekt [[projekt-ccp-spata5]] proto myší model teprve vyvíjí a byl by v tom mezi prvními na světě.
 - **Genová terapie a ASO.** Žádná publikace o genové terapii ani antisense oligonukleotidech pro SPATA5 zatím neexistuje. Právě sem míří český projekt (AAV vektory).
 
-> ℹ **Fenotypování** je systematický popis projevů nemoci. **Studie přirozeného průběhu** sleduje, jak se nemoc vyvíjí bez léčby.
+> ℹ **Fenotypizace** je systematický popis projevů nemoci. **Studie přirozeného průběhu** sleduje, jak se nemoc vyvíjí bez léčby.
 > ℹ **Kryo-EM** (kryoelektronová mikroskopie) zobrazuje rychle zmrazené molekuly elektronovým mikroskopem.
-> ℹ **Knockdown** je umělé snížení činnosti genu v laboratoři. **Knockout** je jeho úplné vypnutí. **CRISPR** je nástroj pro cílené úpravy DNA.
+> ℹ **Knockdown** je umělé snížení činnosti genu v laboratoři. **Knockout** je jeho úplné vypnutí. **CRISPR/Cas9** je nástroj pro cílené úpravy DNA.
 > ℹ **Fibroblasty** jsou buňky pojivové tkáně. Snadno se získají z malého vzorku kůže.
 > ℹ **Zebrafish** je dánio pruhované, malá rybka běžně používaná jako model lidských nemocí.
 > ℹ **Genová terapie** dodává do buněk funkční kopii genu. **AAV vektor** je virus, který sám nemoc nezpůsobuje. Je upravený tak, aby tuto kopii do buněk dopravil.

@@ -16,7 +16,7 @@ Přehled zahraničních firem a organizací, které spojují AI a vzácné nemoc
 - **Healx** (healx.ai): britská firma zaměřená přímo na vzácné nemoci. Pomocí AI znovu využívá a kombinuje již známé látky (repurposing). Uvádí, že 90 % vzácných nemocí nemá žádnou léčbu.
 
 > ℹ **Repurposing** je využití již schváleného léku pro jinou nemoc, než pro kterou vznikl.
-> ℹ **Klinické zkoušky** ověřují léčbu na lidech.
+> ℹ **Klinické studie** ověřují léčbu na lidech.
 
 ## Neziskové organizace
 
@@ -43,7 +43,7 @@ Rozbor z 2026-08-27. Položky jsou seřazeny podle dostupnosti a přínosu. Vypl
 > ℹ **Repurposing** je využití již schváleného léku pro jinou nemoc, než pro kterou vznikl. **Screening** je hromadné testování mnoha látek najednou.
 > ℹ **Mechanistické vodítko** je poznatek o mechanismu nemoci, který napovídá, kde léčbu hledat.
 > ℹ **Studie přirozeného průběhu** sleduje vývoj nemoci bez léčby. **Longitudinální data** jsou opakovaná měření týchž pacientů v čase.
-> ℹ **Genový knockout** je cílené vypnutí jednoho genu v buňce.
+> ℹ **Knockout** je cílené vypnutí jednoho genu v buňce.
 > ℹ **Sekvenování** je přečtení pořadí písmen v DNA. U SPATA5 dává definitivní diagnózu jen genetické vyšetření, obvykle sekvenování exomu nebo cílený genetický panel. Vzácně je potřeba i čipová analýza, která najde velké delece. V literatuře je takový pacient popsán jeden (PMID 30552426). **Obličejový fenotyp** je soubor rysů obličeje typických pro daný syndrom.
 
 ## Vazby
