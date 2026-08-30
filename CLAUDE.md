@@ -55,3 +55,13 @@ static website that presents it.
    welcome. Full rules with examples:
    [content.md](web/_documentation/content.md).
 6. Work on branches in worktrees, land via PR. Never commit to main.
+7. **Every new glossary term gets the full treatment.** Whenever a PR adds
+   a new `> ℹ` term to the vault, the same PR must add a matching entry to
+   `data/09-todo/slovnik-rozsireni.md`: context paragraphs where the short
+   definition is not enough, and a `**Vztah k nemoci:**` paragraph
+   (rendered as "Vztah k nemoci SPATA5" on the glossary page). Omit the
+   Vztah paragraph only when the term genuinely has no relation to the
+   disease worth stating. All facts in the entry follow rule 0 (sources in
+   the file's Zdroje section, `⚠ OVĚŘIT` where unverified). Format and
+   mechanics: web/_documentation/features.md, section "Glossary
+   enrichment".

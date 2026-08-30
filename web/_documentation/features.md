@@ -100,6 +100,11 @@ Unlike `> ℹ` lines, this file may contain numbers and sourced claims.
 build.py parses it in `parse_gloss_extra()` and never renders it as a
 standalone page. Wikilinks inside it resolve to article links.
 
+Enrichment is not optional for new terms. A PR that introduces a new
+`> ℹ` term must add its entry here in the same PR, with context and the
+`**Vztah k nemoci:**` paragraph (skipped only for terms with no relation
+to the disease). See rule 7 in the root CLAUDE.md.
+
 Term data is embedded in the page as JSON (`def`, `ctx`, `dis` fields).
 Search matches the term name, definition, context, and disease-relation
 text, and ignores diacritics, so "lecba" finds "léčba". List rendering
