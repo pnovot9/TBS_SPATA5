@@ -2,12 +2,12 @@
 id: overit-flags
 typ: analyza
 nazev: "Ověřit: všechny štítky"
-datum-reserse: 2026-08-27
+datum-reserse: 2026-08-30
 ---
 
 # Ověřit: všechny štítky
 
-Přehled všech štítků `⚠ OVĚŘIT` ve vaultu na jednom místě. Slouží k rychlému projití otevřených otázek. Jakmile je otázka zodpovězena, opravte text ve zdrojovém článku, odstraňte tam štítek a smažte odpovídající řádek zde. Stav k 27. 8. 2026: 20 štítků ve 13 článcích.
+Přehled všech štítků `⚠ OVĚŘIT` ve vaultu na jednom místě. Slouží k rychlému projití otevřených otázek. Jakmile je otázka zodpovězena, opravte text ve zdrojovém článku, odstraňte tam štítek a smažte odpovídající řádek zde. Stav k 30. 8. 2026: 21 štítků ve 13 článcích.
 
 ## Rozpory mezi zdroji
 
@@ -28,6 +28,7 @@ Nejvyšší priorita. Dva zdroje si protiřečí, nebo mediální číslo nesed�
 
 ## Neúplná rešerše
 
+- **Návod Evo 2 pro gen AFG2A.** NVIDIA zveřejnila návod k predikci variant pro gen BRCA1. Předpoklad, že jej lze přepsat na AFG2A, vychází jen z dokumentace a nebyl vyzkoušen. Ověřit spuštěním. Článek: [[ai-prilezitosti]].
 - **Boltz-2 a Recursion.** Detaily pocházejí z tiskové zprávy a materiálů MIT. Před citováním v žádosti o grant zkontrolovat primární zdroje. Článek: [[ai-prilezitosti]].
 - **Chybějící myší a zebrafish model.** Publikovaný model nebyl při rešerši nalezen. Negativní zjištění, které je potřeba čas od času znovu ověřit. Článek: [[lecba-a-vyzkum-svet]].
 - **SPATA5/AFG2A v datasetu RxRx3.** Zastoupení genu mezi knockouty zatím nebylo ověřeno. Článek: [[inspirace]].
