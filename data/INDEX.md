@@ -37,6 +37,13 @@ Rychlá orientace: nemoc [[spata5-nemoc]] je způsobena poruchou genu [[gen-spat
 - [[vedecke-publikace]] (zdroj): odborná literatura s PMID a DOI
 - [[databaze]] (zdroj): OMIM, Orphanet, ClinVar a další
 
+## Dostupné zdroje dat
+
+- [[orphanet]] (zdroj): evropská referenční databáze vzácných nemocí
+- [[uniprot]] (zdroj): znalostní báze o proteinech, záznam Q8NB90
+- [[alphafold]] (zdroj): predikované 3D struktury proteinů
+- [[clinvar]] (zdroj): klinicky hodnocené genetické varianty
+
 ## Analýzy a další kroky
 
 - [[ai-prilezitosti]] (analyza): kde může pomoci AI
