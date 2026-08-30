@@ -27,7 +27,7 @@ Diagnóza často přichází pozdě. Nemoc totiž napodobuje mitochondriální o
 
 - EEG: multifokální hroty, hypsarytmie u infantilních spasmů
 - MRI mozku: hypomyelinizace (39 %), atrofie mozku (34 %), tenké corpus callosum (29 %)
-- Vyšetření sluchu (BERA, audiometrie): senzorineurální ztráta sluchu
+- Vyšetření sluchu (BERA): senzorineurální ztráta sluchu. V publikované kohortě odhalila BERA poruchu sluchu už u novorozence a sluchové evokované potenciály ji potvrdily u dalších pacientů (PMID 27683084). ⚠ OVĚŘIT: dříve zde uvedená audiometrie není v citovaných zdrojích popsána. Kandidátem je plný text kazuistiky rodiny s izolovanou ztrátou sluchu (PMID 28293831), který je za paywallem.
 - Zrakové evokované potenciály (VEP)
 - Výzkumně: měření dýchání mitochondrií v krevních buňkách jako šetrná náhrada svalové biopsie (PMID 36849973)
 
@@ -56,5 +56,7 @@ Databáze ClinVar k 26. 8. 2026 evidovala pro AFG2A celkem 971 variant. Z toho 1
 - Poddiagnostikování a kombinace exomu s čipovou analýzou: https://pubmed.ncbi.nlm.nih.gov/30552426/ (Papuc 2019)
 - Nálezy MRI a EEG: https://pubmed.ncbi.nlm.nih.gov/41933351/ a https://pubmed.ncbi.nlm.nih.gov/27246907/
 - Mitochondriální test z krve: https://pubmed.ncbi.nlm.nih.gov/36849973/
+- BERA a sluchové evokované potenciály u pacientů: https://pubmed.ncbi.nlm.nih.gov/27683084/ (Buchert 2016, plný text https://pmc.ncbi.nlm.nih.gov/articles/PMC5041579/)
+- Rodina s izolovanou ztrátou sluchu (možný zdroj k audiometrii, plný text za paywallem): https://pubmed.ncbi.nlm.nih.gov/28293831/
 - ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/?term=AFG2A%5Bgene%5D
 - Orphanet diagnostické testy: https://www.orpha.net/en/diagnostic-tests/diagnostic/499349
