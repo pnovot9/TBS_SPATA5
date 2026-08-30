@@ -16,7 +16,7 @@ tvrzení kryje zdroj v sekci Zdroje.
 
 ## AAV vektor
 
-AAV je zkratka pro adeno-asociovaný virus. Je to malý virus, u kterého není známa žádná role při vzniku lidské nemoci. V genové terapii slouží upravený AAV jako přepravka. Nese funkční kopii genu a doručí ji do cílových buněk.
+AAV je zkratka pro adeno-asociovaný virus. Je to malý virus, u kterého není prokázána role při vzniku lidské nemoci. V genové terapii slouží upravený AAV jako přepravka. Nese funkční kopii genu a doručí ji do cílových buněk.
 
 **Vztah k nemoci:** Český projekt v CCP vyvíjí AAV vektory pro genovou terapii SPATA5 a studuje jejich doručení do cílové tkáně. Publikace o genové terapii SPATA5 zatím ve světě neexistuje (stav rešerše: srpen 2026). Viz [[projekt-ccp-spata5]] a [[lecba-a-vyzkum-svet]].
 
@@ -42,7 +42,7 @@ AAV je zkratka pro adeno-asociovaný virus. Je to malý virus, u kterého není 
 
 ## BERA
 
-**Vztah k nemoci:** Vyšetřením BERA se u SPATA5 prokazuje senzorineurální ztráta sluchu už u malých dětí.
+**Vztah k nemoci:** Patří mezi podpůrná vyšetření sluchu uváděná v přehledu diagnostiky SPATA5. Viz [[diagnostika]].
 
 ## Chromozom
 
@@ -50,7 +50,7 @@ AAV je zkratka pro adeno-asociovaný virus. Je to malý virus, u kterého není 
 
 ## Cílený genetický panel
 
-**Vztah k nemoci:** Vedle sekvenování exomu je panel jednou z cest ke genetické diagnóze SPATA5.
+**Vztah k nemoci:** Vedle sekvenování exomu je panel jednou z cest ke genetické diagnóze SPATA5. Viz [[diagnostika]].
 
 ## ClinVar
 
@@ -64,11 +64,11 @@ AAV je zkratka pro adeno-asociovaný virus. Je to malý virus, u kterého není 
 
 Metoda umožňuje cíleně přepsat vybrané místo v DNA. Za její objev dostaly Emmanuelle Charpentier a Jennifer Doudna v roce 2020 Nobelovu cenu za chemii.
 
-**Vztah k nemoci:** CCP pomocí CRISPR/Cas9 vytváří myší modely s pacientskými mutacemi. Mezi publikované modely nemoci patří i buněčné linie s CRISPR knockoutem genu. Viz [[projekt-ccp-spata5]].
+**Vztah k nemoci:** Mezi publikované modely nemoci patří buněčné linie s CRISPR knockoutem genu (PMID 35354024). Přehled nástrojů českého projektu uvádí [[projekt-ccp-spata5]].
 
 ## EEG
 
-**Vztah k nemoci:** U SPATA5 se na EEG popisují multifokální hroty. Při infantilních epileptických spasmech je typická hypsarytmie.
+**Vztah k nemoci:** U SPATA5 se na EEG popisují multifokální hroty. U části pacientů s infantilními epileptickými spasmy byla zaznamenána hypsarytmie.
 
 ## EHLMRS
 
@@ -120,11 +120,11 @@ U nemocí ze ztráty funkce genu je cílem dodat do buněk jeho funkční kopii,
 
 ## Hypsarytmie
 
-**Vztah k nemoci:** Hypsarytmie provází infantilní epileptické spasmy, nejčastější úvodní epileptický syndrom u SPATA5.
+**Vztah k nemoci:** Hypsarytmie patří k obrazu infantilních epileptických spasmů, nejčastějšího úvodního epileptického syndromu u SPATA5. V kohortě 51 pacientů ale byla zaznamenána jen u 4 z 20 popsaných EEG (plný text PMID 41933351).
 
 ## Infantilní epileptické spasmy
 
-Starší název je Westův syndrom. Na EEG je při nich typická hypsarytmie.
+Starší název je Westův syndrom. Na EEG je s nimi spojena hypsarytmie.
 
 **Vztah k nemoci:** Jsou nejčastějším úvodním epileptickým syndromem u SPATA5 (66,7 %, PMID 41933351). Záchvaty typicky začínají mezi 6. a 12. měsícem života (PMID 27246907).
 
@@ -146,7 +146,7 @@ Starší název je Westův syndrom. Na EEG je při nich typická hypsarytmie.
 
 ## Kochleární implantát
 
-**Vztah k nemoci:** Při ztrátě sluchu u SPATA5 je vedle sluchadel součástí symptomatické péče.
+**Vztah k nemoci:** Přehled péče na tomto webu ho uvádí vedle sluchadel jako součást symptomatické péče při ztrátě sluchu. Viz [[lecba-a-vyzkum-svet]].
 
 ## Kohorta
 
@@ -198,7 +198,7 @@ Starší název je Westův syndrom. Na EEG je při nich typická hypsarytmie.
 
 ## Myší model
 
-**Vztah k nemoci:** Publikovaný myší model SPATA5 nebyl při rešerši nalezen (stav: srpen 2026). Český projekt v CCP myší modely s pacientskými mutacemi vyvíjí. Zaměřuje se na energetický metabolismus mozku, funkci mitochondrií a neurologické, sluchové a záchvatové projevy. Viz [[projekt-ccp-spata5]].
+**Vztah k nemoci:** Publikovaný myší model SPATA5 nebyl při rešerši nalezen (stav: srpen 2026). Český projekt v CCP myší model s mutací genu SPATA5 vyvíjí. Zaměřuje se na energetický metabolismus mozku, funkci mitochondrií a neurologické, sluchové a záchvatové projevy. Viz [[projekt-ccp-spata5]].
 
 ## OMIM
 
@@ -206,7 +206,7 @@ Starší název je Westův syndrom. Na EEG je při nich typická hypsarytmie.
 
 ## Pacientská mutace
 
-**Vztah k nemoci:** Myší modely v CCP se vyvíjejí s pacientskými mutacemi. Viz [[projekt-ccp-spata5]].
+**Vztah k nemoci:** Pojem se používá při vývoji myších modelů v českém projektu. Viz [[projekt-ccp-spata5]].
 
 ## Paralog
 
@@ -244,7 +244,7 @@ Nemoc se dědí autozomálně recesivně. Každý člověk má dvě kopie genu a
 
 ## Senzorineurální ztráta sluchu
 
-**Vztah k nemoci:** Poruchu sluchu má 93,6 % pacientů v souhrnu 51 případů (PMID 41933351). Prokazuje se vyšetřením BERA a audiometrií. Řeší se sluchadly nebo kochleárním implantátem. Popsána je i mírná forma nemoci, kde je ztráta sluchu jediným projevem (PMID 28293831).
+**Vztah k nemoci:** Poruchu sluchu má 93,6 % pacientů v souhrnu 51 případů (PMID 41933351). Popsána je i mírná forma nemoci, kde je ztráta sluchu jediným projevem (PMID 28293831).
 
 ## Spasticita
 
@@ -256,11 +256,11 @@ Nemoc se dědí autozomálně recesivně. Každý člověk má dvě kopie genu a
 
 ## Symptomatická péče
 
-**Vztah k nemoci:** U SPATA5 je dnes jedinou dostupnou péčí. Zahrnuje antiepileptika, rehabilitaci a fyzioterapii, sluchadla nebo kochleární implantát a podporu výživy. Viz [[lecba-a-vyzkum-svet]].
+**Vztah k nemoci:** U SPATA5 je dnes jedinou dostupnou péčí. Podle stránky českého projektu zahrnuje léčbu záchvatů, rehabilitaci sluchu, podporu výživy a intenzivní pohybovou, komunikační a vývojovou péči. Viz [[lecba-a-vyzkum-svet]].
 
 ## Syndrom PEHO
 
-**Vztah k nemoci:** Fenotyp SPATA5 se syndromu PEHO podobá. Podobnost přispívá k tomu, že diagnóza často dlouho uniká.
+**Vztah k nemoci:** Podle článku [[spata5-nemoc]] se fenotyp SPATA5 syndromu PEHO podobá a podobnost přispívá k tomu, že diagnóza dlouho uniká. ⚠ OVĚŘIT: přímý publikovaný zdroj podobnosti s PEHO se při kontrole nepodařilo dohledat (PubMed, srpen 2026). Doložit citací, nebo tvrzení z webu stáhnout.
 
 ## Varianta
 
@@ -297,7 +297,7 @@ https://pubmed.ncbi.nlm.nih.gov/PMID/
 - Orphanet ORPHA:457351: http://www.orpha.net/ORDO/Orphanet_457351
 - ClinVar, počty variant k 26. 8. 2026: https://www.ncbi.nlm.nih.gov/clinvar/?term=AFG2A%5Bgene%5D
 - Göttingenská studie přirozeného průběhu: https://ern-ithaca.eu/our-research-activities/calls-for-collaboration/deep-phenotyping-and-natural-history-of-afg2a-spata5-and-afg2b-spata5l1-disorders/
-- Český projekt (AAV, malé molekuly, myší modely, zaměření fenotypizace): https://www.phenogenomics.cz/rare-diseases/spata5/ a https://www.phenogenomics.cz/post-doc-spata5-syndrome/
+- Český projekt (AAV, malé molekuly, myší modely, zaměření fenotypizace, složky symptomatické péče): https://www.phenogenomics.cz/rare-diseases/spata5/ a https://www.phenogenomics.cz/post-doc-spata5-syndrome/
 - Cíl projektu dle Sedláčka: https://roklen24.cz/?quick_news=nadeje-na-zazrak-rodice-nemocnych-deti-chteji-diky-sbirce-podporit-vyzkum-lecby-spata5
 - Obecná definice AAV (adeno-asociovaný virus, bez známé role v nemoci): https://en.wikipedia.org/wiki/Adeno-associated_virus
 - Nobelova cena za chemii 2020 (CRISPR/Cas9): https://www.nobelprize.org/prizes/chemistry/2020/summary/
